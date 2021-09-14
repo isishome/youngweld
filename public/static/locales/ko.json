@@ -1,0 +1,804 @@
+{
+  "pnf": "페이지를 찾을 수 없습니다.",
+  "company": {
+    "name": "영일전기",
+    "copyright1": "Copyright © 2021 영일전기.",
+    "copyright2": "모든 권리 보유.",
+    "timeline": [
+      {
+        "title": "1981년",
+        "color": "primary",
+        "children": [
+          {
+            "label": "회사 개업",
+            "time": "1981년 2월",
+            "desc": "고척산업용품상가 1동1호에 첫 개업",
+            "color": "secondary",
+            "icon": "home"
+          },
+          {
+            "label": "사명 변경",
+            "time": "1981년 11월",
+            "desc": "영일전자에서 영일전기로 사명 변경",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "title": "2000년",
+        "color": "primary",
+        "children": [
+          {
+            "label": "회사 이전",
+            "time": "2000년 5월",
+            "desc": "인천산업유통센터로 회사이전",
+            "color": "secondary",
+            "icon": "swap_horiz"
+          }
+        ]
+      },
+      {
+        "title": "2010년",
+        "color": "primary",
+        "children": [
+          {
+            "label": "서브머지드 캐리지 용접기 개발 착수",
+            "time": "2010년 3월",
+            "desc": "<p>개발착수</p><img src=\"/static/images/products/yesawps001.png\" width=\"200px\" />",
+            "icon": "work"
+          },
+          {
+            "label": "서브머지드 캐리지 용접기 개발 진행",
+            "time": "2010년 4월",
+            "desc": "<p>개발진행</p><img src=\"/static/images/products/yesawcg001.png\" width=\"200px\" />",
+            "icon": "work"
+          },
+          {
+            "label": "서브머지드 캐리지 용접기 개발 완료",
+            "time": "2010년 5월",
+            "desc": "개발완료",
+            "icon": "work"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "product": "제품정보",
+    "company": "회사정보",
+    "support": "고객지원",
+    "location": "오시는길"
+  },
+  "language": "언어",
+  "languageList": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "main": {
+    "detail": "상세보기",
+    "top": [
+      {
+        "direction": "right",
+        "src": "/static/images/main/top00.png",
+        "align": "left",
+        "title": "서브머지드 아크 용접 캐리지",
+        "desc": "레일을 따라 주행하며 정밀하게 용접",
+        "code": "YESAWCG-001",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
+      },
+      {
+        "direction": "left",
+        "src": "/static/images/main/top01.png",
+        "align": "right",
+        "title": "에어스포트용접 콘트롤",
+        "desc": "용접전원 사이클에 동기한 디지털 제어방식",
+        "code": "YM9601",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
+      }
+    ],
+    "section": [
+      [
+        {
+          "title": "서브머지드 아크 용접 캐리지",
+          "desc": "레일을 따라 주행하며 정밀하게 용접",
+          "etc": [
+            "YESAWCG-001"
+          ],
+          "src": "/static/images/products/yesawcg001.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCG-001"
+            }
+          }
+        },
+        {
+          "title": "서브머지드 아크 용접선 추적장치",
+          "desc": "프로브센서",
+          "etc": [
+            "YESAWPS-001"
+          ],
+          "src": "/static/images/products/yesawps001.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWPS-001"
+            }
+          }
+        },
+        {
+          "title": "서브머지드 아크 용접선 추적장치",
+          "desc": "컨트롤 유닛",
+          "etc": [
+            "YESAWCU-004"
+          ],
+          "src": "/static/images/products/yesawcu004.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCU-004"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "서브머지드 아크 용접선 추적장치",
+          "desc": "컨트롤 유닛",
+          "etc": [
+            "YM001"
+          ],
+          "src": "/static/images/products/ym001.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM001"
+            }
+          }
+        },
+        {
+          "title": "팬케이크 머신용",
+          "desc": "컨트롤 유닛",
+          "etc": [
+            "YEPCCU-001"
+          ],
+          "src": "/static/images/products/yepccu001.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YEPCCU-001"
+            }
+          }
+        },
+        {
+          "title": "에어 스포트 저항 용접기용",
+          "desc": "컨트롤 유닛",
+          "etc": [
+            "YM9601"
+          ],
+          "src": "/static/images/products/ym9601.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM9601"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "인버터 용접기",
+          "desc": "인버터 아크 용접기(소형)",
+          "etc": [
+            "YEAWW-001"
+          ],
+          "src": "/static/images/products/yeaww001.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "inverter",
+              "code": "YEAWW-001"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "콘덴서 용접기",
+          "desc": "콘덴서 스포트 저항용접기",
+          "etc": [
+            "YERWW-001"
+          ],
+          "src": "/static/images/products/yerww001.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWW-001"
+            }
+          }
+        },
+        {
+          "title": "콘덴서 스포트 용접기 파워",
+          "desc": "콘덴서 스포트 저항용접기용 파워",
+          "etc": [
+            "YERWP-001"
+          ],
+          "src": "/static/images/products/yerwp001.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWP-001"
+            }
+          }
+        },
+        {
+          "title": "DC 스포트 변압기",
+          "desc": "DC 스포트 저항용접기용 변압기",
+          "etc": [
+            "YERWT-001"
+          ],
+          "src": "/static/images/products/yerwt001.png",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWT-001"
+            }
+          }
+        }
+      ]
+    ]
+  },
+  "location": {
+    "contact": "연락처",
+    "address": "인천광역시 동구 송림동 294번지 인천산업유통센터 3단지 17동 121호",
+    "phone": "(032) 589 - 1160 ~ 2",
+    "fax": "(032) 589 - 5095",
+    "PublicTransport": "대중교통",
+    "OwnCar": "자가용",
+    "PublicTransportInfo": [
+      "1호선 제물포역 하차",
+      "2번출구 앞 지하상가",
+      "선인고등학교앞 출구 30미터 직진",
+      "510번 버스 승차",
+      "13개 정류장 후 산업유통센터 3단지(C동) 하차"
+    ],
+    "OwnCarInfo": [
+      "경인고속도로 진입",
+      "서운분기점(인천,서인천,부평)방면으로 직진",
+      "인천톨게이트",
+      "동인천IC 방면으로 우측고속도로 출구",
+      "봉수대길사거리 - 동인천역,동구청 방면으로 좌회전",
+      "인천산업용품유통센터 3단지(C동) 입구"
+    ]
+  },
+  "support": {
+    "searchSupport": "도움말 검색",
+    "title": "아직 문제가 해결되지 않으셨나요?",
+    "contact": [
+      "영일전기 제품을 이용해 주셔서 감사합니다.",
+      "제품에 관한 매뉴얼은 제품지원 항목에서 확인 하실수 있습니다.",
+      "제품에 관한 문의사항이 있으시면 아래 연락처로 문의 바랍니다.",
+      "문의 하실때 제품명 또는 제품코드를 말씀하시면 제품에 대한 빠른 상담과 조회가 가능합니다",
+      "전화상담은 오전 9시부터 오후 5시까지 운영합니다."
+    ],
+    "email": {
+      "icon": "email",
+      "name": "이메일",
+      "value": "youngweld@hanmail.net"
+    },
+    "phone": {
+      "icon": "phone_enabled",
+      "name": "전화번호",
+      "value": "(032) 589 - 1160 ~ 2"
+    },
+    "section": {
+      "control": [
+        {
+          "label": "전원이 들어오지 않습니다.",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "전원 플러그가 제대로 꼽혀 있는지 확인"
+            }
+          ]
+        },
+        {
+          "label": "볼륨 조절이 안됩니다.",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "내부 냉납으로 인한 단선일 수 있으니 제품을 센터에 입고"
+            }
+          ]
+        }
+      ],
+      "submerged": [
+        {
+          "label": "초기 전원 인가 후 정상작동 하나 수분내에 작동이 멈춥니다.",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "과열로 인한 내부 보호 회로 작동으로 간주되므로 센터에 입고하여 점검요망"
+            }
+          ]
+        },
+        {
+          "label": "서브머지드2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solution"
+            }
+          ]
+        }
+      ],
+      "inverter": [
+        {
+          "label": "인버터1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "answer"
+            }
+          ]
+        },
+        {
+          "label": "인버터2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solution"
+            }
+          ]
+        }
+      ],
+      "spot": [
+        {
+          "label": "스포트1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "answer"
+            }
+          ]
+        },
+        {
+          "label": "스포트2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solution"
+            }
+          ]
+        }
+      ]
+    },
+    "message": {
+      "noData": "검색 된 도움말이 없습니다."
+    }
+  },
+  "section": [
+    {
+      "code": "control",
+      "icon": "/static/images/support/control.png",
+      "name": "콘트롤"
+    },
+    {
+      "code": "submerged",
+      "icon": "/static/images/support/submerged.png",
+      "name": "서브머지드"
+    },
+    {
+      "code": "inverter",
+      "icon": "/static/images/support/inverter.png",
+      "name": "인버터"
+    },
+    {
+      "code": "spot",
+      "icon": "/static/images/support/spot.png",
+      "name": "스포트"
+    }
+  ],
+  "product": {
+    "manual": "설명서",
+    "list": [
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesrwcu001.png",
+        "name": "심용접 컨트롤 유닛",
+        "desc": [
+          {
+            "name": "용접전원전압",
+            "contents": "단상 AC220V/380V"
+          },
+          {
+            "name": "용접전원주파수",
+            "contents": "50/60HZ (자동절환)"
+          },
+          {
+            "name": "제어전원",
+            "contents": "단상 AC110V +10% -10%"
+          },
+          {
+            "name": "전원제어방식",
+            "contents": "SCR 위상각 제어"
+          },
+          {
+            "name": "시간제어방식",
+            "contents": "용접전원 사이클에 동기한 디지털 제어방식"
+          },
+          {
+            "name": "가압출력신호",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "기동신호",
+            "contents": "1개입력으로 FOOT 스위치로 기동개시함"
+          }
+        ],
+        "code": "SEAM01",
+        "manual": "/static/manual/SEAM01.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu001.png",
+        "name": "콘덴서 스포트 용접 컨트롤",
+        "code": "YECRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu002.png",
+        "name": "콘덴서 스포트 용접 컨트롤",
+        "code": "YECRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeaswcu001.png",
+        "name": "스터드용접 컨트롤",
+        "code": "YEASWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu001.png",
+        "name": "스포트용접 컨트롤",
+        "code": "YESPRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu002.png",
+        "name": "스포트용접 컨트롤",
+        "code": "YESPRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeasrwcu002.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "에어스포트용접 컨트롤",
+        "desc": [
+          {
+            "name": "용접전원전압",
+            "contents": "단상 AC220V/380V +10% -30%"
+          },
+          {
+            "name": "용접전원주파수",
+            "contents": "50/60HZ (자동절환)"
+          },
+          {
+            "name": "제어전원",
+            "contents": "단상 AC110V +10% -10%"
+          },
+          {
+            "name": "전원제어방식",
+            "contents": "SCR 위상각 제어"
+          },
+          {
+            "name": "시간제어방식",
+            "contents": "비동기형 시간제어 방식<br>(용접시간은 용접전원 주파수에 동기한 디지털 제어방식)"
+          },
+          {
+            "name": "가압출력신호",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "기동신호",
+            "contents": "FOOT 스위치로 기동개시함"
+          }
+        ],
+        "code": "YM002",
+        "manual": "/static/manual/YM002.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym001.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "에어스포트용접 컨트롤",
+        "desc": [
+          {
+            "name": "용접전원전압",
+            "contents": "단상 AC220V/380V +10% -30%"
+          },
+          {
+            "name": "용접전원주파수",
+            "contents": "50/60HZ (자동절환)"
+          },
+          {
+            "name": "제어전원",
+            "contents": "단상 AC110V +10% -10%"
+          },
+          {
+            "name": "전원제어방식",
+            "contents": "SCR 위상각 제어"
+          },
+          {
+            "name": "시간제어방식",
+            "contents": "비동기형 시간제어 방식"
+          },
+          {
+            "name": "가압출력신호",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "기동신호",
+            "contents": "FOOT 스위치로 기동개시함"
+          }
+        ],
+        "code": "YM001",
+        "manual": "/static/manual/YM001.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym9601.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "에어스포트용접 컨트롤",
+        "desc": [
+          {
+            "name": "용접전원전압",
+            "contents": "단상 AC220V/380V +10% -30%"
+          },
+          {
+            "name": "용접전원주파수",
+            "contents": "50/60HZ (자동절환)"
+          },
+          {
+            "name": "제어전원",
+            "contents": "단상 AC110V +10% -10%"
+          },
+          {
+            "name": "전원제어방식",
+            "contents": "SCR 위상각 제어"
+          },
+          {
+            "name": "시간제어방식",
+            "contents": "용접전원 사이클에 동기한 디지털 제어방식"
+          },
+          {
+            "name": "제어가열",
+            "contents": "10 조건 (가압은 2계열)"
+          },
+          {
+            "name": "가압출력신호",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "기동신호",
+            "contents": "2개입력으로 ON 으로 기동개시함<br>(FOOT-1 으로 가압 SOL-1 출력 FOOT-2 으로 가압 SOL-2 출력)"
+          }
+        ],
+        "code": "YM9601",
+        "manual": "/static/manual/YM9601.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yepccu001.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "팬케익 컨트롤",
+        "code": "YEPCCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu001.png",
+        "name": "텐덤 컨트롤 유닛",
+        "code": "YESAWCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu002.png",
+        "name": "싱글 컨트롤 유닛",
+        "code": "YESAWCU-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawpd001.png",
+        "name": "메인파워 분배기",
+        "code": "YESAWPD-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu003.png",
+        "name": "메인파워 컨트롤 유닛",
+        "code": "YESAWCU-003"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu004.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "용접선 추적장치 컨트롤 유닛",
+        "code": "YESAWCU-004"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl001.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "용접선 추적장치 슬라이드",
+        "code": "YESAWSL-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl002.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "용접선 추적장치 슬라이드",
+        "code": "YESAWSL-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawps001.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "용접선 추적장치 프로브센서",
+        "code": "YESAWPS-001",
+        "manual": "/static/manual/YESAWPS-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcg001.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "캐리지",
+        "desc": [
+          {
+            "name": "제어전원전압",
+            "contents": "단상 AC 110V, 40V, 0V, 40V"
+          },
+          {
+            "name": "적용전류",
+            "contents": "AC 또는 DC 250 ~ 1500A"
+          },
+          {
+            "name": "와이어송급속도",
+            "contents": "0.5 ~ 4m/min"
+          },
+          {
+            "name": "와이어송급속도 제어방식",
+            "contents": "아크전압 피드백 방식"
+          },
+          {
+            "name": "적용와이어경",
+            "contents": "2.4, 3.2, 4.0, 4.8, 6.4ø"
+          },
+          {
+            "name": "적용와이어릴 내경",
+            "contents": "300ø 폭 100m/m"
+          },
+          {
+            "name": "적용와이어릴 외경",
+            "contents": "450ø 중량 10 ~ 24kg"
+          },
+          {
+            "name": "대차 주행 속도",
+            "contents": "12~120cm/min"
+          },
+          {
+            "name": "수평조정",
+            "contents": "50m/m"
+          },
+          {
+            "name": "수직조정",
+            "contents": "35m/m"
+          },
+          {
+            "name": "플럭스호퍼 용량",
+            "contents": "5ℓ"
+          },
+          {
+            "name": "중량",
+            "contents": ""
+          },
+          {
+            "name": "출하시 팁",
+            "contents": "4.0ø, 4.8ø"
+          }
+        ],
+        "code": "YESAWCG-001",
+        "manual": "/static/manual/YESAWCG-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawm001.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "용접기",
+        "code": "YESAWM-001"
+      },
+      {
+        "sec": "inverter",
+        "src": "/static/images/products/yeaww001.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "인버터 용접기",
+        "code": "YEAWW-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwt001.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "DC 스포트 변압기",
+        "code": "YERWT-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwp001.png",
+        "name": "콘덴서스포트 용접기 파워",
+        "code": "YERWP-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerww001.png",
+        "type": {
+          "name": "인기",
+          "color": "blue-6"
+        },
+        "name": "콘덴서 용접기",
+        "code": "YERWW-001"
+      }
+    ]
+  }
+}
