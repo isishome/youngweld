@@ -142,3 +142,9 @@ body {
 .body--dark .q-separator{
   background-color:rgba(50, 50, 50, .8);
 }
+
+.q-body--prevent-scroll.platform-ios {
+  overflow: hidden;
+  height: 1px;
+  position: relative !important;
+}

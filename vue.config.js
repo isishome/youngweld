@@ -1,6 +1,7 @@
 module.exports = {
   chainWebpack: config => {
     config.plugins.delete('prefetch')
+    config.plugins.delete('prefetch-index')
     //config.resolve.alias.set('vue-i18n', 'vue-i18n/dist/vue-i18n.cjs.js')
     config
       .plugin('html')
