@@ -6,8 +6,7 @@
         <q-btn dense flat round class="lt-md" icon="menu" @click="toggleLeftDrawer" />
       </div>
       <div class="row justify-center items-center q-gutter-x-xs col-xs-4 col-sm-6 col-xl-4">
-        <ul class="full-width f--tabs row items-center" :class="$q.screen.lt.md ? 'justify-center' : 'justify-between'"
-          :lang="lang">
+        <ul class="full-width f--tabs row items-center" :class="$q.screen.lt.md ? 'justify-center' : 'justify-between'">
           <slot name="logo"></slot>
           <slot name="tab"></slot>
         </ul>
@@ -66,7 +65,6 @@
   import { ref, reactive, computed, watch } from 'vue'
   import { useQuasar } from 'quasar'
   import { useI18n } from 'vue-i18n'
-  import { loadLocaleMessages } from '@/i18n'
 
   export default {
     setup() {
@@ -91,14 +89,16 @@
       }
 
       // language
-      const { t, tm, locale, setLocaleMessage } = useI18n({ useScope: 'global' })
+      const { t, tm, locale } = useI18n({ useScope: 'global' })
       const localeOptions = computed(() => Object.entries(tm('languageList')).map(([key, value]) => { return { value: key, label: value } }))
       const lang = ref($q.cookies.has(`${prefix}.lang`) ? $q.cookies.get(`${prefix}.lang`) : $q.lang.getLocale().substring(0, 2))
 
-      watch(() => lang.value, async (val, old) => {
+      watch(() => lang.value, (val, old) => {
+
         if (val !== old) {
-          await loadLocaleMessages(setLocaleMessage, val)
           locale.value = val
+          document.querySelector('html').setAttribute('lang', val)
+          $q.cookies.set(`${prefix}.lang`, val, { path: '/', expires: 365 })
         }
       })
 

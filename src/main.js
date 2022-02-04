@@ -6,8 +6,10 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import { createStore } from 'vuex'
 import routes from './routes'
 import store from './store'
-import { setupI18n, setI18nLanguage, loadLocaleMessages, numberFormats } from './i18n'
-import axios from 'axios'
+import { SUPPORT_LOCALES, loadLocaleMessages, setI18nLanguage } from './i18n'
+import { createI18n } from 'vue-i18n'
+import ko from './locales/ko'
+import en from './locales/en'
 
 // create app
 const app = createApp(App)
@@ -17,6 +19,16 @@ const Layout = defineAsyncComponent(() => import(/* webpackChunkName: "group-com
 const Product = defineAsyncComponent(() => import(/* webpackChunkName: "group-component" */ '@/components/fourshome/Product'))
 app.component('f-layout', Layout)
 app.component('f-product', Product)
+
+// call with I18n option
+const i18n = createI18n({
+  legacy: false, // you must specify 'legacy: false' option
+  locale: 'ko',
+  messages: {
+    ko,
+    en
+  }
+})
 
 // create router object...
 const router = createRouter({
@@ -35,15 +47,20 @@ const router = createRouter({
 
 router.beforeEach(async (to, from, next) => {
   const prefix = process.env.VUE_APP_PREFIX
-  const lang = Cookies.has(`${prefix}.lang`) ? Cookies.get(`${prefix}.lang`) : Quasar.lang.getLocale().substring(0, 2)
+  const paramsLocale = Cookies.has(`${prefix}.lang`) ? Cookies.get(`${prefix}.lang`) : Quasar.lang.getLocale().substring(0, 2)
+
+  // use locale if paramsLocale is not in SUPPORT_LOCALES
+  if (!SUPPORT_LOCALES.includes(paramsLocale)) {
+    return next(`/${paramsLocale}`)
+  }
 
   // load locale messages
-  if (!i18n.global.availableLocales.includes(lang)) {
-    await loadLocaleMessages(i18n.global.setLocaleMessage, lang)
+  if (!i18n.global.availableLocales.includes(paramsLocale)) {
+    await loadLocaleMessages(i18n, paramsLocale)
   }
 
   // set i18n language
-  setI18nLanguage(i18n, lang)
+  setI18nLanguage(i18n, paramsLocale)
 
   return next()
 })
@@ -51,26 +68,4 @@ router.beforeEach(async (to, from, next) => {
 // create vuex object
 const storage = createStore(store)
 
-// init vue-i18n
-let i18n = null
-
-axios.get('/static/locales/ko.json')
-  .then(function (response) {
-    const messages = { 'ko': response.data }
-    i18n = setupI18n({
-      legacy: false,
-      locale: 'ko',
-      fallback: 'en',
-      messages,
-      numberFormats
-    })
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error)
-  })
-  .then(function () {
-
-    // regist vue-router and vuex and i18n and components...
-    app.use(Quasar, quasarUserOptions).use(router).use(storage).use(i18n).mount('#app')
-  })
+app.use(Quasar, quasarUserOptions).use(router).use(storage).use(i18n).mount('#app')

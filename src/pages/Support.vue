@@ -93,11 +93,11 @@
               <q-card-section :class="$q.dark.isActive ? 'bg-grey-9 text-grey-5' : 'bg-cyan-8 text-white'">
                 <div class="row q-gutter-x-md text-h6">
                   <q-icon :name="tm('support.email.icon')" size="md" />
-                  <div>{{tm('support.email.name')}}</div>
+                  <div>{{t('support.email.name')}}</div>
                 </div>
               </q-card-section>
               <q-card-section class="support-contents" style="letter-spacing: 2px;">
-                {{tm('support.email.value')}}
+                {{t('support.email.value')}}
               </q-card-section>
             </q-card>
           </div>
@@ -106,11 +106,11 @@
               <q-card-section :class="$q.dark.isActive ? 'bg-grey-9 text-grey-5' : 'bg-teal-8 text-white'">
                 <div class="row q-gutter-x-md text-h6">
                   <q-icon :name="tm('support.phone.icon')" size="md" />
-                  <div>{{tm('support.phone.name')}}</div>
+                  <div>{{t('support.phone.name')}}</div>
                 </div>
               </q-card-section>
               <q-card-section class="support-contents">
-                {{tm('support.phone.value')}}
+                {{t('support.phone.value')}}
               </q-card-section>
             </q-card>
           </div>
