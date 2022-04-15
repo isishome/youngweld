@@ -293,7 +293,7 @@
     "email": {
       "icon": "email",
       "name": "이메일",
-      "value": "youngweld@hanmail.net"
+      "value": "youngweld{'@'}hanmail.net"
     },
     "phone": {
       "icon": "phone_enabled",

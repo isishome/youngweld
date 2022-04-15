@@ -11,7 +11,6 @@
           <slot name="tab"></slot>
         </ul>
       </div>
-
       <div class="row justify-end items-center q-gutter-x-sm col-xs-4 col-sm">
         <div class="gt-sm" style="padding: 2px 0 0 8vw;">
           <q-btn flat dense size="13px" icon="language" :label="$q.screen.gt.sm ? t('language') : ''">

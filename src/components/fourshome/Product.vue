@@ -1,5 +1,5 @@
 <template>
-  <div v-touch-pan.vertical.prevent="handlePan" class="product-wrap column items-center" :data-id="data.id">
+  <div class="product-wrap column items-center" :data-id="data.id">
     <div class="col-1">&nbsp;</div>
     <div class="col-3 column justify-center full-width">
       <div class="title animate__animated" :class="[`animate__delay-${parsDelay}s`, show ? 'animate__fadeInDown' : '']"
@@ -25,14 +25,6 @@
 </template>
 <script>
   import { computed } from 'vue'
-  import { scroll } from 'quasar'
-  const { getScrollTarget, setVerticalScrollPosition } = scroll
-
-  const scrollToPosition = (to) => {
-    const target = getScrollTarget(document.body)
-    const duration = 200
-    setVerticalScrollPosition(target, to, duration)
-  }
 
   export default {
     props: {
@@ -80,29 +72,7 @@
       })
 
       return {
-        parsDelay,
-        handlePan({ ...info }) {
-          if (info.isFinal) {
-            let dest = null
-            const exists = props.data.list.find(i => i.id === props.data.id)
-            const direction = info.direction === 'down' ? -1 : 1
-
-            if (exists) {
-              const idx = props.data.list.indexOf(exists)
-              if ((idx === 0 && direction === -1) || (idx + 1 === props.data.list.length && direction === 1))
-                ''
-              else {
-                if ((info.duration < 150 || info.distance.y > 130))
-                  dest = props.data.list[idx + direction].pos
-                else
-                  dest = exists.pos
-              }
-
-              if (dest)
-                scrollToPosition(dest)
-            }
-          }
-        }
+        parsDelay
       }
     }
   }

@@ -5,7 +5,7 @@
   <div class="row full-width">
     <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 q-gutter-y-lg q-gutter-y-lg">
       <div class="column top relative-position"
-        :class="!$q.dark.isActive && index%2 === 0 ? 'body--dark text-white' : ''" v-intersection="options"
+        :class="!$q.dark.isActive && index%2 === 0 ? 'body--dark text-white' : ''" v-intersection.once="options"
         :data-id="index" v-for="(t, index) in tm('main.top')" :key="index">
         <div class="top-contents row justify-center items-center content-center text-center fit"
           :class="t.direction === 'left' ? 'reverse' : ''">
@@ -30,7 +30,7 @@
   </div>
   <div class="gt-sm q-mt-lg"></div>
   <div class="lt-md q-mt-md"></div>
-  <div class="non-selectable bg-transparent" @touchstart="touchstart" @touchmove="touchmove" :class="wrapClass">
+  <div class="non-selectable bg-transparent">
     <template v-for="(s, idx1) in tm('main.section')" :key="`s_${idx1}`">
       <div class="section-wrap row full-width">
         <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
@@ -50,34 +50,14 @@
 </template>
 <script>
   import { useI18n } from 'vue-i18n'
-  import { useQuasar, scroll, format } from 'quasar'
-  import { ref, onBeforeUpdate, watch } from 'vue'
+  import { useQuasar, format } from 'quasar'
+  import { ref } from 'vue'
   const { capitalize } = format
-  const { getScrollTarget, setVerticalScrollPosition } = scroll
-
-  const scrollToPosition = (to) => {
-    const target = getScrollTarget(document.body)
-    const duration = 200
-    setVerticalScrollPosition(target, to, duration)
-  }
 
   const thresholds = []
 
   for (let i = 0; i <= 1.0; i += 0.01) {
     thresholds.push(i)
-  }
-
-  const getTargetTop = (el) => {
-    let result = null
-    try {
-      const clientRect = el.getBoundingClientRect()
-      const relativeTop = clientRect.top
-      const scrolledTopLength = window.pageYOffset
-      result = scrolledTopLength + relativeTop
-    }
-    catch { 'no element' }
-
-    return result
   }
 
   export default {
@@ -118,13 +98,6 @@
         }
       }
 
-      watch(() => inView.value, (val) => {
-        if (val.includes('p_0_0') && val.includes('1') && $q.screen.lt.sm) {
-          document.querySelector('footer').style.display = 'none'
-          wrapClass.value = 'block'
-        }
-      }, { deep: true })
-
       function add(i) {
         remove(i)
         inView.value.push(i)
@@ -147,34 +120,7 @@
         return inView.value.includes(id)
       }
 
-      // touch pen
-      let scrollY = 0
-      let startPos = 0
-      let dest = 0
-      const wrapClass = ref('')
-
-      const touchstart = (e) => {
-        if ($q.screen.gt.xs)
-          return
-
-        scrollY = window.scrollY
-        startPos = e.touches[0].clientY
-        document.querySelector('footer').style.display = ''
-        wrapClass.value = ''
-      }
-
-      const touchmove = (e) => {
-        if ($q.screen.gt.xs)
-          return
-
-        dest = startPos - e.changedTouches[0].clientY
-        scrollToPosition(scrollY + dest)
-      }
-
       const infos = ref([])
-      onBeforeUpdate(() => {
-        infos.value = [...document.querySelectorAll('div.product-wrap')].map(e => { return { id: e.getAttribute('data-id'), pos: getTargetTop(e) } })
-      })
 
       return {
         locale,
@@ -183,9 +129,6 @@
         options,
         inView,
         action,
-        wrapClass,
-        touchstart,
-        touchmove,
         infos,
         capitalize
       }
@@ -198,6 +141,7 @@
     height: 400px;
     overflow: hidden;
     box-shadow: inset 0 0 0 1px rgba(100, 100, 100, 0.2);
+    border-radius: 4px;
   }
 
   .top-contents {
