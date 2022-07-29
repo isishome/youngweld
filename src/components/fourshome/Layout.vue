@@ -18,7 +18,7 @@
               <q-list dense class="text-caption">
                 <q-item v-for="loc in localeOptions" :key="loc.value" clickable v-close-popup @click="lang = loc.value">
                   <q-item-section>
-                    <q-item-label>{{loc.label}}</q-item-label>
+                    <q-item-label>{{ loc.label }}</q-item-label>
                   </q-item-section>
                 </q-item>
               </q-list>
@@ -61,104 +61,104 @@
 </template>
 
 <script>
-  import { ref, reactive, computed, watch } from 'vue'
-  import { useQuasar } from 'quasar'
-  import { useI18n } from 'vue-i18n'
+import { ref, reactive, computed, watch } from 'vue'
+import { useQuasar } from 'quasar'
+import { useI18n } from 'vue-i18n'
 
-  export default {
-    setup() {
-      // global
-      const prefix = process.env.VUE_APP_PREFIX
-      const $q = useQuasar()
-      const footer = ref(null)
-      const myTweak = (offset) => {
-        return { minHeight: offset ? `calc(100vh - ${footer.value ? offset + footer.value.offsetHeight : offset}px)` : '100vh' }
+export default {
+  setup() {
+    // global
+    const prefix = process.env.VUE_APP_PREFIX
+    const $q = useQuasar()
+    const footer = ref(null)
+    const myTweak = (offset) => {
+      return { minHeight: offset ? `calc(100vh - ${footer.value ? offset + footer.value.offsetHeight : offset}px)` : '100vh' }
+    }
+
+    // tabs
+    const tabs = reactive([])
+    const tab = ref(null)
+
+    // scroll
+    let debounce = ref(0)
+    const scrollMove = ref(false)
+    const onScroll = (info) => {
+      debounce.value = info.position.top > 0 ? 300 : 0
+      scrollMove.value = info.position.top > 0
+    }
+
+    // language
+    const { t, tm, locale } = useI18n({ useScope: 'global' })
+    const localeOptions = computed(() => Object.entries(tm('languageList')).map(([key, value]) => { return { value: key, label: value } }))
+    const lang = ref($q.cookies.has(`${prefix}.lang`) ? $q.cookies.get(`${prefix}.lang`) : $q.lang.getLocale().substring(0, 2))
+
+    watch(() => lang.value, (val, old) => {
+
+      if (val !== old) {
+        locale.value = val
+        document.querySelector('html').setAttribute('lang', val)
+        $q.cookies.set(`${prefix}.lang`, val, { path: '/', expires: 365 })
       }
+    })
 
-      // tabs
-      const tabs = reactive([])
-      const tab = ref(null)
-
-      // scroll
-      let debounce = ref(0)
-      const scrollMove = ref(false)
-      const onScroll = (info) => {
-        debounce.value = info.position.top > 0 ? 300 : 0
-        scrollMove.value = info.position.top > 0
-      }
-
-      // language
-      const { t, tm, locale } = useI18n({ useScope: 'global' })
-      const localeOptions = computed(() => Object.entries(tm('languageList')).map(([key, value]) => { return { value: key, label: value } }))
-      const lang = ref($q.cookies.has(`${prefix}.lang`) ? $q.cookies.get(`${prefix}.lang`) : $q.lang.getLocale().substring(0, 2))
-
-      watch(() => lang.value, (val, old) => {
-
-        if (val !== old) {
-          locale.value = val
-          document.querySelector('html').setAttribute('lang', val)
-          $q.cookies.set(`${prefix}.lang`, val, { path: '/', expires: 365 })
-        }
-      })
-
-      // dark
-      const isDark = ref($q.cookies.has(`${prefix}.dark`) ? $q.cookies.get(`${prefix}.dark`) : false)
+    // dark
+    const isDark = ref($q.cookies.has(`${prefix}.dark`) ? $q.cookies.get(`${prefix}.dark`).toString() === 'true' : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    $q.dark.set(isDark.value)
+    const onChangeDark = () => {
       $q.dark.set(isDark.value)
-      const onChangeDark = () => {
-        $q.dark.set(isDark.value)
-        $q.cookies.set(`${prefix}.dark`, isDark.value, { path: '/', expires: 365 })
-      }
+      $q.cookies.set(`${prefix}.dark`, isDark.value, { path: '/', expires: 365 })
+    }
 
-      // draw
-      const leftDrawerOpen = ref(false)
-      watch(() => leftDrawerOpen.value, (val) => {
-        document.body.style.overflow = val ? 'hidden' : ''
-      })
+    // draw
+    const leftDrawerOpen = ref(false)
+    watch(() => leftDrawerOpen.value, (val) => {
+      document.body.style.overflow = val ? 'hidden' : ''
+    })
 
-      return {
-        footer,
-        myTweak,
-        tabs,
-        tab,
-        debounce,
-        scrollMove,
-        onScroll,
-        lang,
-        t,
-        localeOptions,
-        isDark,
-        onChangeDark,
-        leftDrawerOpen,
-        toggleLeftDrawer() {
-          leftDrawerOpen.value = !leftDrawerOpen.value
-        }
+    return {
+      footer,
+      myTweak,
+      tabs,
+      tab,
+      debounce,
+      scrollMove,
+      onScroll,
+      lang,
+      t,
+      localeOptions,
+      isDark,
+      onChangeDark,
+      leftDrawerOpen,
+      toggleLeftDrawer() {
+        leftDrawerOpen.value = !leftDrawerOpen.value
       }
     }
   }
+}
 </script>
 <style scoped>
+.page-scroller {
+  box-shadow: inset 0 0 1px 1px rgba(120, 120, 120, 1);
+  backdrop-filter: saturate(100%) blur(20px);
+  -webkit-backdrop-filter: saturate(100%) blur(20px);
+  right: 20vw
+}
+
+@media screen and (max-width:1023px) {
   .page-scroller {
-    box-shadow: inset 0 0 1px 1px rgba(120, 120, 120, 1);
-    backdrop-filter: saturate(100%) blur(20px);
-    -webkit-backdrop-filter: saturate(100%) blur(20px);
-    right: 20vw
+    right: 0;
   }
+}
 
-  @media screen and (max-width:1023px) {
-    .page-scroller {
-      right: 0;
-    }
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .page-scroller {
+    right: 10vw;
   }
+}
 
-  @media screen and (min-width:1024px) and (max-width:1439px) {
-    .page-scroller {
-      right: 10vw;
-    }
+@media screen and (min-width:1440px) and (max-width:1919px) {
+  .page-scroller {
+    right: 15vw;
   }
-
-  @media screen and (min-width:1440px) and (max-width:1919px) {
-    .page-scroller {
-      right: 15vw;
-    }
-  }
+}
 </style>
