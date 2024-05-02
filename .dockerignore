@@ -1,0 +1,8 @@
+.vscode
+node_modules
+.dockerignore
+.env.development
+.gitignore
+Dockerfile
+README.md
+yarn.lock

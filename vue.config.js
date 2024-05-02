@@ -18,6 +18,5 @@ module.exports = {
   },
   transpileDependencies: [
     'quasar'
-  ],
-  outputDir: './youngweld'
+  ]
 }
