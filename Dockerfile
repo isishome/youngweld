@@ -11,7 +11,7 @@ COPY . .
 RUN npm install && \
 
 # 프로젝트 빌드
-npm run build
+    npm run build
 
 # nginx 1.26.0 alpine 버전 기반
 FROM nginx:1.26.0-alpine as service-stage
