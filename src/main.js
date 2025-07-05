@@ -23,6 +23,7 @@ app.component('f-product', Product)
 // call with I18n option
 const i18n = createI18n({
   legacy: false, // you must specify 'legacy: false' option
+  globalInjection:true,
   locale: 'ko',
   messages: {
     ko,
