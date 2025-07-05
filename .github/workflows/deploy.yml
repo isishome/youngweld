@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: "16"
 
+      - name: Create .env.production from secret
+        run: echo "${{ secrets.ENV_PRODUCTION }}" > .env.production
+
       - name: Install dependencies
         run: npm ci
 
