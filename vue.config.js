@@ -18,5 +18,10 @@ module.exports = {
   },
   transpileDependencies: [
     'quasar'
-  ]
+  ],
+  devServer: {
+    client: {
+      overlay: false
+    }
+  }
 }
