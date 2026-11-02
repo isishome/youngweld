@@ -131,7 +131,7 @@
                     <div>
                       <a
                         class="manual text-h6 product-name text-subtitle1 text-red-8 ellipsis"
-                        :href="p.manual"
+                        :href="`${p.manual}?download=1`"
                         :download="`${p.code}_${t('product.manual')}.pdf`"
                       >
                         <q-icon size="30px" name="picture_as_pdf" />

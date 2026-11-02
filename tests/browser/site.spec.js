@@ -89,10 +89,14 @@ test('슬래시 경로·상세·새로고침·매뉴얼·404', async ({ page, re
   }
   await expect(page.locator('#YESAWCG-001')).toBeVisible()
   const manual = page.locator('#YESAWCG-001 a.manual')
+  await expect(manual).toHaveAttribute('href', /\.pdf\?download=1$/)
   const response = await request.get(await manual.getAttribute('href'))
   expect(response.status()).toBe(200)
   expect(response.headers()['content-type']).toContain('application/pdf')
   expect(response.headers()['content-disposition']).toBe('attachment')
+  expect(response.headers()['cache-control']).toBe(
+    'no-cache,max-age=0,must-revalidate',
+  )
   const downloadEvent = page.waitForEvent('download')
   await manual.click()
   const download = await downloadEvent
