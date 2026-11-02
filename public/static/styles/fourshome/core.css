@@ -5,8 +5,8 @@ body {
 .f--header {
   transition: background-color .3s;
   box-shadow: 0 1px 0 0 rgba(110, 120, 120, .2);
-  backdrop-filter: saturate(200%) blur(20px);
   -webkit-backdrop-filter: saturate(200%) blur(20px);
+  backdrop-filter: saturate(200%) blur(20px);
   user-select: none;
 }
 
@@ -19,12 +19,12 @@ body {
 }
 
 .body--light .f--header {
-  background-color: rgba(230, 230, 230, .6) !important;
+  background-color: rgba(230, 230, 230, .94) !important;
   box-shadow: inset 0 -1px 0 0 rgba(50, 50, 50, .1), inset 0 1px 0 0 rgba(50, 50, 50, .1);
 }
 
 .body--light .f--header.scroll-move {
-  background-color: rgba(250, 250, 250, .6) !important;
+  background-color: rgba(250, 250, 250, .97) !important;
   box-shadow: inset 0 -1px 0 0 rgba(50, 50, 50, .1) !important;
 }
 
@@ -53,12 +53,12 @@ body {
 }
 
 .body--dark .f--header {
-  background-color: rgba(40, 40, 40, .8) !important;
+  background-color: rgba(40, 40, 40, .94) !important;
   box-shadow: inset 0 -1px 0 0 rgba(50, 50, 50, .8), inset 0 1px 0 0 rgba(50, 50, 50, .8);
 }
 
 .body--dark .f--header.scroll-move {
-  background-color: rgba(30, 30, 30, .8) !important;
+  background-color: rgba(30, 30, 30, .97) !important;
   box-shadow: inset 0 -1px 0 0 rgba(50, 50, 50, .8) !important;
 }
 

@@ -246,8 +246,8 @@ export default {
 <style scoped>
 .page-scroller {
   box-shadow: inset 0 0 1px 1px rgba(120, 120, 120, 1);
-  backdrop-filter: saturate(100%) blur(20px);
   -webkit-backdrop-filter: saturate(100%) blur(20px);
+  backdrop-filter: saturate(100%) blur(20px);
   right: 20vw;
 }
 

@@ -64,6 +64,8 @@ createServer(async (req, res) => {
       'Content-Type',
       types[extname(file)] || 'application/octet-stream',
     )
+    if (extname(file) === '.pdf')
+      res.setHeader('Content-Disposition', 'attachment')
     let cacheControl = 'public,max-age=3600'
     if (result.uri === '/index.html')
       cacheControl = 'no-cache,max-age=0,must-revalidate'

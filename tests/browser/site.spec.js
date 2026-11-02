@@ -92,9 +92,41 @@ test('슬래시 경로·상세·새로고침·매뉴얼·404', async ({ page, re
   const response = await request.get(await manual.getAttribute('href'))
   expect(response.status()).toBe(200)
   expect(response.headers()['content-type']).toContain('application/pdf')
+  expect(response.headers()['content-disposition']).toBe('attachment')
+  const downloadEvent = page.waitForEvent('download')
+  await manual.click()
+  const download = await downloadEvent
+  expect(download.suggestedFilename()).toMatch(/\.pdf$/i)
+  expect(await download.failure()).toBeNull()
+  await expect(page.locator('#YESAWCG-001')).toBeVisible()
   expect((await request.get('/missing.js')).status()).toBe(404)
   await page.goto('/#/not-a-page')
   await expect(page).toHaveURL(/#\/404$/)
+})
+
+test('스크롤 시 헤더·서브헤더의 라이트/다크 배경과 blur 유지', async ({
+  page,
+}) => {
+  await page.goto('/product/')
+  await page.evaluate(() => window.scrollTo(0, 900))
+  const headers = page.locator('.f--header.scroll-move')
+  await expect(headers).toHaveCount(2)
+  for (const dark of [false, true]) {
+    await page.getByRole('switch', { name: '어두운 화면' }).setChecked(dark)
+    for (const header of await headers.all()) {
+      await expect(header).toHaveCSS(
+        'background-color',
+        dark ? 'rgba(30, 30, 30, 0.97)' : 'rgba(250, 250, 250, 0.97)',
+      )
+      await expect(header).toHaveCSS(
+        'backdrop-filter',
+        'saturate(2) blur(20px)',
+      )
+    }
+    await page.screenshot({
+      path: test.info().outputPath(`headers-${dark ? 'dark' : 'light'}.png`),
+    })
+  }
 })
 
 test('지원하지 않는 언어·테마·언어 저장', async ({

@@ -10,16 +10,16 @@
         "color": "primary",
         "children": [
           {
-            "label": "Opening of the company",
+            "label": "Company established",
             "time": "February 1981",
-            "desc": "First opening in Gocheok Industrial Goods Shopping Mall No. 1 Building No. 1",
+            "desc": "Opened in Building 1, Unit 1 of the Gocheok Industrial Supplies Shopping Center",
             "color": "secondary",
             "icon": "home"
           },
           {
-            "label": "Changed company name",
+            "label": "Company renamed",
             "time": "November 1981",
-            "desc": "Changed company name from Youngil Electronics to Youngil Electric",
+            "desc": "Renamed from Youngil Electronics to Youngil Electric",
             "color": "red"
           }
         ]
@@ -31,7 +31,7 @@
           {
             "label": "Company relocation",
             "time": "May 2000",
-            "desc": "Relocated company to Incheon Industrial Distribution Center",
+            "desc": "Relocated to the Incheon Industrial Distribution Center",
             "color": "secondary",
             "icon": "swap_horiz"
           }
@@ -42,21 +42,21 @@
         "color": "primary",
         "children": [
           {
-            "label": "Development of submerged carriage welding machine started",
+            "label": "Submerged arc welding carriage development began",
             "time": "March 2010",
             "desc": "<p>Development started</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
             "icon": "work"
           },
           {
-            "label": "Submerged carriage welding machine development in progress",
+            "label": "Submerged arc welding carriage development continued",
             "time": "April 2010",
             "desc": "<p>Development in progress</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
             "icon": "work"
           },
           {
-            "label": "Submerged carriage welding machine development completed",
+            "label": "Submerged arc welding carriage development completed",
             "time": "May 2010",
-            "desc": "development completed",
+            "desc": "Development completed",
             "icon": "work"
           }
         ]
@@ -64,7 +64,7 @@
     ]
   },
   "menu": {
-    "product": "Product",
+    "product": "Products",
     "company": "Company",
     "support": "Support",
     "location": "Location"
@@ -75,14 +75,14 @@
     "en": "English"
   },
   "main": {
-    "detail": "View",
+    "detail": "View details",
     "top": [
       {
         "direction": "right",
         "src": "/static/images/main/top00.webp",
         "align": "left",
         "title": "SUBMERGED ARC WELDING CARRIAGE",
-        "desc": "Precision welding driving along rails",
+        "desc": "Precision welding along guide rails",
         "code": "YESAWCG-001",
         "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
       },
@@ -90,8 +90,8 @@
         "direction": "left",
         "src": "/static/images/main/top01.webp",
         "align": "right",
-        "title": "AIR SPOT RESISTANCE WELDING",
-        "desc": "Digital control method synchronized with welding power cycle",
+        "title": "PNEUMATIC SPOT WELDING",
+        "desc": "Digital control synchronized with the welding power cycle",
         "code": "YM9601",
         "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
       }
@@ -100,7 +100,7 @@
       [
         {
           "title": "SUBMERGED ARC WELDING CARRIAGE",
-          "desc": "Precision welding driving along rails",
+          "desc": "Precision welding along guide rails",
           "etc": ["YESAWCG-001"],
           "src": "/static/images/products/yesawcg001.webp",
           "to": {
@@ -140,7 +140,7 @@
       ],
       [
         {
-          "title": "AIR SPOT RESISTANCE WELDING",
+          "title": "PNEUMATIC SPOT WELDING",
           "desc": "Control unit",
           "etc": ["YM001"],
           "src": "/static/images/products/ym001.webp",
@@ -166,7 +166,7 @@
           }
         },
         {
-          "title": "AIR SPOT RESISTANCE WELDING",
+          "title": "PNEUMATIC SPOT WELDING",
           "desc": "Control unit",
           "etc": ["YM9601"],
           "src": "/static/images/products/ym9601.webp",
@@ -182,7 +182,7 @@
       [
         {
           "title": "INVERTER ARC WELDING MACHINE",
-          "desc": "Inverter ARC welding machine (small)",
+          "desc": "Compact inverter arc welding machine",
           "etc": ["YEAWW-001"],
           "src": "/static/images/products/yeaww001.webp",
           "to": {
@@ -196,8 +196,8 @@
       ],
       [
         {
-          "title": "CONDENSER WELDING MACHINE",
-          "desc": "Condenser spot resistance welding machine",
+          "title": "CAPACITOR WELDING MACHINE",
+          "desc": "Capacitor spot resistance welding machine",
           "etc": ["YERWW-001"],
           "src": "/static/images/products/yerww001.webp",
           "to": {
@@ -209,8 +209,8 @@
           }
         },
         {
-          "title": "CONDENSER SPOT WELDING MACHINE POWER",
-          "desc": "Power for capacitor spot resistance welding machine",
+          "title": "CAPACITOR SPOT WELDING POWER SUPPLY",
+          "desc": "Power supply for capacitor spot resistance welding machines",
           "etc": ["YERWP-001"],
           "src": "/static/images/products/yerwp001.webp",
           "to": {
@@ -243,7 +243,7 @@
     "phone": "82 - (32) 589 - 1160 ~ 2",
     "fax": "82 - (32) 589 - 5095",
     "PublicTransport": "Public Transport",
-    "OwnCar": "Own Car",
+    "OwnCar": "By Car",
     "PublicTransportInfo": [
       "Get off at Jemulpo Station on Line 1",
       "Underground shopping mall in front of Exit 2",
@@ -252,23 +252,23 @@
       "After 13 stops, get off at Industrial Distribution Center Complex 3 (Building C)"
     ],
     "OwnCarInfo": [
-      "Entering Gyeongin Expressway",
-      "Go straight to Seoun Junction(Incheon, Seoincheon, Bupyeong)",
+      "Enter the Gyeongin Expressway",
+      "Continue toward Seoun Junction (Incheon, Seoincheon, Bupyeong)",
       "Incheon tollgate",
-      "Exit on the right side of the highway towards Dongincheon IC",
+      "Take the exit on the right toward Dongincheon IC",
       "Bongsudae-gil Intersection - Turn left towards Dongincheon Station, Dong-gu Office",
       "Incheon Industrial Supplies Distribution Center Complex 3 (C-dong) Entrance"
     ]
   },
   "support": {
-    "searchSupport": "Search Support",
-    "title": "Hasn't the problem been solved yet?",
+    "searchSupport": "Search help",
+    "title": "Still need help?",
     "contact": [
-      "Thank you for using Youngil Electric's product",
-      "You can check the product manual in the product support section",
-      "If you have any questions about the product, please contact us at the contact information below.",
-      "If you tell us the product code, you can quickly consult and inquire about the product",
-      "Telephone consultation is available from 9 am to 5 pm."
+      "Thank you for choosing Youngil Electric products.",
+      "Product manuals are available on the Products page.",
+      "For product inquiries, please contact us using the details below.",
+      "Please provide the product name or model code so we can assist you more quickly.",
+      "Telephone support is available from 9 a.m. to 5 p.m. (Korea Standard Time)."
     ],
     "email": {
       "icon": "email",
@@ -371,50 +371,50 @@
       ]
     },
     "message": {
-      "noData": "No help was found."
+      "noData": "No matching help topics found."
     }
   },
   "section": [
     {
       "code": "control",
       "icon": "/static/images/support/control.webp",
-      "name": "Control"
+      "name": "Controllers"
     },
     {
       "code": "submerged",
       "icon": "/static/images/support/submerged.webp",
-      "name": "Submerged"
+      "name": "Submerged Arc Welding"
     },
     {
       "code": "inverter",
       "icon": "/static/images/support/inverter.webp",
-      "name": "Inverter"
+      "name": "Inverter Welding"
     },
     {
       "code": "spot",
       "icon": "/static/images/support/spot.webp",
-      "name": "Spot"
+      "name": "Spot Welding"
     }
   ],
   "product": {
-    "manual": "manual",
+    "manual": "Download manual",
     "list": [
       {
         "sec": "control",
         "src": "/static/images/products/yesrwcu001.webp",
-        "name": "Seam Weld Control Unit",
+        "name": "Seam Welding Control Unit",
         "desc": [
           {
-            "name": "Welding power voltage",
+            "name": "Welding supply voltage",
             "contents": "Single-phase AC220V/380V"
           },
           {
-            "name": "Welding power frequency",
+            "name": "Welding supply frequency",
             "contents": "50/60HZ (automatic switching)"
           },
           {
-            "name": "control power",
-            "contents": "single-phase AC110V +10% -10%"
+            "name": "Control power supply",
+            "contents": "Single-phase AC110V +10% -10%"
           },
           {
             "name": "Power control method",
@@ -422,7 +422,7 @@
           },
           {
             "name": "Time control method",
-            "contents": "Digital control method synchronized with welding power cycle"
+            "contents": "Digital control synchronized with the welding power cycle"
           },
           {
             "name": "Pressure output signal",
@@ -430,7 +430,7 @@
           },
           {
             "name": "Start signal",
-            "contents": "Starting by FOOT switch with 1 input"
+            "contents": "Started by a foot switch (one input)"
           }
         ],
         "code": "SEAM01",
@@ -439,31 +439,31 @@
       {
         "sec": "control",
         "src": "/static/images/products/yecrwcu001.webp",
-        "name": "Condenser Spot Weld Control",
+        "name": "Capacitor Spot Welding Controller",
         "code": "YECRWCU-001"
       },
       {
         "sec": "control",
         "src": "/static/images/products/yecrwcu002.webp",
-        "name": "Condenser Spot Weld Control",
+        "name": "Capacitor Spot Welding Controller",
         "code": "YECRWCU-002"
       },
       {
         "sec": "control",
         "src": "/static/images/products/yeaswcu001.webp",
-        "name": "Stud welding control",
+        "name": "Stud Welding Controller",
         "code": "YEASWCU-001"
       },
       {
         "sec": "control",
         "src": "/static/images/products/yesprwcu001.webp",
-        "name": "Spot welding control",
+        "name": "Spot Welding Controller",
         "code": "YESPRWCU-001"
       },
       {
         "sec": "control",
         "src": "/static/images/products/yesprwcu002.webp",
-        "name": "Spot welding control",
+        "name": "Spot Welding Controller",
         "code": "YESPRWCU-002"
       },
       {
@@ -473,19 +473,19 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "Airport welding control",
+        "name": "Pneumatic Spot Welding Controller",
         "desc": [
           {
-            "name": "Welding power voltage",
+            "name": "Welding supply voltage",
             "contents": "Single-phase AC220V/380V +10% -30%"
           },
           {
-            "name": "Welding power frequency",
+            "name": "Welding supply frequency",
             "contents": "50/60HZ (automatic switching)"
           },
           {
-            "name": "control power",
-            "contents": "single-phase AC110V +10% -10%"
+            "name": "Control power supply",
+            "contents": "Single-phase AC110V +10% -10%"
           },
           {
             "name": "Power control method",
@@ -493,15 +493,15 @@
           },
           {
             "name": "Time control method",
-            "contents": "Asynchronous time control method<br>(The welding time is a digital control method synchronized with the welding power frequency)"
+            "contents": "Asynchronous timing control<br>(Welding duration is digitally controlled in synchronization with the welding supply frequency)"
           },
           {
             "name": "Pressure output signal",
             "contents": "AC110V 1A"
           },
           {
-            "name": "start signal",
-            "contents": "start start with FOOT switch"
+            "name": "Start signal",
+            "contents": "Started by a foot switch"
           }
         ],
         "code": "YM002",
@@ -514,19 +514,19 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "Airport welding control",
+        "name": "Pneumatic Spot Welding Controller",
         "desc": [
           {
-            "name": "Welding power voltage",
+            "name": "Welding supply voltage",
             "contents": "Single-phase AC220V/380V +10% -30%"
           },
           {
-            "name": "Welding power frequency",
+            "name": "Welding supply frequency",
             "contents": "50/60HZ (automatic switching)"
           },
           {
-            "name": "control power",
-            "contents": "single-phase AC110V +10% -10%"
+            "name": "Control power supply",
+            "contents": "Single-phase AC110V +10% -10%"
           },
           {
             "name": "Power control method",
@@ -534,15 +534,15 @@
           },
           {
             "name": "Time control method",
-            "contents": "Asynchronous time control method"
+            "contents": "Asynchronous timing control"
           },
           {
             "name": "Pressure output signal",
             "contents": "AC110V 1A"
           },
           {
-            "name": "start signal",
-            "contents": "start start with FOOT switch"
+            "name": "Start signal",
+            "contents": "Started by a foot switch"
           }
         ],
         "code": "YM001",
@@ -555,19 +555,19 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "Airport welding control",
+        "name": "Pneumatic Spot Welding Controller",
         "desc": [
           {
-            "name": "Welding power voltage",
+            "name": "Welding supply voltage",
             "contents": "Single-phase AC220V/380V +10% -30%"
           },
           {
-            "name": "Welding power frequency",
+            "name": "Welding supply frequency",
             "contents": "50/60HZ (automatic switching)"
           },
           {
-            "name": "control power",
-            "contents": "single-phase AC110V +10% -10%"
+            "name": "Control power supply",
+            "contents": "Single-phase AC110V +10% -10%"
           },
           {
             "name": "Power control method",
@@ -575,11 +575,11 @@
           },
           {
             "name": "Time control method",
-            "contents": "Digital control method synchronized with welding power cycle"
+            "contents": "Digital control synchronized with the welding power cycle"
           },
           {
-            "name": "Control heating",
-            "contents": "10 conditions (2 series of pressurization)"
+            "name": "Heating control",
+            "contents": "10 settings (two pressure-control channels)"
           },
           {
             "name": "Pressure output signal",
@@ -587,7 +587,7 @@
           },
           {
             "name": "Start signal",
-            "contents": "Starting started by ON with 2 inputs<br>(FOOT-1 pressurized SOL-1 output FOOT-2 pressurized SOL-2 output)"
+            "contents": "Two ON inputs for starting operation<br>(FOOT-1 activates pressure output SOL-1; FOOT-2 activates pressure output SOL-2)"
           }
         ],
         "code": "YM9601",
@@ -600,7 +600,7 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "Pancake Control",
+        "name": "Pancake Controller",
         "code": "YEPCCU-001"
       },
       {
@@ -618,7 +618,7 @@
       {
         "sec": "submerged",
         "src": "/static/images/products/yesawpd001.webp",
-        "name": "Main Power Splitter",
+        "name": "Main Power Distribution Unit",
         "code": "YESAWPD-001"
       },
       {
@@ -634,7 +634,7 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "Weldline Tracker Control Unit",
+        "name": "Weld Seam Tracking Control Unit",
         "code": "YESAWCU-004"
       },
       {
@@ -644,7 +644,7 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "Weldline Tracker Slide",
+        "name": "Weld Seam Tracking Slide",
         "code": "YESAWSL-001"
       },
       {
@@ -654,7 +654,7 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "Weldline Tracker Slide",
+        "name": "Weld Seam Tracking Slide",
         "code": "YESAWSL-002"
       },
       {
@@ -664,7 +664,7 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "Weld Line Tracker Probe Sensor",
+        "name": "Weld Seam Tracking Probe Sensor",
         "code": "YESAWPS-001",
         "manual": "/static/manual/YESAWPS-001.pdf"
       },
@@ -675,18 +675,18 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "carriage",
+        "name": "Welding Carriage",
         "desc": [
           {
             "name": "Control power supply voltage",
             "contents": "Single-phase AC 110V, 40V, 0V, 40V"
           },
           {
-            "name": "applied current",
+            "name": "Welding current range",
             "contents": "AC or DC 250 ~ 1500A"
           },
           {
-            "name": "Wire feeding speed",
+            "name": "Wire feed speed",
             "contents": "0.5 ~ 4m/min"
           },
           {
@@ -706,7 +706,7 @@
             "contents": "450ø weight 10 ~ 24kg"
           },
           {
-            "name": "Bogie travel speed",
+            "name": "Carriage travel speed",
             "contents": "12~120cm/min"
           },
           {
@@ -714,7 +714,7 @@
             "contents": "50m/m"
           },
           {
-            "name": "Vertical Adjustment",
+            "name": "Vertical adjustment",
             "contents": "35m/m"
           },
           {
@@ -722,11 +722,11 @@
             "contents": "5ℓ"
           },
           {
-            "name": "weight",
+            "name": "Weight",
             "contents": ""
           },
           {
-            "name": "Factory tip",
+            "name": "Standard contact tips",
             "contents": "4.0ø, 4.8ø"
           }
         ],
@@ -766,7 +766,7 @@
       {
         "sec": "spot",
         "src": "/static/images/products/yerwp001.webp",
-        "name": "Condenser Spot Welder Power",
+        "name": "Capacitor Spot Welding Power Supply",
         "code": "YERWP-001"
       },
       {
@@ -776,7 +776,7 @@
           "name": "BEST",
           "color": "text-blue"
         },
-        "name": "Condenser Welder",
+        "name": "Capacitor Welder",
         "code": "YERWW-001"
       }
     ]
