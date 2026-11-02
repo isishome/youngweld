@@ -4,7 +4,43 @@ import {
   planDistribution,
   rollbackFields,
   sanitizeAwsError,
+  validateFunctionRedirect,
 } from '../scripts/configure-cloudfront.mjs'
+
+test('AWS TestFunction 응답 래퍼와 302 위치를 검사한다', () => {
+  const result = (response) => ({
+    FunctionErrorMessage: '',
+    FunctionOutput: JSON.stringify({ response }),
+  })
+  const response = {
+    statusCode: 302,
+    statusDescription: 'Found',
+    cookies: {},
+    headers: { location: { value: '/#/company' } },
+  }
+  assert.doesNotThrow(() =>
+    validateFunctionRedirect(result(response), '/#/company'),
+  )
+  assert.throws(() => validateFunctionRedirect(result(response), '/#/support'))
+  assert.throws(() =>
+    validateFunctionRedirect(
+      result({ ...response, statusCode: 200 }),
+      '/#/company',
+    ),
+  )
+  assert.throws(() =>
+    validateFunctionRedirect(
+      { FunctionOutput: JSON.stringify(response) },
+      '/#/company',
+    ),
+  )
+  assert.throws(() =>
+    validateFunctionRedirect(
+      { FunctionErrorMessage: 'SyntaxError' },
+      '/#/company',
+    ),
+  )
+})
 
 test('AWS 실행 실패 원문·명령·출력의 비밀값을 재노출하지 않음', () => {
   const error = Object.assign(new Error('command --secret private-value'), {

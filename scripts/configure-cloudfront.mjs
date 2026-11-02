@@ -76,6 +76,16 @@ export const sanitizeAwsError = (operation, error) => {
   )
 }
 
+export const validateFunctionRedirect = (result, location) => {
+  if (result.FunctionErrorMessage) throw new Error(result.FunctionErrorMessage)
+  const response = JSON.parse(result.FunctionOutput).response
+  if (
+    response?.statusCode !== 302 ||
+    response.headers?.location?.value !== location
+  )
+    throw new Error('CloudFront 함수 실제 런타임 검증 실패')
+}
+
 const aws = (...args) => {
   try {
     return JSON.parse(
@@ -193,10 +203,7 @@ const main = () => {
       '--event-object',
       'fileb://.tmp/cloudfront/event.json',
     ).TestResult
-    if (result.FunctionErrorMessage)
-      throw new Error(result.FunctionErrorMessage)
-    if (JSON.parse(result.FunctionOutput).headers?.location?.value !== location)
-      throw new Error('CloudFront 함수 실제 런타임 검증 실패')
+    validateFunctionRedirect(result, location)
   }
   const config = JSON.parse(
     readFileSync('infra/cloudfront/response-headers-policy.json', 'utf8'),
