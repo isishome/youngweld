@@ -1,6 +1,7 @@
 import { execFileSync } from 'node:child_process'
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
+import { isDeepStrictEqual } from 'node:util'
 
 export const planDistribution = (config, functionArn, policyId) => {
   const next = structuredClone(config)
@@ -255,20 +256,23 @@ const main = () => {
     '--if-match',
     savedFunction.ETag,
   )
+  const latest = aws('get-distribution-config', '--id', distributionId)
   const final = planDistribution(
-    current.DistributionConfig,
+    latest.DistributionConfig,
     savedFunction.FunctionSummary.FunctionMetadata.FunctionARN,
     finalPolicyId,
   )
-  aws(
-    'update-distribution',
-    '--id',
-    distributionId,
-    '--if-match',
-    current.ETag,
-    '--distribution-config',
-    JSON.stringify(final),
-  )
+  if (!isDeepStrictEqual(final, latest.DistributionConfig)) {
+    aws(
+      'update-distribution',
+      '--id',
+      distributionId,
+      '--if-match',
+      latest.ETag,
+      '--distribution-config',
+      JSON.stringify(final),
+    )
+  }
   execFileSync(
     'aws',
     ['cloudfront', 'wait', 'distribution-deployed', '--id', distributionId],
