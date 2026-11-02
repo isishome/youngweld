@@ -22,13 +22,13 @@ test('실행 스크립트와 프레임 출처 제한 및 보안 헤더', () => {
   )
 })
 
-test('초기 HTML의 확대 허용·검색 설명·LCP 사전 로드', () => {
+test('초기 HTML의 확대 허용·검색 설명·공통 이미지 preload 방지', () => {
   const html = readFileSync('dist/index.html', 'utf8')
   assert.doesNotMatch(
     html,
     /maximum-scale|user-scalable|<%|http-equiv="X-UA-Compatible"/,
   )
   assert.match(html, /name="description"/)
-  assert.match(html, /yesawcg001.webp/)
+  assert.doesNotMatch(html, /yesawcg001.webp/)
   assert.doesNotMatch(html, /fonts.googleapis.com|fonts.gstatic.com/)
 })

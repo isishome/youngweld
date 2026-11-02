@@ -45,13 +45,27 @@ const router = createRouter({
   },
 })
 
-router.beforeEach(() => {
+let homeImagePreload
+
+router.beforeEach((to) => {
   const prefix = import.meta.env.VITE_APP_PREFIX
   const locale = resolveLocale(
     Cookies.get(`${prefix}.lang`),
     Quasar.lang.getLocale(),
   )
   setI18nLanguage(i18n, locale)
+
+  if (to.name === 'main' && !homeImagePreload) {
+    homeImagePreload = document.createElement('link')
+    homeImagePreload.rel = 'preload'
+    homeImagePreload.as = 'image'
+    homeImagePreload.href = ko.main.section[0][0].src
+    homeImagePreload.fetchPriority = 'high'
+    document.head.append(homeImagePreload)
+  } else if (to.name !== 'main' && homeImagePreload) {
+    homeImagePreload.remove()
+    homeImagePreload = undefined
+  }
 })
 
 app.use(Quasar, quasarUserOptions).use(router).use(i18n).mount('#app')

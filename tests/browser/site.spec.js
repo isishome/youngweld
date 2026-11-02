@@ -1,6 +1,36 @@
 import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
+test('홈에서만 이미지 preload하며 내부 이동·복귀 시 중복되지 않음', async ({
+  page,
+}) => {
+  const imageRequests = []
+  page.on('request', (request) => {
+    if (request.url().includes('/yesawcg001.webp'))
+      imageRequests.push(request.url())
+  })
+  const preloads = page.locator('link[rel="preload"][as="image"]')
+  await page.goto('/support/')
+  await expect(page.locator('.q-tree')).toBeVisible()
+  await expect(preloads).toHaveCount(0)
+  expect(imageRequests).toEqual([])
+  await page.goto('/')
+  await expect(preloads).toHaveCount(1)
+  await expect(preloads).toHaveAttribute('href', /yesawcg001.webp$/)
+  const image = page.locator('.product-wrap img').first()
+  await expect(image).toHaveAttribute('loading', 'eager')
+  await expect(image).toHaveAttribute('fetchpriority', 'high')
+  await expect
+    .poll(() => image.evaluate((img) => img.complete && img.naturalWidth > 0))
+    .toBe(true)
+  await page.locator('.detail').first().click()
+  await expect(page).toHaveURL(/#\/product\//)
+  await expect(preloads).toHaveCount(0)
+  await page.goBack()
+  await expect(page.locator('.top')).toHaveCount(2)
+  await expect(preloads).toHaveCount(1)
+})
+
 test('홈 이미지·접근성·CSP·아이콘', async ({ page }) => {
   const errors = []
   page.on('pageerror', (error) => errors.push(error.message))
