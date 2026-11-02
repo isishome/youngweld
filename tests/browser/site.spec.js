@@ -45,6 +45,10 @@ test('홈 이미지·접근성·CSP·아이콘', async ({ page }) => {
   await page.goto('/')
   await expect(page.locator('.top')).toHaveCount(2)
   await expect(page.locator('.top img').first()).toBeVisible()
+  await expect(page.locator('.top img').first()).toHaveCSS(
+    'animation-name',
+    'zoomIn',
+  )
   await page.locator('.product-wrap').first().scrollIntoViewIfNeeded()
   await expect
     .poll(() =>
@@ -54,6 +58,9 @@ test('홈 이미지·접근성·CSP·아이콘', async ({ page }) => {
         .evaluate((img) => img.complete && img.naturalWidth > 0),
     )
     .toBe(true)
+  const nextProduct = page.locator('.product-wrap img').nth(1)
+  await nextProduct.scrollIntoViewIfNeeded()
+  await expect(nextProduct).toHaveCSS('animation-name', 'slideInUp')
   const results = await new AxeBuilder({ page })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
     .analyze()

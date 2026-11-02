@@ -53,12 +53,14 @@ test('쿼리의 반복 값과 URL 인코딩을 보존하고 헤더 삽입을 막
       },
       q: { value: 'a+b' },
       unsafe: { value: '\r\n#evil' },
+      malformed: { value: '%ZZ' },
     }),
   })
   const location = response.headers.location.value
   const url = new URL(location, 'https://youngweld.com')
   assert.deepEqual(url.searchParams.getAll('tag'), ['a&b', '한글'])
   assert.equal(url.searchParams.get('q'), 'a b')
+  assert.equal(url.searchParams.get('malformed'), '%ZZ')
   assert.equal(url.hash, '#/company')
   assert.equal(/[\r\n]/.test(location), false)
 })

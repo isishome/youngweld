@@ -1,7 +1,7 @@
 @import '@fontsource-variable/noto-sans-kr';
 @import '@fontsource/teko/latin-500.css';
 @import '../public/static/styles/fourshome/core.css';
-@import '../public/static/styles/animate/animate.min.css';
+@import './animations.css';
 
 @media (prefers-reduced-motion: reduce) {
   *,

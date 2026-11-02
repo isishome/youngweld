@@ -31,4 +31,5 @@ test('초기 HTML의 확대 허용·검색 설명·공통 이미지 preload 방�
   assert.match(html, /name="description"/)
   assert.doesNotMatch(html, /yesawcg001.webp/)
   assert.doesNotMatch(html, /fonts.googleapis.com|fonts.gstatic.com/)
+  assert.doesNotMatch(html, /<(?:meta|link)\b[^>]*\/\s*>/i)
 })

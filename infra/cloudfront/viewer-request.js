@@ -10,16 +10,18 @@ function handler(event) {
     const encode = (value) => {
       try {
         return encodeURIComponent(decodeURIComponent(value.replace(/\+/g, ' ')))
-      } catch {
+      } catch (error) {
+        if (!(error instanceof URIError)) throw error
         return encodeURIComponent(value)
       }
     }
-    for (const key of Object.keys(request.querystring || {})) {
+    Object.keys(request.querystring || {}).forEach((key) => {
       const entry = request.querystring[key]
       const values = entry.multiValue || [entry]
-      for (const item of values)
+      values.forEach((item) => {
         query.push(`${encode(key)}=${encode(item.value)}`)
-    }
+      })
+    })
     const search = query.length ? `?${query.join('&')}` : ''
     return {
       statusCode: 302,
