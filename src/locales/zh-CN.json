@@ -1,0 +1,790 @@
+{
+  "pnf": "找不到您要访问的页面。",
+  "company": {
+    "name": "YOUNGWELD",
+    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright2": "版权所有。",
+    "timeline": [
+      {
+        "title": "1981",
+        "color": "primary",
+        "children": [
+          {
+            "label": "公司成立",
+            "time": "1981年2月",
+            "desc": "在高尺工业用品商街1栋1号开业",
+            "color": "secondary",
+            "icon": "home"
+          },
+          {
+            "label": "公司更名",
+            "time": "1981年11月",
+            "desc": "公司由Youngil Electronics更名为Youngil Electric",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "title": "2000",
+        "color": "primary",
+        "children": [
+          {
+            "label": "公司迁址",
+            "time": "2000年5月",
+            "desc": "迁至仁川工业流通中心",
+            "color": "secondary",
+            "icon": "swap_horiz"
+          }
+        ]
+      },
+      {
+        "title": "2010",
+        "color": "primary",
+        "children": [
+          {
+            "label": "开始研发埋弧焊接小车",
+            "time": "2010年3月",
+            "desc": "<p>开始研发</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "埋弧焊接小车研发中",
+            "time": "2010年4月",
+            "desc": "<p>研发进行中</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "埋弧焊接小车研发完成",
+            "time": "2010年5月",
+            "desc": "研发完成",
+            "icon": "work"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "product": "产品",
+    "company": "公司介绍",
+    "support": "技术支持",
+    "location": "联系我们"
+  },
+  "language": "语言",
+  "languageList": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "main": {
+    "detail": "查看详情",
+    "top": [
+      {
+        "direction": "right",
+        "src": "/static/images/main/top00.webp",
+        "align": "left",
+        "title": "埋弧焊接小车",
+        "desc": "沿导轨进行精密焊接",
+        "code": "YESAWCG-001",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
+      },
+      {
+        "direction": "left",
+        "src": "/static/images/main/top01.webp",
+        "align": "right",
+        "title": "气动点焊",
+        "desc": "与焊接电源周期同步的数字控制",
+        "code": "YM9601",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
+      }
+    ],
+    "section": [
+      [
+        {
+          "title": "埋弧焊接小车",
+          "desc": "沿导轨进行精密焊接",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCG-001"
+            }
+          }
+        },
+        {
+          "title": "埋弧焊缝跟踪装置",
+          "desc": "探针传感器",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWPS-001"
+            }
+          }
+        },
+        {
+          "title": "埋弧焊缝跟踪装置",
+          "desc": "控制单元",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCU-004"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "气动点焊",
+          "desc": "控制单元",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM001"
+            }
+          }
+        },
+        {
+          "title": "薄饼机",
+          "desc": "控制单元",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YEPCCU-001"
+            }
+          }
+        },
+        {
+          "title": "气动点焊",
+          "desc": "控制单元",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM9601"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "逆变弧焊机",
+          "desc": "小型逆变弧焊机",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "inverter",
+              "code": "YEAWW-001"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "电容焊机",
+          "desc": "电容式电阻点焊机",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWW-001"
+            }
+          }
+        },
+        {
+          "title": "电容点焊电源",
+          "desc": "电容式电阻点焊机电源",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWP-001"
+            }
+          }
+        },
+        {
+          "title": "直流点焊变压器",
+          "desc": "直流电阻点焊机变压器",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWT-001"
+            }
+          }
+        }
+      ]
+    ]
+  },
+  "location": {
+    "contact": "联系方式",
+    "address": "17-121, 105, Bangchuk-ro, Dong-gu, Incheon, Republic of Korea",
+    "phone": "82 - (32) 589 - 1160 ~ 2",
+    "fax": "82 - (32) 589 - 5095",
+    "PublicTransport": "公共交通",
+    "OwnCar": "驾车路线",
+    "PublicTransportInfo": [
+      "乘坐1号线至济物浦站下车",
+      "前往2号出口前的地下商场",
+      "从宣仁高中前的出口直行30米",
+      "乘坐510路公交车",
+      "经过13站后，在工业流通中心第3园区（C栋）下车"
+    ],
+    "OwnCarInfo": [
+      "驶入京仁高速公路",
+      "沿瑞云枢纽（仁川、西仁川、富平）方向直行",
+      "仁川收费站",
+      "从右侧出口驶向东仁川IC",
+      "在烽燧大路十字路口左转，驶向东仁川站、东区厅",
+      "仁川工业用品流通中心第3园区（C栋）入口"
+    ]
+  },
+  "support": {
+    "searchSupport": "搜索帮助",
+    "title": "仍需帮助？",
+    "contact": [
+      "感谢您使用Youngil Electric产品。",
+      "您可以在产品页面查看产品说明书。",
+      "如有产品相关问题，请通过以下方式联系我们。",
+      "请提供产品名称或型号，以便我们更快地为您服务。",
+      "电话咨询时间为上午9点至下午5点（韩国标准时间）。"
+    ],
+    "email": {
+      "icon": "email",
+      "name": "电子邮箱",
+      "value": "youngweld{'@'}hanmail.net"
+    },
+    "phone": {
+      "icon": "phone_enabled",
+      "name": "电话",
+      "value": "82 - (32) 589 - 1160 ~ 2"
+    },
+    "section": {
+      "control": [
+        {
+          "label": "控制1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "回答"
+            }
+          ]
+        },
+        {
+          "label": "控制2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "解决方法"
+            }
+          ]
+        }
+      ],
+      "submerged": [
+        {
+          "label": "埋弧焊1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "回答"
+            }
+          ]
+        },
+        {
+          "label": "埋弧焊2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "解决方法"
+            }
+          ]
+        }
+      ],
+      "inverter": [
+        {
+          "label": "逆变1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "回答"
+            }
+          ]
+        },
+        {
+          "label": "逆变2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "解决方法"
+            }
+          ]
+        }
+      ],
+      "spot": [
+        {
+          "label": "点焊1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "回答"
+            }
+          ]
+        },
+        {
+          "label": "点焊2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "解决方法"
+            }
+          ]
+        }
+      ]
+    },
+    "message": {
+      "noData": "未找到匹配的帮助内容。"
+    }
+  },
+  "section": [
+    {
+      "code": "control",
+      "icon": "/static/images/support/control.webp",
+      "name": "控制器"
+    },
+    {
+      "code": "submerged",
+      "icon": "/static/images/support/submerged.webp",
+      "name": "埋弧焊"
+    },
+    {
+      "code": "inverter",
+      "icon": "/static/images/support/inverter.webp",
+      "name": "逆变焊接"
+    },
+    {
+      "code": "spot",
+      "icon": "/static/images/support/spot.webp",
+      "name": "点焊"
+    }
+  ],
+  "product": {
+    "manual": "查看说明书",
+    "list": [
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesrwcu001.webp",
+        "name": "缝焊控制单元",
+        "desc": [
+          {
+            "name": "焊接电源电压",
+            "contents": "单相 AC220V/380V"
+          },
+          {
+            "name": "焊接电源频率",
+            "contents": "50/60HZ（自动切换）"
+          },
+          {
+            "name": "控制电源",
+            "contents": "单相 AC110V +10% -10%"
+          },
+          {
+            "name": "电源控制方式",
+            "contents": "SCR相位角控制"
+          },
+          {
+            "name": "时间控制方式",
+            "contents": "与焊接电源周期同步的数字控制"
+          },
+          {
+            "name": "加压输出信号",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "启动信号",
+            "contents": "通过脚踏开关启动（1个输入）"
+          }
+        ],
+        "code": "SEAM01",
+        "manual": "/static/manual/SEAM01.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu001.webp",
+        "name": "电容点焊控制器",
+        "code": "YECRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu002.webp",
+        "name": "电容点焊控制器",
+        "code": "YECRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeaswcu001.webp",
+        "name": "螺柱焊控制器",
+        "code": "YEASWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu001.webp",
+        "name": "点焊控制器",
+        "code": "YESPRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu002.webp",
+        "name": "点焊控制器",
+        "code": "YESPRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeasrwcu002.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "气动点焊控制器",
+        "desc": [
+          {
+            "name": "焊接电源电压",
+            "contents": "单相 AC220V/380V +10% -30%"
+          },
+          {
+            "name": "焊接电源频率",
+            "contents": "50/60HZ（自动切换）"
+          },
+          {
+            "name": "控制电源",
+            "contents": "单相 AC110V +10% -10%"
+          },
+          {
+            "name": "电源控制方式",
+            "contents": "SCR相位角控制"
+          },
+          {
+            "name": "时间控制方式",
+            "contents": "异步时间控制方式<br>（焊接时间采用与焊接电源频率同步的数字控制）"
+          },
+          {
+            "name": "加压输出信号",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "启动信号",
+            "contents": "通过脚踏开关启动"
+          }
+        ],
+        "code": "YM002",
+        "manual": "/static/manual/YM002.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym001.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "气动点焊控制器",
+        "desc": [
+          {
+            "name": "焊接电源电压",
+            "contents": "单相 AC220V/380V +10% -30%"
+          },
+          {
+            "name": "焊接电源频率",
+            "contents": "50/60HZ（自动切换）"
+          },
+          {
+            "name": "控制电源",
+            "contents": "单相 AC110V +10% -10%"
+          },
+          {
+            "name": "电源控制方式",
+            "contents": "SCR相位角控制"
+          },
+          {
+            "name": "时间控制方式",
+            "contents": "异步时间控制方式"
+          },
+          {
+            "name": "加压输出信号",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "启动信号",
+            "contents": "通过脚踏开关启动"
+          }
+        ],
+        "code": "YM001",
+        "manual": "/static/manual/YM001.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym9601.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "气动点焊控制器",
+        "desc": [
+          {
+            "name": "焊接电源电压",
+            "contents": "单相 AC220V/380V +10% -30%"
+          },
+          {
+            "name": "焊接电源频率",
+            "contents": "50/60HZ（自动切换）"
+          },
+          {
+            "name": "控制电源",
+            "contents": "单相 AC110V +10% -10%"
+          },
+          {
+            "name": "电源控制方式",
+            "contents": "SCR相位角控制"
+          },
+          {
+            "name": "时间控制方式",
+            "contents": "与焊接电源周期同步的数字控制"
+          },
+          {
+            "name": "加热控制",
+            "contents": "10种设置（2路加压控制）"
+          },
+          {
+            "name": "加压输出信号",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "启动信号",
+            "contents": "2路ON启动输入<br>（FOOT-1启动加压输出SOL-1，FOOT-2启动加压输出SOL-2）"
+          }
+        ],
+        "code": "YM9601",
+        "manual": "/static/manual/YM9601.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yepccu001.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "薄饼机控制器",
+        "code": "YEPCCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu001.webp",
+        "name": "串列控制单元",
+        "code": "YESAWCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu002.webp",
+        "name": "单机控制单元",
+        "code": "YESAWCU-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawpd001.webp",
+        "name": "主电源分配器",
+        "code": "YESAWPD-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu003.webp",
+        "name": "主电源控制单元",
+        "code": "YESAWCU-003"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu004.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "焊缝跟踪控制单元",
+        "code": "YESAWCU-004"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl001.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "焊缝跟踪滑台",
+        "code": "YESAWSL-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl002.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "焊缝跟踪滑台",
+        "code": "YESAWSL-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawps001.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "焊缝跟踪探针传感器",
+        "code": "YESAWPS-001",
+        "manual": "/static/manual/YESAWPS-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcg001.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "焊接小车",
+        "desc": [
+          {
+            "name": "控制电源电压",
+            "contents": "单相 AC 110V, 40V, 0V, 40V"
+          },
+          {
+            "name": "适用电流范围",
+            "contents": "AC或DC 250 ~ 1500A"
+          },
+          {
+            "name": "送丝速度",
+            "contents": "0.5 ~ 4m/min"
+          },
+          {
+            "name": "送丝速度控制方式",
+            "contents": "电弧电压反馈方式"
+          },
+          {
+            "name": "适用焊丝直径",
+            "contents": "2.4, 3.2, 4.0, 4.8, 6.4ø"
+          },
+          {
+            "name": "适用焊丝盘内径",
+            "contents": "300ø 宽度100m/m"
+          },
+          {
+            "name": "适用焊丝盘外径",
+            "contents": "450ø 重量10 ~ 24kg"
+          },
+          {
+            "name": "小车行走速度",
+            "contents": "12~120cm/min"
+          },
+          {
+            "name": "水平调节",
+            "contents": "50m/m"
+          },
+          {
+            "name": "垂直调节",
+            "contents": "35m/m"
+          },
+          {
+            "name": "焊剂料斗容量",
+            "contents": "5ℓ"
+          },
+          {
+            "name": "重量",
+            "contents": ""
+          },
+          {
+            "name": "出厂配备的导电嘴",
+            "contents": "4.0ø, 4.8ø"
+          }
+        ],
+        "code": "YESAWCG-001",
+        "manual": "/static/manual/YESAWCG-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawm001.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "焊机",
+        "code": "YESAWM-001"
+      },
+      {
+        "sec": "inverter",
+        "src": "/static/images/products/yeaww001.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "逆变焊机",
+        "code": "YEAWW-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwt001.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "直流点焊变压器",
+        "code": "YERWT-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwp001.webp",
+        "name": "电容点焊电源",
+        "code": "YERWP-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerww001.webp",
+        "type": {
+          "name": "热门",
+          "color": "text-blue"
+        },
+        "name": "电容焊机",
+        "code": "YERWW-001"
+      }
+    ]
+  },
+  "accessibility": {
+    "menu": "打开菜单",
+    "darkMode": "深色模式",
+    "backToTop": "返回顶部"
+  },
+  "languageLoadError": "无法加载此语言，请重新选择。"
+}

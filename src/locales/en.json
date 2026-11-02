@@ -397,7 +397,7 @@
     }
   ],
   "product": {
-    "manual": "Download manual",
+    "manual": "View manual",
     "list": [
       {
         "sec": "control",
@@ -785,5 +785,6 @@
     "menu": "Open menu",
     "darkMode": "Dark mode",
     "backToTop": "Back to top"
-  }
+  },
+  "languageLoadError": "Unable to load this language. Please try again."
 }

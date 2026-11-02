@@ -134,6 +134,7 @@ export default {
 }
 
 .title {
+  overflow-wrap: anywhere;
   font-size: 1.4em;
   font-weight: bold;
   letter-spacing: -1px;

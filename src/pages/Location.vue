@@ -143,15 +143,12 @@ export default {
 <style scoped>
 .text-wrap {
   word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 
 @media screen and (min-width: 1440px) {
-  .card:lang(ko) {
-    height: 260px;
-  }
-
-  .card:lang(en) {
-    height: 300px;
+  .card {
+    min-height: 300px;
   }
 }
 </style>

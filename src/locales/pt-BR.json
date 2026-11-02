@@ -1,0 +1,790 @@
+{
+  "pnf": "A página que você procura não foi encontrada.",
+  "company": {
+    "name": "YOUNGWELD",
+    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright2": "Todos os direitos reservados.",
+    "timeline": [
+      {
+        "title": "1981",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Fundação da empresa",
+            "time": "Fevereiro de 1981",
+            "desc": "Abertura no prédio 1, unidade 1 do centro de suprimentos industriais de Gocheok",
+            "color": "secondary",
+            "icon": "home"
+          },
+          {
+            "label": "Mudança de nome",
+            "time": "Novembro de 1981",
+            "desc": "Mudança de nome de Youngil Electronics para Youngil Electric",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "title": "2000",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Mudança de sede",
+            "time": "Maio de 2000",
+            "desc": "Mudança para o centro de distribuição industrial de Incheon",
+            "color": "secondary",
+            "icon": "swap_horiz"
+          }
+        ]
+      },
+      {
+        "title": "2010",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Início do desenvolvimento do carro de soldagem por arco submerso",
+            "time": "Março de 2010",
+            "desc": "<p>Início do desenvolvimento</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Continuação do desenvolvimento do carro de soldagem por arco submerso",
+            "time": "Abril de 2010",
+            "desc": "<p>Desenvolvimento em andamento</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Conclusão do desenvolvimento do carro de soldagem por arco submerso",
+            "time": "Maio de 2010",
+            "desc": "Desenvolvimento concluído",
+            "icon": "work"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "product": "Produtos",
+    "company": "Empresa",
+    "support": "Suporte",
+    "location": "Localização"
+  },
+  "language": "Idioma",
+  "languageList": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "main": {
+    "detail": "Ver detalhes",
+    "top": [
+      {
+        "direction": "right",
+        "src": "/static/images/main/top00.webp",
+        "align": "left",
+        "title": "CARRO DE SOLDAGEM POR ARCO SUBMERSO",
+        "desc": "Soldagem de precisão ao longo de trilhos-guia",
+        "code": "YESAWCG-001",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
+      },
+      {
+        "direction": "left",
+        "src": "/static/images/main/top01.webp",
+        "align": "right",
+        "title": "SOLDAGEM A PONTO PNEUMÁTICA",
+        "desc": "Controle digital sincronizado com o ciclo de alimentação da soldagem",
+        "code": "YM9601",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
+      }
+    ],
+    "section": [
+      [
+        {
+          "title": "CARRO DE SOLDAGEM POR ARCO SUBMERSO",
+          "desc": "Soldagem de precisão ao longo de trilhos-guia",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCG-001"
+            }
+          }
+        },
+        {
+          "title": "SEGUIDOR DE JUNTA PARA SOLDAGEM POR ARCO SUBMERSO",
+          "desc": "Sensor apalpador",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWPS-001"
+            }
+          }
+        },
+        {
+          "title": "SEGUIDOR DE JUNTA PARA SOLDAGEM POR ARCO SUBMERSO",
+          "desc": "Unidade de controle",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCU-004"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "SOLDAGEM A PONTO PNEUMÁTICA",
+          "desc": "Unidade de controle",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM001"
+            }
+          }
+        },
+        {
+          "title": "MÁQUINA PANCAKE",
+          "desc": "Unidade de controle",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YEPCCU-001"
+            }
+          }
+        },
+        {
+          "title": "SOLDAGEM A PONTO PNEUMÁTICA",
+          "desc": "Unidade de controle",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM9601"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "INVERSORA DE SOLDA A ARCO",
+          "desc": "Inversora compacta de solda a arco",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "inverter",
+              "code": "YEAWW-001"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "MÁQUINA DE SOLDA POR CAPACITORES",
+          "desc": "Máquina de solda a ponto por resistência com capacitores",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWW-001"
+            }
+          }
+        },
+        {
+          "title": "FONTE PARA SOLDA A PONTO COM CAPACITORES",
+          "desc": "Fonte de alimentação para máquinas de solda a ponto por resistência com capacitores",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWP-001"
+            }
+          }
+        },
+        {
+          "title": "TRANSFORMADOR PARA SOLDA A PONTO EM CORRENTE CONTÍNUA",
+          "desc": "Transformador para máquinas de solda a ponto por resistência em corrente contínua",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWT-001"
+            }
+          }
+        }
+      ]
+    ]
+  },
+  "location": {
+    "contact": "Contato",
+    "address": "17-121, 105, Bangchuk-ro, Dong-gu, Incheon, Republic of Korea",
+    "phone": "82 - (32) 589 - 1160 ~ 2",
+    "fax": "82 - (32) 589 - 5095",
+    "PublicTransport": "Transporte público",
+    "OwnCar": "De carro",
+    "PublicTransportInfo": [
+      "Desça na estação Jemulpo da linha 1",
+      "Vá à galeria comercial subterrânea em frente à saída 2",
+      "Siga em frente por 30 metros a partir da saída em frente à escola Seonin",
+      "Pegue o ônibus 510",
+      "Após 13 paradas, desça no centro de distribuição industrial, complexo 3 (prédio C)"
+    ],
+    "OwnCarInfo": [
+      "Entre na via expressa Gyeongin",
+      "Continue em direção ao entroncamento Seoun (Incheon, Seoincheon, Bupyeong)",
+      "Pedágio de Incheon",
+      "Pegue a saída à direita em direção a Dongincheon IC",
+      "No cruzamento Bongsudae-gil, vire à esquerda em direção à estação Dongincheon e à administração distrital de Dong-gu",
+      "Entrada do centro de suprimentos industriais de Incheon, complexo 3 (prédio C)"
+    ]
+  },
+  "support": {
+    "searchSupport": "Pesquisar ajuda",
+    "title": "Precisa de mais ajuda?",
+    "contact": [
+      "Obrigado por escolher os produtos Youngil Electric.",
+      "Os manuais estão disponíveis na página de Produtos.",
+      "Para dúvidas sobre os produtos, use os contatos abaixo.",
+      "Informe o nome do produto ou o código do modelo para agilizar o atendimento.",
+      "O suporte por telefone está disponível das 9h às 17h (horário padrão da Coreia)."
+    ],
+    "email": {
+      "icon": "email",
+      "name": "E-mail",
+      "value": "youngweld{'@'}hanmail.net"
+    },
+    "phone": {
+      "icon": "phone_enabled",
+      "name": "Telefone",
+      "value": "82 - (32) 589 - 1160 ~ 2"
+    },
+    "section": {
+      "control": [
+        {
+          "label": "Controle 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Resposta"
+            }
+          ]
+        },
+        {
+          "label": "Controle 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solução"
+            }
+          ]
+        }
+      ],
+      "submerged": [
+        {
+          "label": "Arco submerso 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Resposta"
+            }
+          ]
+        },
+        {
+          "label": "Arco submerso 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solução"
+            }
+          ]
+        }
+      ],
+      "inverter": [
+        {
+          "label": "Inversora 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Resposta"
+            }
+          ]
+        },
+        {
+          "label": "Inversora 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solução"
+            }
+          ]
+        }
+      ],
+      "spot": [
+        {
+          "label": "Ponto 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Resposta"
+            }
+          ]
+        },
+        {
+          "label": "Ponto 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solução"
+            }
+          ]
+        }
+      ]
+    },
+    "message": {
+      "noData": "Nenhum tópico de ajuda correspondente encontrado."
+    }
+  },
+  "section": [
+    {
+      "code": "control",
+      "icon": "/static/images/support/control.webp",
+      "name": "Controladores"
+    },
+    {
+      "code": "submerged",
+      "icon": "/static/images/support/submerged.webp",
+      "name": "Soldagem por arco submerso"
+    },
+    {
+      "code": "inverter",
+      "icon": "/static/images/support/inverter.webp",
+      "name": "Soldagem com inversora"
+    },
+    {
+      "code": "spot",
+      "icon": "/static/images/support/spot.webp",
+      "name": "Soldagem a ponto"
+    }
+  ],
+  "product": {
+    "manual": "Ver manual",
+    "list": [
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesrwcu001.webp",
+        "name": "Unidade de controle de soldagem por costura",
+        "desc": [
+          {
+            "name": "Tensão de alimentação da soldagem",
+            "contents": "Monofásica AC220V/380V"
+          },
+          {
+            "name": "Frequência de alimentação da soldagem",
+            "contents": "50/60HZ (comutação automática)"
+          },
+          {
+            "name": "Alimentação de controle",
+            "contents": "Monofásica AC110V +10% -10%"
+          },
+          {
+            "name": "Método de controle de potência",
+            "contents": "Controle de ângulo de fase SCR"
+          },
+          {
+            "name": "Método de temporização",
+            "contents": "Controle digital sincronizado com o ciclo de alimentação da soldagem"
+          },
+          {
+            "name": "Sinal de saída de pressão",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Sinal de partida",
+            "contents": "Partida por pedal (uma entrada)"
+          }
+        ],
+        "code": "SEAM01",
+        "manual": "/static/manual/SEAM01.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu001.webp",
+        "name": "Controlador de soldagem a ponto com capacitores",
+        "code": "YECRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu002.webp",
+        "name": "Controlador de soldagem a ponto com capacitores",
+        "code": "YECRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeaswcu001.webp",
+        "name": "Controlador de soldagem de pinos",
+        "code": "YEASWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu001.webp",
+        "name": "Controlador de soldagem a ponto",
+        "code": "YESPRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu002.webp",
+        "name": "Controlador de soldagem a ponto",
+        "code": "YESPRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeasrwcu002.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Controlador de soldagem a ponto pneumática",
+        "desc": [
+          {
+            "name": "Tensão de alimentação da soldagem",
+            "contents": "Monofásica AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Frequência de alimentação da soldagem",
+            "contents": "50/60HZ (comutação automática)"
+          },
+          {
+            "name": "Alimentação de controle",
+            "contents": "Monofásica AC110V +10% -10%"
+          },
+          {
+            "name": "Método de controle de potência",
+            "contents": "Controle de ângulo de fase SCR"
+          },
+          {
+            "name": "Método de temporização",
+            "contents": "Temporização assíncrona<br>(A duração da soldagem é controlada digitalmente em sincronia com a frequência de alimentação da soldagem)"
+          },
+          {
+            "name": "Sinal de saída de pressão",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Sinal de partida",
+            "contents": "Partida por pedal"
+          }
+        ],
+        "code": "YM002",
+        "manual": "/static/manual/YM002.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym001.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Controlador de soldagem a ponto pneumática",
+        "desc": [
+          {
+            "name": "Tensão de alimentação da soldagem",
+            "contents": "Monofásica AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Frequência de alimentação da soldagem",
+            "contents": "50/60HZ (comutação automática)"
+          },
+          {
+            "name": "Alimentação de controle",
+            "contents": "Monofásica AC110V +10% -10%"
+          },
+          {
+            "name": "Método de controle de potência",
+            "contents": "Controle de ângulo de fase SCR"
+          },
+          {
+            "name": "Método de temporização",
+            "contents": "Temporização assíncrona"
+          },
+          {
+            "name": "Sinal de saída de pressão",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Sinal de partida",
+            "contents": "Partida por pedal"
+          }
+        ],
+        "code": "YM001",
+        "manual": "/static/manual/YM001.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym9601.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Controlador de soldagem a ponto pneumática",
+        "desc": [
+          {
+            "name": "Tensão de alimentação da soldagem",
+            "contents": "Monofásica AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Frequência de alimentação da soldagem",
+            "contents": "50/60HZ (comutação automática)"
+          },
+          {
+            "name": "Alimentação de controle",
+            "contents": "Monofásica AC110V +10% -10%"
+          },
+          {
+            "name": "Método de controle de potência",
+            "contents": "Controle de ângulo de fase SCR"
+          },
+          {
+            "name": "Método de temporização",
+            "contents": "Controle digital sincronizado com o ciclo de alimentação da soldagem"
+          },
+          {
+            "name": "Controle de aquecimento",
+            "contents": "10 ajustes (dois canais de controle de pressão)"
+          },
+          {
+            "name": "Sinal de saída de pressão",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Sinal de partida",
+            "contents": "Duas entradas ON para iniciar a operação<br>(FOOT-1 ativa a saída de pressão SOL-1; FOOT-2 ativa a saída de pressão SOL-2)"
+          }
+        ],
+        "code": "YM9601",
+        "manual": "/static/manual/YM9601.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yepccu001.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Controlador Pancake",
+        "code": "YEPCCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu001.webp",
+        "name": "Unidade de controle tandem",
+        "code": "YESAWCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu002.webp",
+        "name": "Unidade de controle simples",
+        "code": "YESAWCU-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawpd001.webp",
+        "name": "Unidade de distribuição de alimentação principal",
+        "code": "YESAWPD-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu003.webp",
+        "name": "Unidade de controle de alimentação principal",
+        "code": "YESAWCU-003"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu004.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Unidade de controle de seguimento de junta",
+        "code": "YESAWCU-004"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl001.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Carro deslizante de seguimento de junta",
+        "code": "YESAWSL-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl002.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Carro deslizante de seguimento de junta",
+        "code": "YESAWSL-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawps001.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Sensor apalpador de seguimento de junta",
+        "code": "YESAWPS-001",
+        "manual": "/static/manual/YESAWPS-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcg001.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Carro de soldagem",
+        "desc": [
+          {
+            "name": "Tensão de alimentação de controle",
+            "contents": "Monofásica AC 110V, 40V, 0V, 40V"
+          },
+          {
+            "name": "Faixa de corrente de soldagem",
+            "contents": "AC ou DC 250 ~ 1500A"
+          },
+          {
+            "name": "Velocidade de alimentação do arame",
+            "contents": "0.5 ~ 4m/min"
+          },
+          {
+            "name": "Método de controle da velocidade de alimentação do arame",
+            "contents": "Realimentação da tensão do arco"
+          },
+          {
+            "name": "Diâmetro de arame compatível",
+            "contents": "2.4, 3.2, 4.0, 4.8, 6.4ø"
+          },
+          {
+            "name": "Diâmetro interno do carretel compatível",
+            "contents": "300ø largura 100m/m"
+          },
+          {
+            "name": "Diâmetro externo do carretel compatível",
+            "contents": "450ø peso 10 ~ 24kg"
+          },
+          {
+            "name": "Velocidade de deslocamento do carro",
+            "contents": "12~120cm/min"
+          },
+          {
+            "name": "Ajuste horizontal",
+            "contents": "50m/m"
+          },
+          {
+            "name": "Ajuste vertical",
+            "contents": "35m/m"
+          },
+          {
+            "name": "Capacidade do reservatório de fluxo",
+            "contents": "5ℓ"
+          },
+          {
+            "name": "Peso",
+            "contents": ""
+          },
+          {
+            "name": "Bicos de contato padrão",
+            "contents": "4.0ø, 4.8ø"
+          }
+        ],
+        "code": "YESAWCG-001",
+        "manual": "/static/manual/YESAWCG-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawm001.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Máquina de solda",
+        "code": "YESAWM-001"
+      },
+      {
+        "sec": "inverter",
+        "src": "/static/images/products/yeaww001.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Inversora de solda",
+        "code": "YEAWW-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwt001.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Transformador para solda a ponto em corrente contínua",
+        "code": "YERWT-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwp001.webp",
+        "name": "Fonte para solda a ponto com capacitores",
+        "code": "YERWP-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerww001.webp",
+        "type": {
+          "name": "DESTAQUE",
+          "color": "text-blue"
+        },
+        "name": "Máquina de solda por capacitores",
+        "code": "YERWW-001"
+      }
+    ]
+  },
+  "accessibility": {
+    "menu": "Abrir menu",
+    "darkMode": "Modo escuro",
+    "backToTop": "Voltar ao topo"
+  },
+  "languageLoadError": "Não foi possível carregar este idioma. Tente novamente."
+}

@@ -99,7 +99,7 @@ export default {
   color: #ff9d42;
 }
 
-.company .skew:lang(en) {
+.company .skew:not(:lang(ko)) {
   font-size: 1.5em;
   font-family: 'Teko', sans-serif;
   padding-top: 4px;

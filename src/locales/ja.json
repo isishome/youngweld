@@ -1,0 +1,790 @@
+{
+  "pnf": "お探しのページが見つかりません。",
+  "company": {
+    "name": "YOUNGWELD",
+    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright2": "無断転載を禁じます。",
+    "timeline": [
+      {
+        "title": "1981",
+        "color": "primary",
+        "children": [
+          {
+            "label": "会社設立",
+            "time": "1981年2月",
+            "desc": "高尺産業用品商街1棟1号で創業",
+            "color": "secondary",
+            "icon": "home"
+          },
+          {
+            "label": "社名変更",
+            "time": "1981年11月",
+            "desc": "Youngil ElectronicsからYoungil Electricに社名を変更",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "title": "2000",
+        "color": "primary",
+        "children": [
+          {
+            "label": "本社移転",
+            "time": "2000年5月",
+            "desc": "仁川産業流通センターに移転",
+            "color": "secondary",
+            "icon": "swap_horiz"
+          }
+        ]
+      },
+      {
+        "title": "2010",
+        "color": "primary",
+        "children": [
+          {
+            "label": "サブマージアーク溶接台車の開発開始",
+            "time": "2010年3月",
+            "desc": "<p>開発開始</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "サブマージアーク溶接台車を開発中",
+            "time": "2010年4月",
+            "desc": "<p>開発中</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "サブマージアーク溶接台車の開発完了",
+            "time": "2010年5月",
+            "desc": "開発完了",
+            "icon": "work"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "product": "製品情報",
+    "company": "会社情報",
+    "support": "サポート",
+    "location": "アクセス"
+  },
+  "language": "言語",
+  "languageList": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "main": {
+    "detail": "詳細を見る",
+    "top": [
+      {
+        "direction": "right",
+        "src": "/static/images/main/top00.webp",
+        "align": "left",
+        "title": "サブマージアーク溶接台車",
+        "desc": "ガイドレールに沿った精密溶接",
+        "code": "YESAWCG-001",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
+      },
+      {
+        "direction": "left",
+        "src": "/static/images/main/top01.webp",
+        "align": "right",
+        "title": "空圧式スポット溶接",
+        "desc": "溶接電源周期に同期したデジタル制御",
+        "code": "YM9601",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
+      }
+    ],
+    "section": [
+      [
+        {
+          "title": "サブマージアーク溶接台車",
+          "desc": "ガイドレールに沿った精密溶接",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCG-001"
+            }
+          }
+        },
+        {
+          "title": "サブマージアーク溶接線追従装置",
+          "desc": "プローブセンサー",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWPS-001"
+            }
+          }
+        },
+        {
+          "title": "サブマージアーク溶接線追従装置",
+          "desc": "制御ユニット",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCU-004"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "空圧式スポット溶接",
+          "desc": "制御ユニット",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM001"
+            }
+          }
+        },
+        {
+          "title": "パンケーキ機",
+          "desc": "制御ユニット",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YEPCCU-001"
+            }
+          }
+        },
+        {
+          "title": "空圧式スポット溶接",
+          "desc": "制御ユニット",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM9601"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "インバーターアーク溶接機",
+          "desc": "小型インバーターアーク溶接機",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "inverter",
+              "code": "YEAWW-001"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "コンデンサー溶接機",
+          "desc": "コンデンサー式抵抗スポット溶接機",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWW-001"
+            }
+          }
+        },
+        {
+          "title": "コンデンサースポット溶接電源",
+          "desc": "コンデンサー式抵抗スポット溶接機用電源",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWP-001"
+            }
+          }
+        },
+        {
+          "title": "直流スポット溶接トランス",
+          "desc": "直流抵抗スポット溶接機用トランス",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWT-001"
+            }
+          }
+        }
+      ]
+    ]
+  },
+  "location": {
+    "contact": "お問い合わせ",
+    "address": "17-121, 105, Bangchuk-ro, Dong-gu, Incheon, Republic of Korea",
+    "phone": "82 - (32) 589 - 1160 ~ 2",
+    "fax": "82 - (32) 589 - 5095",
+    "PublicTransport": "公共交通機関",
+    "OwnCar": "お車でのアクセス",
+    "PublicTransportInfo": [
+      "1号線の済物浦駅で下車",
+      "2番出口前の地下商店街へ",
+      "宣仁高校前の出口から30メートル直進",
+      "510番バスに乗車",
+      "13停留所先の産業流通センター第3団地（C棟）で下車"
+    ],
+    "OwnCarInfo": [
+      "京仁高速道路に進入",
+      "瑞雲ジャンクション（仁川・西仁川・富平）方面へ直進",
+      "仁川料金所",
+      "東仁川IC方面の右側出口へ",
+      "烽燧大路交差点で東仁川駅・東区庁方面へ左折",
+      "仁川産業用品流通センター第3団地（C棟）入口"
+    ]
+  },
+  "support": {
+    "searchSupport": "ヘルプを検索",
+    "title": "お困りですか？",
+    "contact": [
+      "Youngil Electric製品をご利用いただきありがとうございます。",
+      "製品マニュアルは製品情報ページでご覧いただけます。",
+      "製品に関するご質問は、下記の連絡先までお問い合わせください。",
+      "迅速な対応のため、製品名または型番をお知らせください。",
+      "電話受付時間は午前9時から午後5時までです（韓国標準時）。"
+    ],
+    "email": {
+      "icon": "email",
+      "name": "メール",
+      "value": "youngweld{'@'}hanmail.net"
+    },
+    "phone": {
+      "icon": "phone_enabled",
+      "name": "電話",
+      "value": "82 - (32) 589 - 1160 ~ 2"
+    },
+    "section": {
+      "control": [
+        {
+          "label": "制御1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "回答"
+            }
+          ]
+        },
+        {
+          "label": "制御2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "解決方法"
+            }
+          ]
+        }
+      ],
+      "submerged": [
+        {
+          "label": "サブマージアーク1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "回答"
+            }
+          ]
+        },
+        {
+          "label": "サブマージアーク2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "解決方法"
+            }
+          ]
+        }
+      ],
+      "inverter": [
+        {
+          "label": "インバーター1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "回答"
+            }
+          ]
+        },
+        {
+          "label": "インバーター2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "解決方法"
+            }
+          ]
+        }
+      ],
+      "spot": [
+        {
+          "label": "スポット1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "回答"
+            }
+          ]
+        },
+        {
+          "label": "スポット2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "解決方法"
+            }
+          ]
+        }
+      ]
+    },
+    "message": {
+      "noData": "該当するヘルプが見つかりません。"
+    }
+  },
+  "section": [
+    {
+      "code": "control",
+      "icon": "/static/images/support/control.webp",
+      "name": "制御装置"
+    },
+    {
+      "code": "submerged",
+      "icon": "/static/images/support/submerged.webp",
+      "name": "サブマージアーク溶接"
+    },
+    {
+      "code": "inverter",
+      "icon": "/static/images/support/inverter.webp",
+      "name": "インバーター溶接"
+    },
+    {
+      "code": "spot",
+      "icon": "/static/images/support/spot.webp",
+      "name": "スポット溶接"
+    }
+  ],
+  "product": {
+    "manual": "マニュアルを見る",
+    "list": [
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesrwcu001.webp",
+        "name": "シーム溶接制御ユニット",
+        "desc": [
+          {
+            "name": "溶接電源電圧",
+            "contents": "単相 AC220V/380V"
+          },
+          {
+            "name": "溶接電源周波数",
+            "contents": "50/60HZ（自動切替）"
+          },
+          {
+            "name": "制御電源",
+            "contents": "単相 AC110V +10% -10%"
+          },
+          {
+            "name": "電源制御方式",
+            "contents": "SCR位相角制御"
+          },
+          {
+            "name": "時間制御方式",
+            "contents": "溶接電源周期に同期したデジタル制御"
+          },
+          {
+            "name": "加圧出力信号",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "起動信号",
+            "contents": "フットスイッチによる起動（1入力）"
+          }
+        ],
+        "code": "SEAM01",
+        "manual": "/static/manual/SEAM01.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu001.webp",
+        "name": "コンデンサースポット溶接制御装置",
+        "code": "YECRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu002.webp",
+        "name": "コンデンサースポット溶接制御装置",
+        "code": "YECRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeaswcu001.webp",
+        "name": "スタッド溶接制御装置",
+        "code": "YEASWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu001.webp",
+        "name": "スポット溶接制御装置",
+        "code": "YESPRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu002.webp",
+        "name": "スポット溶接制御装置",
+        "code": "YESPRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeasrwcu002.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "空圧式スポット溶接制御装置",
+        "desc": [
+          {
+            "name": "溶接電源電圧",
+            "contents": "単相 AC220V/380V +10% -30%"
+          },
+          {
+            "name": "溶接電源周波数",
+            "contents": "50/60HZ（自動切替）"
+          },
+          {
+            "name": "制御電源",
+            "contents": "単相 AC110V +10% -10%"
+          },
+          {
+            "name": "電源制御方式",
+            "contents": "SCR位相角制御"
+          },
+          {
+            "name": "時間制御方式",
+            "contents": "非同期時間制御方式<br>（溶接時間は溶接電源周波数に同期したデジタル制御）"
+          },
+          {
+            "name": "加圧出力信号",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "起動信号",
+            "contents": "フットスイッチによる起動"
+          }
+        ],
+        "code": "YM002",
+        "manual": "/static/manual/YM002.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym001.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "空圧式スポット溶接制御装置",
+        "desc": [
+          {
+            "name": "溶接電源電圧",
+            "contents": "単相 AC220V/380V +10% -30%"
+          },
+          {
+            "name": "溶接電源周波数",
+            "contents": "50/60HZ（自動切替）"
+          },
+          {
+            "name": "制御電源",
+            "contents": "単相 AC110V +10% -10%"
+          },
+          {
+            "name": "電源制御方式",
+            "contents": "SCR位相角制御"
+          },
+          {
+            "name": "時間制御方式",
+            "contents": "非同期時間制御方式"
+          },
+          {
+            "name": "加圧出力信号",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "起動信号",
+            "contents": "フットスイッチによる起動"
+          }
+        ],
+        "code": "YM001",
+        "manual": "/static/manual/YM001.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym9601.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "空圧式スポット溶接制御装置",
+        "desc": [
+          {
+            "name": "溶接電源電圧",
+            "contents": "単相 AC220V/380V +10% -30%"
+          },
+          {
+            "name": "溶接電源周波数",
+            "contents": "50/60HZ（自動切替）"
+          },
+          {
+            "name": "制御電源",
+            "contents": "単相 AC110V +10% -10%"
+          },
+          {
+            "name": "電源制御方式",
+            "contents": "SCR位相角制御"
+          },
+          {
+            "name": "時間制御方式",
+            "contents": "溶接電源周期に同期したデジタル制御"
+          },
+          {
+            "name": "加熱制御",
+            "contents": "10条件（加圧は2系統）"
+          },
+          {
+            "name": "加圧出力信号",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "起動信号",
+            "contents": "起動用ON入力2点<br>（FOOT-1で加圧出力SOL-1、FOOT-2で加圧出力SOL-2を作動）"
+          }
+        ],
+        "code": "YM9601",
+        "manual": "/static/manual/YM9601.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yepccu001.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "パンケーキ制御装置",
+        "code": "YEPCCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu001.webp",
+        "name": "タンデム制御ユニット",
+        "code": "YESAWCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu002.webp",
+        "name": "シングル制御ユニット",
+        "code": "YESAWCU-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawpd001.webp",
+        "name": "主電源分配器",
+        "code": "YESAWPD-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu003.webp",
+        "name": "主電源制御ユニット",
+        "code": "YESAWCU-003"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu004.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "溶接線追従制御ユニット",
+        "code": "YESAWCU-004"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl001.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "溶接線追従スライド",
+        "code": "YESAWSL-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl002.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "溶接線追従スライド",
+        "code": "YESAWSL-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawps001.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "溶接線追従プローブセンサー",
+        "code": "YESAWPS-001",
+        "manual": "/static/manual/YESAWPS-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcg001.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "溶接台車",
+        "desc": [
+          {
+            "name": "制御電源電圧",
+            "contents": "単相 AC 110V, 40V, 0V, 40V"
+          },
+          {
+            "name": "適用電流範囲",
+            "contents": "ACまたはDC 250 ~ 1500A"
+          },
+          {
+            "name": "ワイヤ送給速度",
+            "contents": "0.5 ~ 4m/min"
+          },
+          {
+            "name": "ワイヤ送給速度制御方式",
+            "contents": "アーク電圧フィードバック方式"
+          },
+          {
+            "name": "適用ワイヤ径",
+            "contents": "2.4, 3.2, 4.0, 4.8, 6.4ø"
+          },
+          {
+            "name": "適用ワイヤリール内径",
+            "contents": "300ø 幅100m/m"
+          },
+          {
+            "name": "適用ワイヤリール外径",
+            "contents": "450ø 重量10 ~ 24kg"
+          },
+          {
+            "name": "台車走行速度",
+            "contents": "12~120cm/min"
+          },
+          {
+            "name": "水平調整",
+            "contents": "50m/m"
+          },
+          {
+            "name": "垂直調整",
+            "contents": "35m/m"
+          },
+          {
+            "name": "フラックスホッパー容量",
+            "contents": "5ℓ"
+          },
+          {
+            "name": "重量",
+            "contents": ""
+          },
+          {
+            "name": "標準付属チップ",
+            "contents": "4.0ø, 4.8ø"
+          }
+        ],
+        "code": "YESAWCG-001",
+        "manual": "/static/manual/YESAWCG-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawm001.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "溶接機",
+        "code": "YESAWM-001"
+      },
+      {
+        "sec": "inverter",
+        "src": "/static/images/products/yeaww001.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "インバーター溶接機",
+        "code": "YEAWW-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwt001.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "直流スポット溶接トランス",
+        "code": "YERWT-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwp001.webp",
+        "name": "コンデンサースポット溶接電源",
+        "code": "YERWP-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerww001.webp",
+        "type": {
+          "name": "人気",
+          "color": "text-blue"
+        },
+        "name": "コンデンサー溶接機",
+        "code": "YERWW-001"
+      }
+    ]
+  },
+  "accessibility": {
+    "menu": "メニューを開く",
+    "darkMode": "ダークモード",
+    "backToTop": "ページ上部へ"
+  },
+  "languageLoadError": "言語を読み込めませんでした。もう一度選択してください。"
+}

@@ -76,13 +76,10 @@ export const sanitizeAwsError = (operation, error) => {
   )
 }
 
-export const validateFunctionRedirect = (result, location) => {
+export const validateFunctionRequest = (result, uri) => {
   if (result.FunctionErrorMessage) throw new Error(result.FunctionErrorMessage)
-  const response = JSON.parse(result.FunctionOutput).response
-  if (
-    response?.statusCode !== 302 ||
-    response.headers?.location?.value !== location
-  )
+  const request = JSON.parse(result.FunctionOutput).request
+  if (request?.uri !== uri)
     throw new Error('CloudFront 함수 실제 런타임 검증 실패')
 }
 
@@ -140,7 +137,7 @@ const main = () => {
   }
 
   const functionConfig = JSON.stringify({
-    Comment: 'Youngil Electric hash route normalization',
+    Comment: 'Youngil Electric history route rewrite',
     Runtime: 'cloudfront-js-2.0',
   })
   let savedFunction
@@ -175,9 +172,12 @@ const main = () => {
     )
   }
   mkdirSync('.tmp/cloudfront', { recursive: true })
-  for (const [uri, location] of [
-    ['/company/', '/#/company'],
-    ['/product/submerged/YESAWCG-001/', '/#/product/submerged/YESAWCG-001'],
+  for (const [uri, expectedUri] of [
+    ['/', '/index.html'],
+    ['/company/', '/index.html'],
+    ['/product/submerged/YESAWCG-001/', '/index.html'],
+    ['/missing.js', '/missing.js'],
+    ['/static/manual/YM001.pdf', '/static/manual/YM001.pdf'],
   ]) {
     const event = {
       version: '1.0',
@@ -203,7 +203,7 @@ const main = () => {
       '--event-object',
       'fileb://.tmp/cloudfront/event.json',
     ).TestResult
-    validateFunctionRedirect(result, location)
+    validateFunctionRequest(result, expectedUri)
   }
   const config = JSON.parse(
     readFileSync('infra/cloudfront/response-headers-policy.json', 'utf8'),

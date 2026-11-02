@@ -2,9 +2,10 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import { Quasar, Cookies } from 'quasar'
 import quasarUserOptions from './quasar-user-options'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import routes from './routes/index.js'
-import { resolveLocale, setI18nLanguage } from './i18n.js'
+import { setI18nLanguage } from './i18n.js'
+import { resolveLocale } from './locales/registry.js'
 import { normalizeEntryUrl } from './routes/entry-url.js'
 import { createI18n } from 'vue-i18n'
 import ko from './locales/ko.json'
@@ -23,6 +24,7 @@ const i18n = createI18n({
   legacy: false,
   globalInjection: true,
   locale: 'ko',
+  fallbackLocale: 'en',
   messages: {
     ko,
     en,
@@ -30,9 +32,13 @@ const i18n = createI18n({
 })
 
 const router = createRouter({
-  history: createWebHashHistory('/'),
+  history: createWebHistory('/'),
   routes,
-  scrollBehavior(to) {
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition
+    // 목록 안에서 제품을 선택할 때는 현재 읽고 있는 위치를 유지한다.
+    if (from.matched.some(({ name }) => name === 'product') && to.params.code)
+      return false
     if (to.name && to.query.top)
       return { top: Number(to.query.top), behavior: 'smooth' }
     else if (to.name && to.params.code) {
@@ -48,13 +54,6 @@ const router = createRouter({
 let homeImagePreload
 
 router.beforeEach((to) => {
-  const prefix = import.meta.env.VITE_APP_PREFIX
-  const locale = resolveLocale(
-    Cookies.get(`${prefix}.lang`),
-    Quasar.lang.getLocale(),
-  )
-  setI18nLanguage(i18n, locale)
-
   if (to.name === 'main' && !homeImagePreload) {
     homeImagePreload = document.createElement('link')
     homeImagePreload.rel = 'preload'
@@ -68,4 +67,16 @@ router.beforeEach((to) => {
   }
 })
 
-app.use(Quasar, quasarUserOptions).use(router).use(i18n).mount('#app')
+app.use(Quasar, quasarUserOptions).use(i18n)
+const initialLocale = resolveLocale(
+  Cookies.get(`${import.meta.env.VITE_APP_PREFIX}.lang`),
+  navigator.language,
+)
+try {
+  await setI18nLanguage(i18n.global, initialLocale)
+} catch {
+  await setI18nLanguage(i18n.global, 'ko')
+}
+app.use(router)
+await router.isReady()
+app.mount('#app')

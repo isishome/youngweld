@@ -4,40 +4,25 @@ import {
   planDistribution,
   rollbackFields,
   sanitizeAwsError,
-  validateFunctionRedirect,
+  validateFunctionRequest,
 } from '../scripts/configure-cloudfront.mjs'
 
-test('AWS TestFunction 응답 래퍼와 302 위치를 검사한다', () => {
-  const result = (response) => ({
-    FunctionErrorMessage: '',
-    FunctionOutput: JSON.stringify({ response }),
-  })
-  const response = {
-    statusCode: 302,
-    statusDescription: 'Found',
-    cookies: {},
-    headers: { location: { value: '/#/company' } },
+test('AWS TestFunction request 래퍼와 rewrite 결과를 검사한다', () => {
+  const result = {
+    FunctionOutput: JSON.stringify({ request: { uri: '/index.html' } }),
   }
-  assert.doesNotThrow(() =>
-    validateFunctionRedirect(result(response), '/#/company'),
-  )
-  assert.throws(() => validateFunctionRedirect(result(response), '/#/support'))
+  assert.doesNotThrow(() => validateFunctionRequest(result, '/index.html'))
+  assert.throws(() => validateFunctionRequest(result, '/missing.js'))
   assert.throws(() =>
-    validateFunctionRedirect(
-      result({ ...response, statusCode: 200 }),
-      '/#/company',
+    validateFunctionRequest(
+      { FunctionOutput: '{"uri":"/index.html"}' },
+      '/index.html',
     ),
   )
   assert.throws(() =>
-    validateFunctionRedirect(
-      { FunctionOutput: JSON.stringify(response) },
-      '/#/company',
-    ),
-  )
-  assert.throws(() =>
-    validateFunctionRedirect(
+    validateFunctionRequest(
       { FunctionErrorMessage: 'SyntaxError' },
-      '/#/company',
+      '/index.html',
     ),
   )
 })

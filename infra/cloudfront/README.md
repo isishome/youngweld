@@ -1,10 +1,10 @@
 # S3·CloudFront 설정
 
-앱은 해시 라우팅을 사용한다. `/company/`를 그대로 S3에 요청하면 객체가 없거나 HTML fallback을 받아 홈이 표시될 수 있다. CloudFront의 기본 루트 객체는 하위 경로에 자동 적용되지 않는다.
+앱은 Web History 라우팅을 사용한다. CloudFront 함수는 알려진 앱 경로의 요청 URI를 `/index.html`로 내부 변환하고, 브라우저에는 `/company` 같은 경로를 유지한다. CloudFront의 기본 루트 객체는 하위 경로에 자동 적용되지 않는다.
 
 ## GitHub Actions로 적용
 
-기존 `aws_cicd` 환경의 AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, CLOUDFRONT_DISTRIBUTION_ID를 그대로 사용한다. 사이트 배포가 먼저 성공한 뒤 `.github/workflows/cloudfront.yml`을 main에서 수동 실행한다.
+기존 `aws_cicd` 환경의 AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, CLOUDFRONT_DISTRIBUTION_ID를 그대로 사용한다. `.github/workflows/cloudfront.yml`은 수동 실행한다. 해시 라우팅에서 처음 전환할 때는 아래 전환 순서를 따른다.
 
 1. `apply=false`로 실행해 조회 결과와 복구 필드를 보관한다. 이 단계는 AWS 리소스를 변경하지 않는다.
 2. 다른 viewer-request 함수·Lambda@Edge·응답 정책이 있으면 자동 교체를 거부한다. 기존 동작을 검토하고 통합해야 한다.
@@ -18,7 +18,7 @@
 ## 적용 순서
 
 1. 현재 배포 설정과 ETag를 `aws cloudfront get-distribution-config --id <배포-ID>`로 보관한다. 기존 Function/Lambda@Edge 연결과 응답 정책을 확인한다. 기존 연결을 덮어쓰지 말고 로직을 합친다.
-2. 사이트 코드를 먼저 배포하고 기존 `/#/company`, 언어·테마·제품 PDF·지도를 확인한다. 새 앱은 기존 CDN이 직접 경로에 HTML을 제공하는 경우에도 알려진 경로를 해시로 정규화한다.
+2. 최초 전환은 CloudFront 함수 변경을 먼저 반영하고 Deployed 상태와 직접 경로의 HTML 응답을 확인한 뒤 Web History 앱을 배포한다. 기존 hash 리디렉션 함수와 새 앱을 함께 운영하면 새로고침 시 리디렉션이 발생하므로 순서를 지킨다. main push는 사이트 자동 배포를 시작하므로 함수 변경과 앱 변경을 단계별로 반영한다.
 3. `viewer-request.js`를 CloudFront Function으로 생성한다. 런타임은 `cloudfront-js-2.0`, 이벤트는 기본 캐시 동작의 **viewer-request**다. 개발 단계에서 아래 사례를 Test Function으로 확인한 뒤 Publish하고 연결한다. 알 수 없는 경로·이미지·PDF는 원본 요청을 유지한다.
 4. `response-headers-policy.json`을 `aws cloudfront create-response-headers-policy --cli-input-json file://infra/cloudfront/response-headers-policy.json`로 생성한다. 이미 동일한 이름의 정책이 있으면 ID·ETag를 조회해 update API를 사용한다. 반환된 ID를 기본 동작과 별도 자산 동작의 Response headers policy에 연결한다.
 5. 기본 루트 객체를 `index.html`, Viewer protocol policy를 `redirect-to-https`, 압축을 활성화한다. HTML의 최소 TTL은 0이어야 한다. `/assets/*`는 긴 TTL, 변경 가능한 `/static/*`는 최대 하루를 사용한다. 기존 캐시 정책의 최소 TTL이 원본 `no-cache`를 무시하지 않는지 확인한다.
@@ -30,10 +30,10 @@
 ## 검증
 
 - `/` → 200 HTML.
-- `/company`, `/company/` → 302 `/#/company`, 최종 회사 페이지.
+- `/company`, `/company/` → 200 HTML, 주소는 `/company`로 정규화되며 회사 페이지 표시.
 - `/product/submerged/YESAWCG-001/` → 제품 상세; 새로고침 후 동일.
 - `/support/?tag=a&tag=b` → 반복 쿼리 보존.
-- `/#/company` → 기존 링크 호환.
+- `/#/company` → 진입 시 `/company`로 변환. 내부 링크는 모두 path 주소를 사용.
 - 존재하는 PDF·이미지 → 올바른 Content-Type. 없는 JS·이미지 → 403/404, HTML 200 금지.
 - HTML·자산의 Cache-Control 확인. HTML은 재검증, 해시 자산은 immutable.
 - HTML 응답에 CSP, HSTS, X-Content-Type-Options, X-Frame-Options, Referrer-Policy 확인.

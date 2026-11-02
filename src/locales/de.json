@@ -1,0 +1,790 @@
+{
+  "pnf": "Die gesuchte Seite wurde nicht gefunden.",
+  "company": {
+    "name": "YOUNGWELD",
+    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright2": "Alle Rechte vorbehalten.",
+    "timeline": [
+      {
+        "title": "1981",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Firmengründung",
+            "time": "Februar 1981",
+            "desc": "Eröffnung in Gebäude 1, Einheit 1 des Industriewarenzentrums Gocheok",
+            "color": "secondary",
+            "icon": "home"
+          },
+          {
+            "label": "Umbenennung",
+            "time": "November 1981",
+            "desc": "Umbenennung von Youngil Electronics in Youngil Electric",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "title": "2000",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Firmenumzug",
+            "time": "Mai 2000",
+            "desc": "Umzug in das Industriehandelszentrum Incheon",
+            "color": "secondary",
+            "icon": "swap_horiz"
+          }
+        ]
+      },
+      {
+        "title": "2010",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Entwicklungsbeginn des Unterpulver-Schweißwagens",
+            "time": "März 2010",
+            "desc": "<p>Entwicklungsbeginn</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Weiterentwicklung des Unterpulver-Schweißwagens",
+            "time": "April 2010",
+            "desc": "<p>Entwicklung läuft</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Entwicklung des Unterpulver-Schweißwagens abgeschlossen",
+            "time": "Mai 2010",
+            "desc": "Entwicklung abgeschlossen",
+            "icon": "work"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "product": "Produkte",
+    "company": "Unternehmen",
+    "support": "Support",
+    "location": "Anfahrt"
+  },
+  "language": "Sprache",
+  "languageList": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "main": {
+    "detail": "Details ansehen",
+    "top": [
+      {
+        "direction": "right",
+        "src": "/static/images/main/top00.webp",
+        "align": "left",
+        "title": "UNTERPULVER-SCHWEISSWAGEN",
+        "desc": "Präzises Schweißen entlang von Führungsschienen",
+        "code": "YESAWCG-001",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
+      },
+      {
+        "direction": "left",
+        "src": "/static/images/main/top01.webp",
+        "align": "right",
+        "title": "PNEUMATISCHES PUNKTSCHWEISSEN",
+        "desc": "Digitale Steuerung synchron zum Zyklus der Schweißstromversorgung",
+        "code": "YM9601",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
+      }
+    ],
+    "section": [
+      [
+        {
+          "title": "UNTERPULVER-SCHWEISSWAGEN",
+          "desc": "Präzises Schweißen entlang von Führungsschienen",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCG-001"
+            }
+          }
+        },
+        {
+          "title": "NAHTFÜHRUNG FÜR UNTERPULVERSCHWEISSEN",
+          "desc": "Tastsensor",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWPS-001"
+            }
+          }
+        },
+        {
+          "title": "NAHTFÜHRUNG FÜR UNTERPULVERSCHWEISSEN",
+          "desc": "Steuereinheit",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCU-004"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "PNEUMATISCHES PUNKTSCHWEISSEN",
+          "desc": "Steuereinheit",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM001"
+            }
+          }
+        },
+        {
+          "title": "PANCAKE-MASCHINE",
+          "desc": "Steuereinheit",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YEPCCU-001"
+            }
+          }
+        },
+        {
+          "title": "PNEUMATISCHES PUNKTSCHWEISSEN",
+          "desc": "Steuereinheit",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM9601"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "INVERTER-LICHTBOGENSCHWEISSGERÄT",
+          "desc": "Kompaktes Inverter-Lichtbogenschweißgerät",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "inverter",
+              "code": "YEAWW-001"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "KONDENSATORSCHWEISSGERÄT",
+          "desc": "Kondensator-Widerstandspunktschweißgerät",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWW-001"
+            }
+          }
+        },
+        {
+          "title": "STROMVERSORGUNG FÜR KONDENSATOR-PUNKTSCHWEISSEN",
+          "desc": "Stromversorgung für Kondensator-Widerstandspunktschweißgeräte",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWP-001"
+            }
+          }
+        },
+        {
+          "title": "GLEICHSTROM-PUNKTSCHWEISSTRANSFORMATOR",
+          "desc": "Transformator für Gleichstrom-Widerstandspunktschweißgeräte",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWT-001"
+            }
+          }
+        }
+      ]
+    ]
+  },
+  "location": {
+    "contact": "Kontakt",
+    "address": "17-121, 105, Bangchuk-ro, Dong-gu, Incheon, Republic of Korea",
+    "phone": "82 - (32) 589 - 1160 ~ 2",
+    "fax": "82 - (32) 589 - 5095",
+    "PublicTransport": "Öffentliche Verkehrsmittel",
+    "OwnCar": "Mit dem Auto",
+    "PublicTransportInfo": [
+      "An der Station Jemulpo der Linie 1 aussteigen",
+      "Zur unterirdischen Einkaufspassage vor Ausgang 2 gehen",
+      "Vom Ausgang vor der Seonin High School 30 Meter geradeaus gehen",
+      "Bus 510 nehmen",
+      "Nach 13 Haltestellen am Industriehandelszentrum, Komplex 3 (Gebäude C), aussteigen"
+    ],
+    "OwnCarInfo": [
+      "Auf die Gyeongin-Autobahn auffahren",
+      "In Richtung Autobahnkreuz Seoun (Incheon, Seoincheon, Bupyeong) weiterfahren",
+      "Mautstelle Incheon",
+      "Rechte Ausfahrt in Richtung Dongincheon IC nehmen",
+      "An der Kreuzung Bongsudae-gil links in Richtung Bahnhof Dongincheon und Bezirksamt Dong-gu abbiegen",
+      "Eingang zum Industriewarenzentrum Incheon, Komplex 3 (Gebäude C)"
+    ]
+  },
+  "support": {
+    "searchSupport": "Hilfe durchsuchen",
+    "title": "Benötigen Sie weitere Hilfe?",
+    "contact": [
+      "Vielen Dank, dass Sie sich für Produkte von Youngil Electric entschieden haben.",
+      "Produkthandbücher finden Sie auf der Produktseite.",
+      "Bei Fragen zu unseren Produkten nutzen Sie bitte die folgenden Kontaktdaten.",
+      "Bitte geben Sie den Produktnamen oder Modellcode an, damit wir Ihnen schneller helfen können.",
+      "Telefonischer Support ist von 9 bis 17 Uhr verfügbar (koreanische Standardzeit)."
+    ],
+    "email": {
+      "icon": "email",
+      "name": "E-Mail",
+      "value": "youngweld{'@'}hanmail.net"
+    },
+    "phone": {
+      "icon": "phone_enabled",
+      "name": "Telefon",
+      "value": "82 - (32) 589 - 1160 ~ 2"
+    },
+    "section": {
+      "control": [
+        {
+          "label": "Steuerung 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Antwort"
+            }
+          ]
+        },
+        {
+          "label": "Steuerung 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Lösung"
+            }
+          ]
+        }
+      ],
+      "submerged": [
+        {
+          "label": "Unterpulver 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Antwort"
+            }
+          ]
+        },
+        {
+          "label": "Unterpulver 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Lösung"
+            }
+          ]
+        }
+      ],
+      "inverter": [
+        {
+          "label": "Inverter 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Antwort"
+            }
+          ]
+        },
+        {
+          "label": "Inverter 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Lösung"
+            }
+          ]
+        }
+      ],
+      "spot": [
+        {
+          "label": "Punkt 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Antwort"
+            }
+          ]
+        },
+        {
+          "label": "Punkt 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Lösung"
+            }
+          ]
+        }
+      ]
+    },
+    "message": {
+      "noData": "Keine passenden Hilfethemen gefunden."
+    }
+  },
+  "section": [
+    {
+      "code": "control",
+      "icon": "/static/images/support/control.webp",
+      "name": "Steuerungen"
+    },
+    {
+      "code": "submerged",
+      "icon": "/static/images/support/submerged.webp",
+      "name": "Unterpulverschweißen"
+    },
+    {
+      "code": "inverter",
+      "icon": "/static/images/support/inverter.webp",
+      "name": "Inverterschweißen"
+    },
+    {
+      "code": "spot",
+      "icon": "/static/images/support/spot.webp",
+      "name": "Punktschweißen"
+    }
+  ],
+  "product": {
+    "manual": "Handbuch ansehen",
+    "list": [
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesrwcu001.webp",
+        "name": "Nahtschweißsteuerung",
+        "desc": [
+          {
+            "name": "Schweißversorgungsspannung",
+            "contents": "Einphasig AC220V/380V"
+          },
+          {
+            "name": "Frequenz der Schweißstromversorgung",
+            "contents": "50/60HZ (automatische Umschaltung)"
+          },
+          {
+            "name": "Steuerstromversorgung",
+            "contents": "Einphasig AC110V +10% -10%"
+          },
+          {
+            "name": "Leistungsregelung",
+            "contents": "SCR-Phasenanschnittsteuerung"
+          },
+          {
+            "name": "Zeitsteuerung",
+            "contents": "Digitale Steuerung synchron zum Zyklus der Schweißstromversorgung"
+          },
+          {
+            "name": "Druck-Ausgangssignal",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Startsignal",
+            "contents": "Start über Fußschalter (ein Eingang)"
+          }
+        ],
+        "code": "SEAM01",
+        "manual": "/static/manual/SEAM01.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu001.webp",
+        "name": "Kondensator-Punktschweißsteuerung",
+        "code": "YECRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu002.webp",
+        "name": "Kondensator-Punktschweißsteuerung",
+        "code": "YECRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeaswcu001.webp",
+        "name": "Bolzenschweißsteuerung",
+        "code": "YEASWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu001.webp",
+        "name": "Punktschweißsteuerung",
+        "code": "YESPRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu002.webp",
+        "name": "Punktschweißsteuerung",
+        "code": "YESPRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeasrwcu002.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Pneumatische Punktschweißsteuerung",
+        "desc": [
+          {
+            "name": "Schweißversorgungsspannung",
+            "contents": "Einphasig AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Frequenz der Schweißstromversorgung",
+            "contents": "50/60HZ (automatische Umschaltung)"
+          },
+          {
+            "name": "Steuerstromversorgung",
+            "contents": "Einphasig AC110V +10% -10%"
+          },
+          {
+            "name": "Leistungsregelung",
+            "contents": "SCR-Phasenanschnittsteuerung"
+          },
+          {
+            "name": "Zeitsteuerung",
+            "contents": "Asynchrone Zeitsteuerung<br>(Die Schweißdauer wird digital synchron zur Frequenz der Schweißstromversorgung gesteuert)"
+          },
+          {
+            "name": "Druck-Ausgangssignal",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Startsignal",
+            "contents": "Start über Fußschalter"
+          }
+        ],
+        "code": "YM002",
+        "manual": "/static/manual/YM002.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym001.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Pneumatische Punktschweißsteuerung",
+        "desc": [
+          {
+            "name": "Schweißversorgungsspannung",
+            "contents": "Einphasig AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Frequenz der Schweißstromversorgung",
+            "contents": "50/60HZ (automatische Umschaltung)"
+          },
+          {
+            "name": "Steuerstromversorgung",
+            "contents": "Einphasig AC110V +10% -10%"
+          },
+          {
+            "name": "Leistungsregelung",
+            "contents": "SCR-Phasenanschnittsteuerung"
+          },
+          {
+            "name": "Zeitsteuerung",
+            "contents": "Asynchrone Zeitsteuerung"
+          },
+          {
+            "name": "Druck-Ausgangssignal",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Startsignal",
+            "contents": "Start über Fußschalter"
+          }
+        ],
+        "code": "YM001",
+        "manual": "/static/manual/YM001.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym9601.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Pneumatische Punktschweißsteuerung",
+        "desc": [
+          {
+            "name": "Schweißversorgungsspannung",
+            "contents": "Einphasig AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Frequenz der Schweißstromversorgung",
+            "contents": "50/60HZ (automatische Umschaltung)"
+          },
+          {
+            "name": "Steuerstromversorgung",
+            "contents": "Einphasig AC110V +10% -10%"
+          },
+          {
+            "name": "Leistungsregelung",
+            "contents": "SCR-Phasenanschnittsteuerung"
+          },
+          {
+            "name": "Zeitsteuerung",
+            "contents": "Digitale Steuerung synchron zum Zyklus der Schweißstromversorgung"
+          },
+          {
+            "name": "Wärmesteuerung",
+            "contents": "10 Einstellungen (zwei Drucksteuerkanäle)"
+          },
+          {
+            "name": "Druck-Ausgangssignal",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Startsignal",
+            "contents": "Zwei EIN-Eingänge zum Starten<br>(FOOT-1 aktiviert Druckausgang SOL-1; FOOT-2 aktiviert Druckausgang SOL-2)"
+          }
+        ],
+        "code": "YM9601",
+        "manual": "/static/manual/YM9601.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yepccu001.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Pancake-Steuerung",
+        "code": "YEPCCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu001.webp",
+        "name": "Tandem-Steuereinheit",
+        "code": "YESAWCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu002.webp",
+        "name": "Einzel-Steuereinheit",
+        "code": "YESAWCU-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawpd001.webp",
+        "name": "Hauptstromverteiler",
+        "code": "YESAWPD-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu003.webp",
+        "name": "Hauptstrom-Steuereinheit",
+        "code": "YESAWCU-003"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu004.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Steuereinheit zur Schweißnahtführung",
+        "code": "YESAWCU-004"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl001.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Schlitten zur Schweißnahtführung",
+        "code": "YESAWSL-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl002.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Schlitten zur Schweißnahtführung",
+        "code": "YESAWSL-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawps001.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Tastsensor zur Schweißnahtführung",
+        "code": "YESAWPS-001",
+        "manual": "/static/manual/YESAWPS-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcg001.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Schweißwagen",
+        "desc": [
+          {
+            "name": "Steuerstromversorgungsspannung",
+            "contents": "Einphasig AC 110V, 40V, 0V, 40V"
+          },
+          {
+            "name": "Schweißstrombereich",
+            "contents": "AC oder DC 250 ~ 1500A"
+          },
+          {
+            "name": "Drahtvorschubgeschwindigkeit",
+            "contents": "0.5 ~ 4m/min"
+          },
+          {
+            "name": "Regelung der Drahtvorschubgeschwindigkeit",
+            "contents": "Lichtbogenspannungsrückführung"
+          },
+          {
+            "name": "Geeigneter Drahtdurchmesser",
+            "contents": "2.4, 3.2, 4.0, 4.8, 6.4ø"
+          },
+          {
+            "name": "Innendurchmesser der geeigneten Drahtspule",
+            "contents": "300ø Breite 100m/m"
+          },
+          {
+            "name": "Außendurchmesser der geeigneten Drahtspule",
+            "contents": "450ø Gewicht 10 ~ 24kg"
+          },
+          {
+            "name": "Fahrgeschwindigkeit des Schweißwagens",
+            "contents": "12~120cm/min"
+          },
+          {
+            "name": "Horizontale Einstellung",
+            "contents": "50m/m"
+          },
+          {
+            "name": "Vertikale Einstellung",
+            "contents": "35m/m"
+          },
+          {
+            "name": "Fassungsvermögen des Pulverbehälters",
+            "contents": "5ℓ"
+          },
+          {
+            "name": "Gewicht",
+            "contents": ""
+          },
+          {
+            "name": "Standard-Stromdüsen",
+            "contents": "4.0ø, 4.8ø"
+          }
+        ],
+        "code": "YESAWCG-001",
+        "manual": "/static/manual/YESAWCG-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawm001.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Schweißgerät",
+        "code": "YESAWM-001"
+      },
+      {
+        "sec": "inverter",
+        "src": "/static/images/products/yeaww001.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Inverter-Schweißgerät",
+        "code": "YEAWW-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwt001.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Gleichstrom-Punktschweißtransformator",
+        "code": "YERWT-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwp001.webp",
+        "name": "Stromversorgung für Kondensator-Punktschweißen",
+        "code": "YERWP-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerww001.webp",
+        "type": {
+          "name": "BELIEBT",
+          "color": "text-blue"
+        },
+        "name": "Kondensatorschweißgerät",
+        "code": "YERWW-001"
+      }
+    ]
+  },
+  "accessibility": {
+    "menu": "Menü öffnen",
+    "darkMode": "Dunkelmodus",
+    "backToTop": "Nach oben"
+  },
+  "languageLoadError": "Diese Sprache konnte nicht geladen werden. Bitte versuchen Sie es erneut."
+}

@@ -16,13 +16,14 @@
           round
           class="lt-md"
           icon="menu"
+          data-testid="navigation-menu"
           :aria-label="t('accessibility.menu')"
           :aria-expanded="leftDrawerOpen"
           @click="toggleLeftDrawer"
         />
       </div>
       <div
-        class="row justify-center items-center q-gutter-x-xs col-xs-4 col-sm-6 col-xl-4"
+        class="row justify-center items-center q-gutter-x-xs col-xs-4 col-sm-8 col-xl-6"
       >
         <ul
           class="full-width f--tabs row items-center"
@@ -33,12 +34,13 @@
         </ul>
       </div>
       <div class="row justify-end items-center q-gutter-x-sm col-xs-4 col-sm">
-        <div class="gt-sm" style="padding: 2px 0 0 8vw">
+        <div class="gt-sm">
           <q-btn
             flat
             dense
             size="13px"
             icon="language"
+            data-testid="language-menu"
             :label="$q.screen.gt.sm ? t('language') : ''"
           >
             <q-popup-proxy>
@@ -48,7 +50,8 @@
                   :key="loc.value"
                   clickable
                   v-close-popup
-                  @click="lang = loc.value"
+                  :disable="languageLoading"
+                  @click="changeLanguage(loc.value)"
                 >
                   <q-item-section>
                     <q-item-label>{{ loc.label }}</q-item-label>
@@ -98,10 +101,12 @@
               emit-value
               map-options
               behavior="menu"
-              v-model="lang"
+              :model-value="lang"
+              :loading="languageLoading"
+              :disable="languageLoading"
               :options="localeOptions"
               :label="t('language')"
-              @update:model-value="leftDrawerOpen = false"
+              @update:model-value="changeLanguage"
             />
           </q-item-section>
         </q-item>
@@ -110,6 +115,9 @@
       </q-list>
     </q-drawer>
     <q-page-container>
+      <div v-if="languageError" role="alert" class="q-pa-md text-negative">
+        {{ t('languageLoadError') }}
+      </div>
       <q-page :style-fn="myTweak">
         <slot name="contents"></slot>
         <q-page-scroller
@@ -140,7 +148,8 @@
 import { ref, reactive, computed, watch } from 'vue'
 import { useQuasar } from 'quasar'
 import { useI18n } from 'vue-i18n'
-import { resolveLocale } from '../../i18n.js'
+import { setI18nLanguage } from '../../i18n.js'
+import { LOCALE_OPTIONS } from '../../locales/registry.js'
 
 export default {
   setup() {
@@ -169,31 +178,31 @@ export default {
     }
 
     // language
-    const { t, tm, locale } = useI18n({ useScope: 'global' })
-    const localeOptions = computed(() =>
-      Object.entries(tm('languageList')).map(([key, value]) => {
-        return { value: key, label: value }
-      }),
-    )
-    const lang = ref(
-      resolveLocale($q.cookies.get(`${prefix}.lang`), $q.lang.getLocale()),
-    )
-
-    watch(
-      () => lang.value,
-      (val, old) => {
-        if (val !== old) {
-          locale.value = val
-          document.querySelector('html').setAttribute('lang', val)
-          $q.cookies.set(`${prefix}.lang`, val, {
-            path: '/',
-            expires: 365,
-            sameSite: 'Lax',
-            secure: window.location.protocol === 'https:',
-          })
-        }
-      },
-    )
+    const composer = useI18n({ useScope: 'global' })
+    const { t, locale } = composer
+    const localeOptions = LOCALE_OPTIONS
+    const languageLoading = ref(false)
+    const languageError = ref(false)
+    const changeLanguage = async (value) => {
+      if (languageLoading.value || value === locale.value) return
+      languageLoading.value = true
+      languageError.value = false
+      try {
+        await setI18nLanguage(composer, value)
+        $q.cookies.set(`${prefix}.lang`, value, {
+          path: '/',
+          expires: 365,
+          sameSite: 'Lax',
+          secure: window.location.protocol === 'https:',
+        })
+        leftDrawerOpen.value = false
+      } catch {
+        languageError.value = true
+      } finally {
+        languageLoading.value = false
+      }
+    }
+    const lang = computed(() => locale.value)
 
     // dark
     const isDark = ref(
@@ -233,6 +242,9 @@ export default {
       lang,
       t,
       localeOptions,
+      languageLoading,
+      languageError,
+      changeLanguage,
       isDark,
       onChangeDark,
       leftDrawerOpen,

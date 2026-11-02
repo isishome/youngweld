@@ -77,6 +77,11 @@
                 flat
                 class="product bg-transparent"
                 :id="p.code"
+                :aria-current="
+                  code && p.code.toLowerCase() === code.toLowerCase()
+                    ? 'true'
+                    : undefined
+                "
                 :class="
                   p.code && code && p.code.toLowerCase() === code.toLowerCase()
                     ? 'marker'
@@ -84,8 +89,13 @@
                 "
               >
                 <q-separator class="q-mt-xl" />
-                <div
-                  class="img-wrap"
+                <router-link
+                  class="img-wrap product-link"
+                  :to="{
+                    name: 'product-select',
+                    params: { sec: p.sec, code: p.code },
+                  }"
+                  :aria-label="`${p.name} (${p.code})`"
                   :class="$q.screen.lt.md ? 'q-py-md' : 'q-py-xl'"
                 >
                   <q-img
@@ -94,7 +104,7 @@
                     :ratio="1"
                     :width="$q.screen.lt.md ? '80%' : '60%'"
                   />
-                </div>
+                </router-link>
                 <q-card-section class="no-padding">
                   <q-chip
                     size="sm"
@@ -113,9 +123,15 @@
                   </q-chip>
                 </q-card-section>
                 <q-card-section class="no-padding">
-                  <div class="text-h6 product-name ellipsis">
+                  <router-link
+                    class="text-h6 product-name product-link"
+                    :to="{
+                      name: 'product-select',
+                      params: { sec: p.sec, code: p.code },
+                    }"
+                  >
                     {{ p.name }}
-                  </div>
+                  </router-link>
                 </q-card-section>
                 <q-card-section class="q-px-none q-pt-none">
                   <div
@@ -131,8 +147,7 @@
                     <div>
                       <a
                         class="manual text-h6 product-name text-subtitle1 text-red-8 ellipsis"
-                        :href="`${p.manual}?download=1`"
-                        :download="`${p.code}_${t('product.manual')}.pdf`"
+                        :href="p.manual"
                       >
                         <q-icon size="30px" name="picture_as_pdf" />
                         {{ t('product.manual') }}
@@ -237,6 +252,27 @@ export default {
 
 .section-btn {
   border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.product-name {
+  overflow-wrap: anywhere;
+}
+
+.product-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-link:hover,
+.product-link:focus-visible {
+  text-decoration: underline;
+}
+
+.product-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 .body--light .section-btn.selected {

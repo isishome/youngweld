@@ -1,0 +1,790 @@
+{
+  "pnf": "Запрашиваемая страница не найдена.",
+  "company": {
+    "name": "YOUNGWELD",
+    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright2": "Все права защищены.",
+    "timeline": [
+      {
+        "title": "1981",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Основание компании",
+            "time": "Февраль 1981 г.",
+            "desc": "Открытие в корпусе 1, помещении 1 центра промышленных товаров Кочхок",
+            "color": "secondary",
+            "icon": "home"
+          },
+          {
+            "label": "Изменение названия",
+            "time": "Ноябрь 1981 г.",
+            "desc": "Переименование Youngil Electronics в Youngil Electric",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "title": "2000",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Переезд компании",
+            "time": "Май 2000 г.",
+            "desc": "Переезд в центр промышленной дистрибуции Инчхона",
+            "color": "secondary",
+            "icon": "swap_horiz"
+          }
+        ]
+      },
+      {
+        "title": "2010",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Начало разработки каретки для сварки под флюсом",
+            "time": "Март 2010 г.",
+            "desc": "<p>Начало разработки</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Продолжение разработки каретки для сварки под флюсом",
+            "time": "Апрель 2010 г.",
+            "desc": "<p>Разработка продолжается</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Завершение разработки каретки для сварки под флюсом",
+            "time": "Май 2010 г.",
+            "desc": "Разработка завершена",
+            "icon": "work"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "product": "Продукция",
+    "company": "Компания",
+    "support": "Поддержка",
+    "location": "Как добраться"
+  },
+  "language": "Язык",
+  "languageList": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "main": {
+    "detail": "Подробнее",
+    "top": [
+      {
+        "direction": "right",
+        "src": "/static/images/main/top00.webp",
+        "align": "left",
+        "title": "КАРЕТКА ДЛЯ СВАРКИ ПОД ФЛЮСОМ",
+        "desc": "Точная сварка по направляющим рельсам",
+        "code": "YESAWCG-001",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
+      },
+      {
+        "direction": "left",
+        "src": "/static/images/main/top01.webp",
+        "align": "right",
+        "title": "ПНЕВМАТИЧЕСКАЯ ТОЧЕЧНАЯ СВАРКА",
+        "desc": "Цифровое управление, синхронизированное с циклом питания сварки",
+        "code": "YM9601",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
+      }
+    ],
+    "section": [
+      [
+        {
+          "title": "КАРЕТКА ДЛЯ СВАРКИ ПОД ФЛЮСОМ",
+          "desc": "Точная сварка по направляющим рельсам",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCG-001"
+            }
+          }
+        },
+        {
+          "title": "УСТРОЙСТВО СЛЕЖЕНИЯ ЗА СТЫКОМ ДЛЯ СВАРКИ ПОД ФЛЮСОМ",
+          "desc": "Щуповой датчик",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWPS-001"
+            }
+          }
+        },
+        {
+          "title": "УСТРОЙСТВО СЛЕЖЕНИЯ ЗА СТЫКОМ ДЛЯ СВАРКИ ПОД ФЛЮСОМ",
+          "desc": "Блок управления",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCU-004"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "ПНЕВМАТИЧЕСКАЯ ТОЧЕЧНАЯ СВАРКА",
+          "desc": "Блок управления",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM001"
+            }
+          }
+        },
+        {
+          "title": "МАШИНА PANCAKE",
+          "desc": "Блок управления",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YEPCCU-001"
+            }
+          }
+        },
+        {
+          "title": "ПНЕВМАТИЧЕСКАЯ ТОЧЕЧНАЯ СВАРКА",
+          "desc": "Блок управления",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM9601"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "ИНВЕРТОРНЫЙ АППАРАТ ДУГОВОЙ СВАРКИ",
+          "desc": "Компактный инверторный аппарат дуговой сварки",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "inverter",
+              "code": "YEAWW-001"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "АППАРАТ КОНДЕНСАТОРНОЙ СВАРКИ",
+          "desc": "Аппарат конденсаторной контактной точечной сварки",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWW-001"
+            }
+          }
+        },
+        {
+          "title": "ИСТОЧНИК ПИТАНИЯ ДЛЯ КОНДЕНСАТОРНОЙ ТОЧЕЧНОЙ СВАРКИ",
+          "desc": "Источник питания для аппаратов конденсаторной контактной точечной сварки",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWP-001"
+            }
+          }
+        },
+        {
+          "title": "ТРАНСФОРМАТОР ТОЧЕЧНОЙ СВАРКИ ПОСТОЯННОГО ТОКА",
+          "desc": "Трансформатор для аппаратов контактной точечной сварки постоянного тока",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWT-001"
+            }
+          }
+        }
+      ]
+    ]
+  },
+  "location": {
+    "contact": "Контакты",
+    "address": "17-121, 105, Bangchuk-ro, Dong-gu, Incheon, Republic of Korea",
+    "phone": "82 - (32) 589 - 1160 ~ 2",
+    "fax": "82 - (32) 589 - 5095",
+    "PublicTransport": "Общественным транспортом",
+    "OwnCar": "На автомобиле",
+    "PublicTransportInfo": [
+      "Выйдите на станции Чемульпхо линии 1",
+      "Пройдите в подземную торговую галерею перед выходом 2",
+      "От выхода перед школой Сонин пройдите прямо 30 метров",
+      "Сядьте на автобус 510",
+      "Через 13 остановок выйдите у центра промышленной дистрибуции, комплекс 3 (корпус C)"
+    ],
+    "OwnCarInfo": [
+      "Выезжайте на скоростную автомагистраль Кёнин",
+      "Продолжайте движение к развязке Соун (Инчхон, Соинчхон, Пупхён)",
+      "Пункт оплаты Инчхон",
+      "Сверните на правый съезд в направлении Dongincheon IC",
+      "На перекрёстке Bongsudae-gil поверните налево к станции Тонинчхон и администрации района Тонгу",
+      "Въезд в центр промышленных товаров Инчхона, комплекс 3 (корпус C)"
+    ]
+  },
+  "support": {
+    "searchSupport": "Поиск по справке",
+    "title": "Нужна дополнительная помощь?",
+    "contact": [
+      "Благодарим за выбор продукции Youngil Electric.",
+      "Руководства доступны на странице продукции.",
+      "По вопросам о продукции обращайтесь по указанным ниже контактам.",
+      "Укажите название изделия или код модели, чтобы мы могли помочь быстрее.",
+      "Телефонная поддержка доступна с 9:00 до 17:00 по корейскому стандартному времени."
+    ],
+    "email": {
+      "icon": "email",
+      "name": "Электронная почта",
+      "value": "youngweld{'@'}hanmail.net"
+    },
+    "phone": {
+      "icon": "phone_enabled",
+      "name": "Телефон",
+      "value": "82 - (32) 589 - 1160 ~ 2"
+    },
+    "section": {
+      "control": [
+        {
+          "label": "Управление 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Ответ"
+            }
+          ]
+        },
+        {
+          "label": "Управление 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Решение"
+            }
+          ]
+        }
+      ],
+      "submerged": [
+        {
+          "label": "Под флюсом 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Ответ"
+            }
+          ]
+        },
+        {
+          "label": "Под флюсом 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Решение"
+            }
+          ]
+        }
+      ],
+      "inverter": [
+        {
+          "label": "Инвертор 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Ответ"
+            }
+          ]
+        },
+        {
+          "label": "Инвертор 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Решение"
+            }
+          ]
+        }
+      ],
+      "spot": [
+        {
+          "label": "Точечная 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Ответ"
+            }
+          ]
+        },
+        {
+          "label": "Точечная 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Решение"
+            }
+          ]
+        }
+      ]
+    },
+    "message": {
+      "noData": "Подходящие темы справки не найдены."
+    }
+  },
+  "section": [
+    {
+      "code": "control",
+      "icon": "/static/images/support/control.webp",
+      "name": "Контроллеры"
+    },
+    {
+      "code": "submerged",
+      "icon": "/static/images/support/submerged.webp",
+      "name": "Сварка под флюсом"
+    },
+    {
+      "code": "inverter",
+      "icon": "/static/images/support/inverter.webp",
+      "name": "Инверторная сварка"
+    },
+    {
+      "code": "spot",
+      "icon": "/static/images/support/spot.webp",
+      "name": "Точечная сварка"
+    }
+  ],
+  "product": {
+    "manual": "Открыть руководство",
+    "list": [
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesrwcu001.webp",
+        "name": "Блок управления шовной сваркой",
+        "desc": [
+          {
+            "name": "Напряжение питания сварки",
+            "contents": "Однофазное AC220V/380V"
+          },
+          {
+            "name": "Частота питания сварки",
+            "contents": "50/60HZ (автоматическое переключение)"
+          },
+          {
+            "name": "Питание управления",
+            "contents": "Однофазное AC110V +10% -10%"
+          },
+          {
+            "name": "Способ регулирования мощности",
+            "contents": "Фазовое управление SCR"
+          },
+          {
+            "name": "Способ управления временем",
+            "contents": "Цифровое управление, синхронизированное с циклом питания сварки"
+          },
+          {
+            "name": "Выходной сигнал прижима",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Сигнал запуска",
+            "contents": "Запуск ножным выключателем (один вход)"
+          }
+        ],
+        "code": "SEAM01",
+        "manual": "/static/manual/SEAM01.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu001.webp",
+        "name": "Контроллер конденсаторной точечной сварки",
+        "code": "YECRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu002.webp",
+        "name": "Контроллер конденсаторной точечной сварки",
+        "code": "YECRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeaswcu001.webp",
+        "name": "Контроллер приварки шпилек",
+        "code": "YEASWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu001.webp",
+        "name": "Контроллер точечной сварки",
+        "code": "YESPRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu002.webp",
+        "name": "Контроллер точечной сварки",
+        "code": "YESPRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeasrwcu002.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Контроллер пневматической точечной сварки",
+        "desc": [
+          {
+            "name": "Напряжение питания сварки",
+            "contents": "Однофазное AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Частота питания сварки",
+            "contents": "50/60HZ (автоматическое переключение)"
+          },
+          {
+            "name": "Питание управления",
+            "contents": "Однофазное AC110V +10% -10%"
+          },
+          {
+            "name": "Способ регулирования мощности",
+            "contents": "Фазовое управление SCR"
+          },
+          {
+            "name": "Способ управления временем",
+            "contents": "Асинхронное управление временем<br>(Длительность сварки управляется цифровым способом синхронно с частотой питания сварки)"
+          },
+          {
+            "name": "Выходной сигнал прижима",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Сигнал запуска",
+            "contents": "Запуск ножным выключателем"
+          }
+        ],
+        "code": "YM002",
+        "manual": "/static/manual/YM002.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym001.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Контроллер пневматической точечной сварки",
+        "desc": [
+          {
+            "name": "Напряжение питания сварки",
+            "contents": "Однофазное AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Частота питания сварки",
+            "contents": "50/60HZ (автоматическое переключение)"
+          },
+          {
+            "name": "Питание управления",
+            "contents": "Однофазное AC110V +10% -10%"
+          },
+          {
+            "name": "Способ регулирования мощности",
+            "contents": "Фазовое управление SCR"
+          },
+          {
+            "name": "Способ управления временем",
+            "contents": "Асинхронное управление временем"
+          },
+          {
+            "name": "Выходной сигнал прижима",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Сигнал запуска",
+            "contents": "Запуск ножным выключателем"
+          }
+        ],
+        "code": "YM001",
+        "manual": "/static/manual/YM001.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym9601.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Контроллер пневматической точечной сварки",
+        "desc": [
+          {
+            "name": "Напряжение питания сварки",
+            "contents": "Однофазное AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Частота питания сварки",
+            "contents": "50/60HZ (автоматическое переключение)"
+          },
+          {
+            "name": "Питание управления",
+            "contents": "Однофазное AC110V +10% -10%"
+          },
+          {
+            "name": "Способ регулирования мощности",
+            "contents": "Фазовое управление SCR"
+          },
+          {
+            "name": "Способ управления временем",
+            "contents": "Цифровое управление, синхронизированное с циклом питания сварки"
+          },
+          {
+            "name": "Управление нагревом",
+            "contents": "10 настроек (два канала управления прижимом)"
+          },
+          {
+            "name": "Выходной сигнал прижима",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Сигнал запуска",
+            "contents": "Два входа ON для запуска<br>(FOOT-1 активирует выход прижима SOL-1; FOOT-2 активирует выход прижима SOL-2)"
+          }
+        ],
+        "code": "YM9601",
+        "manual": "/static/manual/YM9601.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yepccu001.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Контроллер Pancake",
+        "code": "YEPCCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu001.webp",
+        "name": "Тандемный блок управления",
+        "code": "YESAWCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu002.webp",
+        "name": "Одиночный блок управления",
+        "code": "YESAWCU-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawpd001.webp",
+        "name": "Блок распределения основного питания",
+        "code": "YESAWPD-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu003.webp",
+        "name": "Блок управления основным питанием",
+        "code": "YESAWCU-003"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu004.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Блок управления слежением за стыком",
+        "code": "YESAWCU-004"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl001.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Суппорт слежения за стыком",
+        "code": "YESAWSL-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl002.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Суппорт слежения за стыком",
+        "code": "YESAWSL-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawps001.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Щуповой датчик слежения за стыком",
+        "code": "YESAWPS-001",
+        "manual": "/static/manual/YESAWPS-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcg001.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Сварочная каретка",
+        "desc": [
+          {
+            "name": "Напряжение питания управления",
+            "contents": "Однофазное AC 110V, 40V, 0V, 40V"
+          },
+          {
+            "name": "Диапазон сварочного тока",
+            "contents": "AC или DC 250 ~ 1500A"
+          },
+          {
+            "name": "Скорость подачи проволоки",
+            "contents": "0.5 ~ 4m/min"
+          },
+          {
+            "name": "Способ регулирования скорости подачи проволоки",
+            "contents": "Обратная связь по напряжению дуги"
+          },
+          {
+            "name": "Допустимый диаметр проволоки",
+            "contents": "2.4, 3.2, 4.0, 4.8, 6.4ø"
+          },
+          {
+            "name": "Допустимый внутренний диаметр катушки",
+            "contents": "300ø ширина 100m/m"
+          },
+          {
+            "name": "Допустимый наружный диаметр катушки",
+            "contents": "450ø масса 10 ~ 24kg"
+          },
+          {
+            "name": "Скорость движения каретки",
+            "contents": "12~120cm/min"
+          },
+          {
+            "name": "Горизонтальная регулировка",
+            "contents": "50m/m"
+          },
+          {
+            "name": "Вертикальная регулировка",
+            "contents": "35m/m"
+          },
+          {
+            "name": "Вместимость бункера флюса",
+            "contents": "5ℓ"
+          },
+          {
+            "name": "Масса",
+            "contents": ""
+          },
+          {
+            "name": "Стандартные контактные наконечники",
+            "contents": "4.0ø, 4.8ø"
+          }
+        ],
+        "code": "YESAWCG-001",
+        "manual": "/static/manual/YESAWCG-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawm001.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Сварочный аппарат",
+        "code": "YESAWM-001"
+      },
+      {
+        "sec": "inverter",
+        "src": "/static/images/products/yeaww001.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Инверторный сварочный аппарат",
+        "code": "YEAWW-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwt001.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Трансформатор точечной сварки постоянного тока",
+        "code": "YERWT-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwp001.webp",
+        "name": "Источник питания для конденсаторной точечной сварки",
+        "code": "YERWP-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerww001.webp",
+        "type": {
+          "name": "ПОПУЛЯРНОЕ",
+          "color": "text-blue"
+        },
+        "name": "Аппарат конденсаторной сварки",
+        "code": "YERWW-001"
+      }
+    ]
+  },
+  "accessibility": {
+    "menu": "Открыть меню",
+    "darkMode": "Тёмная тема",
+    "backToTop": "Наверх"
+  },
+  "languageLoadError": "Не удалось загрузить этот язык. Попробуйте ещё раз."
+}

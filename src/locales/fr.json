@@ -1,0 +1,790 @@
+{
+  "pnf": "La page recherchée est introuvable.",
+  "company": {
+    "name": "YOUNGWELD",
+    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright2": "Tous droits réservés.",
+    "timeline": [
+      {
+        "title": "1981",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Création de l’entreprise",
+            "time": "Février 1981",
+            "desc": "Ouverture dans le bâtiment 1, local 1 du centre de fournitures industrielles de Gocheok",
+            "color": "secondary",
+            "icon": "home"
+          },
+          {
+            "label": "Changement de nom",
+            "time": "Novembre 1981",
+            "desc": "Youngil Electronics devient Youngil Electric",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "title": "2000",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Déménagement de l’entreprise",
+            "time": "Mai 2000",
+            "desc": "Installation au centre de distribution industrielle d’Incheon",
+            "color": "secondary",
+            "icon": "swap_horiz"
+          }
+        ]
+      },
+      {
+        "title": "2010",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Début du développement du chariot de soudage à l’arc submergé",
+            "time": "Mars 2010",
+            "desc": "<p>Début du développement</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Poursuite du développement du chariot de soudage à l’arc submergé",
+            "time": "Avril 2010",
+            "desc": "<p>Développement en cours</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Fin du développement du chariot de soudage à l’arc submergé",
+            "time": "Mai 2010",
+            "desc": "Développement terminé",
+            "icon": "work"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "product": "Produits",
+    "company": "Entreprise",
+    "support": "Assistance",
+    "location": "Accès"
+  },
+  "language": "Langue",
+  "languageList": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "main": {
+    "detail": "Voir les détails",
+    "top": [
+      {
+        "direction": "right",
+        "src": "/static/images/main/top00.webp",
+        "align": "left",
+        "title": "CHARIOT DE SOUDAGE À L’ARC SUBMERGÉ",
+        "desc": "Soudage de précision sur rails de guidage",
+        "code": "YESAWCG-001",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
+      },
+      {
+        "direction": "left",
+        "src": "/static/images/main/top01.webp",
+        "align": "right",
+        "title": "SOUDAGE PAR POINTS PNEUMATIQUE",
+        "desc": "Commande numérique synchronisée avec le cycle d’alimentation de soudage",
+        "code": "YM9601",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
+      }
+    ],
+    "section": [
+      [
+        {
+          "title": "CHARIOT DE SOUDAGE À L’ARC SUBMERGÉ",
+          "desc": "Soudage de précision sur rails de guidage",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCG-001"
+            }
+          }
+        },
+        {
+          "title": "SUIVI DE JOINT POUR SOUDAGE À L’ARC SUBMERGÉ",
+          "desc": "Capteur à palpeur",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWPS-001"
+            }
+          }
+        },
+        {
+          "title": "SUIVI DE JOINT POUR SOUDAGE À L’ARC SUBMERGÉ",
+          "desc": "Unité de commande",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCU-004"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "SOUDAGE PAR POINTS PNEUMATIQUE",
+          "desc": "Unité de commande",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM001"
+            }
+          }
+        },
+        {
+          "title": "MACHINE PANCAKE",
+          "desc": "Unité de commande",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YEPCCU-001"
+            }
+          }
+        },
+        {
+          "title": "SOUDAGE PAR POINTS PNEUMATIQUE",
+          "desc": "Unité de commande",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM9601"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "POSTE DE SOUDAGE À L’ARC À ONDULEUR",
+          "desc": "Poste compact de soudage à l’arc à onduleur",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "inverter",
+              "code": "YEAWW-001"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "POSTE DE SOUDAGE À CONDENSATEURS",
+          "desc": "Poste de soudage par points par résistance à condensateurs",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWW-001"
+            }
+          }
+        },
+        {
+          "title": "ALIMENTATION DE SOUDAGE PAR POINTS À CONDENSATEURS",
+          "desc": "Alimentation pour postes de soudage par points par résistance à condensateurs",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWP-001"
+            }
+          }
+        },
+        {
+          "title": "TRANSFORMATEUR DE SOUDAGE PAR POINTS À COURANT CONTINU",
+          "desc": "Transformateur pour postes de soudage par points par résistance à courant continu",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWT-001"
+            }
+          }
+        }
+      ]
+    ]
+  },
+  "location": {
+    "contact": "Contact",
+    "address": "17-121, 105, Bangchuk-ro, Dong-gu, Incheon, Republic of Korea",
+    "phone": "82 - (32) 589 - 1160 ~ 2",
+    "fax": "82 - (32) 589 - 5095",
+    "PublicTransport": "Transports en commun",
+    "OwnCar": "En voiture",
+    "PublicTransportInfo": [
+      "Descendre à la station Jemulpo sur la ligne 1",
+      "Rejoindre la galerie marchande souterraine devant la sortie 2",
+      "Avancer de 30 mètres depuis la sortie située devant le lycée Seonin",
+      "Prendre le bus 510",
+      "Après 13 arrêts, descendre au centre de distribution industrielle, complexe 3 (bâtiment C)"
+    ],
+    "OwnCarInfo": [
+      "Emprunter l’autoroute Gyeongin",
+      "Continuer vers l’échangeur Seoun (Incheon, Seoincheon, Bupyeong)",
+      "Péage d’Incheon",
+      "Prendre la sortie à droite vers Dongincheon IC",
+      "Au carrefour Bongsudae-gil, tourner à gauche vers la gare de Dongincheon et la mairie de l’arrondissement Dong-gu",
+      "Entrée du centre de fournitures industrielles d’Incheon, complexe 3 (bâtiment C)"
+    ]
+  },
+  "support": {
+    "searchSupport": "Rechercher dans l’aide",
+    "title": "Besoin d’aide supplémentaire ?",
+    "contact": [
+      "Merci d’avoir choisi les produits Youngil Electric.",
+      "Les manuels sont disponibles sur la page Produits.",
+      "Pour toute question sur nos produits, veuillez utiliser les coordonnées ci-dessous.",
+      "Précisez le nom du produit ou son code modèle pour faciliter notre réponse.",
+      "L’assistance téléphonique est disponible de 9 h à 17 h (heure normale de Corée)."
+    ],
+    "email": {
+      "icon": "email",
+      "name": "E-mail",
+      "value": "youngweld{'@'}hanmail.net"
+    },
+    "phone": {
+      "icon": "phone_enabled",
+      "name": "Téléphone",
+      "value": "82 - (32) 589 - 1160 ~ 2"
+    },
+    "section": {
+      "control": [
+        {
+          "label": "Commande 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Réponse"
+            }
+          ]
+        },
+        {
+          "label": "Commande 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solution"
+            }
+          ]
+        }
+      ],
+      "submerged": [
+        {
+          "label": "Arc submergé 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Réponse"
+            }
+          ]
+        },
+        {
+          "label": "Arc submergé 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solution"
+            }
+          ]
+        }
+      ],
+      "inverter": [
+        {
+          "label": "Onduleur 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Réponse"
+            }
+          ]
+        },
+        {
+          "label": "Onduleur 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solution"
+            }
+          ]
+        }
+      ],
+      "spot": [
+        {
+          "label": "Points 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Réponse"
+            }
+          ]
+        },
+        {
+          "label": "Points 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Solution"
+            }
+          ]
+        }
+      ]
+    },
+    "message": {
+      "noData": "Aucune rubrique d’aide correspondante."
+    }
+  },
+  "section": [
+    {
+      "code": "control",
+      "icon": "/static/images/support/control.webp",
+      "name": "Contrôleurs"
+    },
+    {
+      "code": "submerged",
+      "icon": "/static/images/support/submerged.webp",
+      "name": "Soudage à l’arc submergé"
+    },
+    {
+      "code": "inverter",
+      "icon": "/static/images/support/inverter.webp",
+      "name": "Soudage à onduleur"
+    },
+    {
+      "code": "spot",
+      "icon": "/static/images/support/spot.webp",
+      "name": "Soudage par points"
+    }
+  ],
+  "product": {
+    "manual": "Consulter le manuel",
+    "list": [
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesrwcu001.webp",
+        "name": "Unité de commande de soudage à la molette",
+        "desc": [
+          {
+            "name": "Tension d’alimentation de soudage",
+            "contents": "Monophasé AC220V/380V"
+          },
+          {
+            "name": "Fréquence d’alimentation de soudage",
+            "contents": "50/60HZ (commutation automatique)"
+          },
+          {
+            "name": "Alimentation de commande",
+            "contents": "Monophasé AC110V +10% -10%"
+          },
+          {
+            "name": "Mode de régulation de puissance",
+            "contents": "Commande par angle de phase SCR"
+          },
+          {
+            "name": "Mode de temporisation",
+            "contents": "Commande numérique synchronisée avec le cycle d’alimentation de soudage"
+          },
+          {
+            "name": "Signal de sortie de pression",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Signal de démarrage",
+            "contents": "Démarrage par pédale (une entrée)"
+          }
+        ],
+        "code": "SEAM01",
+        "manual": "/static/manual/SEAM01.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu001.webp",
+        "name": "Contrôleur de soudage par points à condensateurs",
+        "code": "YECRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu002.webp",
+        "name": "Contrôleur de soudage par points à condensateurs",
+        "code": "YECRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeaswcu001.webp",
+        "name": "Contrôleur de soudage de goujons",
+        "code": "YEASWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu001.webp",
+        "name": "Contrôleur de soudage par points",
+        "code": "YESPRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu002.webp",
+        "name": "Contrôleur de soudage par points",
+        "code": "YESPRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeasrwcu002.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Contrôleur de soudage par points pneumatique",
+        "desc": [
+          {
+            "name": "Tension d’alimentation de soudage",
+            "contents": "Monophasé AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Fréquence d’alimentation de soudage",
+            "contents": "50/60HZ (commutation automatique)"
+          },
+          {
+            "name": "Alimentation de commande",
+            "contents": "Monophasé AC110V +10% -10%"
+          },
+          {
+            "name": "Mode de régulation de puissance",
+            "contents": "Commande par angle de phase SCR"
+          },
+          {
+            "name": "Mode de temporisation",
+            "contents": "Temporisation asynchrone<br>(La durée de soudage est commandée numériquement en synchronisation avec la fréquence d’alimentation de soudage)"
+          },
+          {
+            "name": "Signal de sortie de pression",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Signal de démarrage",
+            "contents": "Démarrage par pédale"
+          }
+        ],
+        "code": "YM002",
+        "manual": "/static/manual/YM002.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym001.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Contrôleur de soudage par points pneumatique",
+        "desc": [
+          {
+            "name": "Tension d’alimentation de soudage",
+            "contents": "Monophasé AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Fréquence d’alimentation de soudage",
+            "contents": "50/60HZ (commutation automatique)"
+          },
+          {
+            "name": "Alimentation de commande",
+            "contents": "Monophasé AC110V +10% -10%"
+          },
+          {
+            "name": "Mode de régulation de puissance",
+            "contents": "Commande par angle de phase SCR"
+          },
+          {
+            "name": "Mode de temporisation",
+            "contents": "Temporisation asynchrone"
+          },
+          {
+            "name": "Signal de sortie de pression",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Signal de démarrage",
+            "contents": "Démarrage par pédale"
+          }
+        ],
+        "code": "YM001",
+        "manual": "/static/manual/YM001.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym9601.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Contrôleur de soudage par points pneumatique",
+        "desc": [
+          {
+            "name": "Tension d’alimentation de soudage",
+            "contents": "Monophasé AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Fréquence d’alimentation de soudage",
+            "contents": "50/60HZ (commutation automatique)"
+          },
+          {
+            "name": "Alimentation de commande",
+            "contents": "Monophasé AC110V +10% -10%"
+          },
+          {
+            "name": "Mode de régulation de puissance",
+            "contents": "Commande par angle de phase SCR"
+          },
+          {
+            "name": "Mode de temporisation",
+            "contents": "Commande numérique synchronisée avec le cycle d’alimentation de soudage"
+          },
+          {
+            "name": "Commande de chauffe",
+            "contents": "10 réglages (deux canaux de commande de pression)"
+          },
+          {
+            "name": "Signal de sortie de pression",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Signal de démarrage",
+            "contents": "Deux entrées ON pour le démarrage<br>(FOOT-1 active la sortie de pression SOL-1 ; FOOT-2 active la sortie de pression SOL-2)"
+          }
+        ],
+        "code": "YM9601",
+        "manual": "/static/manual/YM9601.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yepccu001.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Contrôleur Pancake",
+        "code": "YEPCCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu001.webp",
+        "name": "Unité de commande tandem",
+        "code": "YESAWCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu002.webp",
+        "name": "Unité de commande simple",
+        "code": "YESAWCU-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawpd001.webp",
+        "name": "Unité de distribution de l’alimentation principale",
+        "code": "YESAWPD-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu003.webp",
+        "name": "Unité de commande de l’alimentation principale",
+        "code": "YESAWCU-003"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu004.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Unité de commande du suivi de joint",
+        "code": "YESAWCU-004"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl001.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Glissière de suivi de joint",
+        "code": "YESAWSL-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl002.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Glissière de suivi de joint",
+        "code": "YESAWSL-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawps001.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Capteur à palpeur pour suivi de joint",
+        "code": "YESAWPS-001",
+        "manual": "/static/manual/YESAWPS-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcg001.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Chariot de soudage",
+        "desc": [
+          {
+            "name": "Tension d’alimentation de commande",
+            "contents": "Monophasé AC 110V, 40V, 0V, 40V"
+          },
+          {
+            "name": "Plage de courant de soudage",
+            "contents": "AC ou DC 250 ~ 1500A"
+          },
+          {
+            "name": "Vitesse d’avance du fil",
+            "contents": "0.5 ~ 4m/min"
+          },
+          {
+            "name": "Mode de régulation de la vitesse d’avance du fil",
+            "contents": "Rétroaction de la tension d’arc"
+          },
+          {
+            "name": "Diamètre de fil compatible",
+            "contents": "2.4, 3.2, 4.0, 4.8, 6.4ø"
+          },
+          {
+            "name": "Diamètre intérieur de bobine compatible",
+            "contents": "300ø largeur 100m/m"
+          },
+          {
+            "name": "Diamètre extérieur de bobine compatible",
+            "contents": "450ø poids 10 ~ 24kg"
+          },
+          {
+            "name": "Vitesse de déplacement du chariot",
+            "contents": "12~120cm/min"
+          },
+          {
+            "name": "Réglage horizontal",
+            "contents": "50m/m"
+          },
+          {
+            "name": "Réglage vertical",
+            "contents": "35m/m"
+          },
+          {
+            "name": "Capacité de la trémie à flux",
+            "contents": "5ℓ"
+          },
+          {
+            "name": "Poids",
+            "contents": ""
+          },
+          {
+            "name": "Tubes contact standard",
+            "contents": "4.0ø, 4.8ø"
+          }
+        ],
+        "code": "YESAWCG-001",
+        "manual": "/static/manual/YESAWCG-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawm001.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Poste de soudage",
+        "code": "YESAWM-001"
+      },
+      {
+        "sec": "inverter",
+        "src": "/static/images/products/yeaww001.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Poste de soudage à onduleur",
+        "code": "YEAWW-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwt001.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Transformateur de soudage par points à courant continu",
+        "code": "YERWT-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwp001.webp",
+        "name": "Alimentation de soudage par points à condensateurs",
+        "code": "YERWP-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerww001.webp",
+        "type": {
+          "name": "POPULAIRE",
+          "color": "text-blue"
+        },
+        "name": "Poste de soudage à condensateurs",
+        "code": "YERWW-001"
+      }
+    ]
+  },
+  "accessibility": {
+    "menu": "Ouvrir le menu",
+    "darkMode": "Mode sombre",
+    "backToTop": "Retour en haut"
+  },
+  "languageLoadError": "Impossible de charger cette langue. Veuillez réessayer."
+}

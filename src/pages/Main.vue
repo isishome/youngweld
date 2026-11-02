@@ -186,13 +186,14 @@ export default {
 </script>
 <style scoped>
 .top {
-  height: 400px;
+  min-height: 400px;
   overflow: hidden;
   box-shadow: inset 0 0 0 1px rgba(100, 100, 100, 0.2);
   border-radius: 4px;
 }
 
 .top-contents {
+  min-height: inherit;
   padding: 1vw 4vw;
 }
 
@@ -202,11 +203,13 @@ export default {
 
 .top-contents img {
   --animate-duration: 1s;
-  height: 80%;
-  width: auto;
+  height: auto;
+  width: 80%;
+  max-width: 300px;
 }
 
 .title {
+  overflow-wrap: anywhere;
   font-size: 34px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -225,7 +228,7 @@ export default {
 
 @media screen and (max-width: 599px) {
   .top {
-    height: 140px;
+    min-height: 140px;
   }
 
   .top-contents p {
@@ -233,7 +236,7 @@ export default {
   }
 
   .top-contents img {
-    height: 70%;
+    width: 90%;
   }
 
   .title {
@@ -260,7 +263,7 @@ export default {
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .top {
-    height: 300px;
+    min-height: 300px;
   }
 
   .title {
@@ -278,7 +281,7 @@ export default {
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .top {
-    height: 340px;
+    min-height: 340px;
   }
 
   .title {

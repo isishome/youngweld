@@ -1,6 +1,6 @@
 # 영일전기
 
-Quasar·Vue 기반 한국어/영어 용접기 회사 사이트.
+Quasar·Vue 기반 13개 언어 지원 용접기 회사 사이트. Vue Router의 Web History를 사용해 `/company`, `/product/control/YM001`과 같은 경로로 이동한다.
 
 ## 개발
 

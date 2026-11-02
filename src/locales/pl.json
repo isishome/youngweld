@@ -1,0 +1,790 @@
+{
+  "pnf": "Nie znaleziono szukanej strony.",
+  "company": {
+    "name": "YOUNGWELD",
+    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright2": "Wszelkie prawa zastrzeżone.",
+    "timeline": [
+      {
+        "title": "1981",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Założenie firmy",
+            "time": "Luty 1981",
+            "desc": "Otwarcie w budynku 1, lokalu 1 centrum zaopatrzenia przemysłowego Gocheok",
+            "color": "secondary",
+            "icon": "home"
+          },
+          {
+            "label": "Zmiana nazwy firmy",
+            "time": "Listopad 1981",
+            "desc": "Zmiana nazwy z Youngil Electronics na Youngil Electric",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "title": "2000",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Przeniesienie siedziby",
+            "time": "Maj 2000",
+            "desc": "Przeniesienie do centrum dystrybucji przemysłowej w Incheon",
+            "color": "secondary",
+            "icon": "swap_horiz"
+          }
+        ]
+      },
+      {
+        "title": "2010",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Rozpoczęcie prac nad wózkiem do spawania łukiem krytym",
+            "time": "Marzec 2010",
+            "desc": "<p>Rozpoczęcie prac</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Dalsze prace nad wózkiem do spawania łukiem krytym",
+            "time": "Kwiecień 2010",
+            "desc": "<p>Prace w toku</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Zakończenie prac nad wózkiem do spawania łukiem krytym",
+            "time": "Maj 2010",
+            "desc": "Prace zakończone",
+            "icon": "work"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "product": "Produkty",
+    "company": "Firma",
+    "support": "Wsparcie",
+    "location": "Dojazd"
+  },
+  "language": "Język",
+  "languageList": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "main": {
+    "detail": "Zobacz szczegóły",
+    "top": [
+      {
+        "direction": "right",
+        "src": "/static/images/main/top00.webp",
+        "align": "left",
+        "title": "WÓZEK DO SPAWANIA ŁUKIEM KRYTYM",
+        "desc": "Precyzyjne spawanie wzdłuż prowadnic",
+        "code": "YESAWCG-001",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
+      },
+      {
+        "direction": "left",
+        "src": "/static/images/main/top01.webp",
+        "align": "right",
+        "title": "PNEUMATYCZNE ZGRZEWANIE PUNKTOWE",
+        "desc": "Sterowanie cyfrowe zsynchronizowane z cyklem zasilania spawania",
+        "code": "YM9601",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
+      }
+    ],
+    "section": [
+      [
+        {
+          "title": "WÓZEK DO SPAWANIA ŁUKIEM KRYTYM",
+          "desc": "Precyzyjne spawanie wzdłuż prowadnic",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCG-001"
+            }
+          }
+        },
+        {
+          "title": "UKŁAD ŚLEDZENIA ZŁĄCZA DO SPAWANIA ŁUKIEM KRYTYM",
+          "desc": "Czujnik dotykowy",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWPS-001"
+            }
+          }
+        },
+        {
+          "title": "UKŁAD ŚLEDZENIA ZŁĄCZA DO SPAWANIA ŁUKIEM KRYTYM",
+          "desc": "Jednostka sterująca",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCU-004"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "PNEUMATYCZNE ZGRZEWANIE PUNKTOWE",
+          "desc": "Jednostka sterująca",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM001"
+            }
+          }
+        },
+        {
+          "title": "MASZYNA PANCAKE",
+          "desc": "Jednostka sterująca",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YEPCCU-001"
+            }
+          }
+        },
+        {
+          "title": "PNEUMATYCZNE ZGRZEWANIE PUNKTOWE",
+          "desc": "Jednostka sterująca",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM9601"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "SPAWARKA INWERTOROWA ŁUKOWA",
+          "desc": "Kompaktowa spawarka inwertorowa łukowa",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "inverter",
+              "code": "YEAWW-001"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "ZGRZEWARKA KONDENSATOROWA",
+          "desc": "Kondensatorowa zgrzewarka rezystancyjna punktowa",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWW-001"
+            }
+          }
+        },
+        {
+          "title": "ZASILACZ DO KONDENSATOROWEGO ZGRZEWANIA PUNKTOWEGO",
+          "desc": "Zasilacz do kondensatorowych zgrzewarek rezystancyjnych punktowych",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWP-001"
+            }
+          }
+        },
+        {
+          "title": "TRANSFORMATOR DO ZGRZEWANIA PUNKTOWEGO PRĄDEM STAŁYM",
+          "desc": "Transformator do rezystancyjnych zgrzewarek punktowych prądu stałego",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWT-001"
+            }
+          }
+        }
+      ]
+    ]
+  },
+  "location": {
+    "contact": "Kontakt",
+    "address": "17-121, 105, Bangchuk-ro, Dong-gu, Incheon, Republic of Korea",
+    "phone": "82 - (32) 589 - 1160 ~ 2",
+    "fax": "82 - (32) 589 - 5095",
+    "PublicTransport": "Transport publiczny",
+    "OwnCar": "Samochodem",
+    "PublicTransportInfo": [
+      "Wysiądź na stacji Jemulpo linii 1",
+      "Przejdź do podziemnej galerii handlowej przed wyjściem 2",
+      "Idź prosto 30 metrów od wyjścia przed szkołą średnią Seonin",
+      "Wsiądź do autobusu 510",
+      "Po 13 przystankach wysiądź przy centrum dystrybucji przemysłowej, kompleks 3 (budynek C)"
+    ],
+    "OwnCarInfo": [
+      "Wjedź na autostradę Gyeongin",
+      "Jedź w kierunku węzła Seoun (Incheon, Seoincheon, Bupyeong)",
+      "Punkt poboru opłat Incheon",
+      "Wybierz zjazd po prawej w kierunku Dongincheon IC",
+      "Na skrzyżowaniu Bongsudae-gil skręć w lewo w kierunku stacji Dongincheon i urzędu dzielnicy Dong-gu",
+      "Wjazd do centrum zaopatrzenia przemysłowego w Incheon, kompleks 3 (budynek C)"
+    ]
+  },
+  "support": {
+    "searchSupport": "Szukaj pomocy",
+    "title": "Potrzebujesz dodatkowej pomocy?",
+    "contact": [
+      "Dziękujemy za wybór produktów Youngil Electric.",
+      "Instrukcje są dostępne na stronie produktów.",
+      "W razie pytań dotyczących produktów skorzystaj z poniższych danych kontaktowych.",
+      "Podaj nazwę produktu lub kod modelu, abyśmy mogli szybciej pomóc.",
+      "Wsparcie telefoniczne jest dostępne od 9:00 do 17:00 (czas koreański)."
+    ],
+    "email": {
+      "icon": "email",
+      "name": "E-mail",
+      "value": "youngweld{'@'}hanmail.net"
+    },
+    "phone": {
+      "icon": "phone_enabled",
+      "name": "Telefon",
+      "value": "82 - (32) 589 - 1160 ~ 2"
+    },
+    "section": {
+      "control": [
+        {
+          "label": "Sterowanie 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Odpowiedź"
+            }
+          ]
+        },
+        {
+          "label": "Sterowanie 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Rozwiązanie"
+            }
+          ]
+        }
+      ],
+      "submerged": [
+        {
+          "label": "Łuk kryty 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Odpowiedź"
+            }
+          ]
+        },
+        {
+          "label": "Łuk kryty 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Rozwiązanie"
+            }
+          ]
+        }
+      ],
+      "inverter": [
+        {
+          "label": "Inwertor 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Odpowiedź"
+            }
+          ]
+        },
+        {
+          "label": "Inwertor 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Rozwiązanie"
+            }
+          ]
+        }
+      ],
+      "spot": [
+        {
+          "label": "Punktowe 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Odpowiedź"
+            }
+          ]
+        },
+        {
+          "label": "Punktowe 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Rozwiązanie"
+            }
+          ]
+        }
+      ]
+    },
+    "message": {
+      "noData": "Nie znaleziono pasujących tematów pomocy."
+    }
+  },
+  "section": [
+    {
+      "code": "control",
+      "icon": "/static/images/support/control.webp",
+      "name": "Sterowniki"
+    },
+    {
+      "code": "submerged",
+      "icon": "/static/images/support/submerged.webp",
+      "name": "Spawanie łukiem krytym"
+    },
+    {
+      "code": "inverter",
+      "icon": "/static/images/support/inverter.webp",
+      "name": "Spawanie inwertorowe"
+    },
+    {
+      "code": "spot",
+      "icon": "/static/images/support/spot.webp",
+      "name": "Zgrzewanie punktowe"
+    }
+  ],
+  "product": {
+    "manual": "Otwórz instrukcję",
+    "list": [
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesrwcu001.webp",
+        "name": "Jednostka sterująca zgrzewaniem liniowym",
+        "desc": [
+          {
+            "name": "Napięcie zasilania spawania",
+            "contents": "Jednofazowe AC220V/380V"
+          },
+          {
+            "name": "Częstotliwość zasilania spawania",
+            "contents": "50/60HZ (przełączanie automatyczne)"
+          },
+          {
+            "name": "Zasilanie sterowania",
+            "contents": "Jednofazowe AC110V +10% -10%"
+          },
+          {
+            "name": "Metoda regulacji mocy",
+            "contents": "Sterowanie kątem fazowym SCR"
+          },
+          {
+            "name": "Metoda sterowania czasem",
+            "contents": "Sterowanie cyfrowe zsynchronizowane z cyklem zasilania spawania"
+          },
+          {
+            "name": "Sygnał wyjściowy docisku",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Sygnał startu",
+            "contents": "Uruchamianie pedałem (jedno wejście)"
+          }
+        ],
+        "code": "SEAM01",
+        "manual": "/static/manual/SEAM01.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu001.webp",
+        "name": "Sterownik kondensatorowego zgrzewania punktowego",
+        "code": "YECRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu002.webp",
+        "name": "Sterownik kondensatorowego zgrzewania punktowego",
+        "code": "YECRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeaswcu001.webp",
+        "name": "Sterownik zgrzewania kołków",
+        "code": "YEASWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu001.webp",
+        "name": "Sterownik zgrzewania punktowego",
+        "code": "YESPRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu002.webp",
+        "name": "Sterownik zgrzewania punktowego",
+        "code": "YESPRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeasrwcu002.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Sterownik pneumatycznego zgrzewania punktowego",
+        "desc": [
+          {
+            "name": "Napięcie zasilania spawania",
+            "contents": "Jednofazowe AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Częstotliwość zasilania spawania",
+            "contents": "50/60HZ (przełączanie automatyczne)"
+          },
+          {
+            "name": "Zasilanie sterowania",
+            "contents": "Jednofazowe AC110V +10% -10%"
+          },
+          {
+            "name": "Metoda regulacji mocy",
+            "contents": "Sterowanie kątem fazowym SCR"
+          },
+          {
+            "name": "Metoda sterowania czasem",
+            "contents": "Asynchroniczne sterowanie czasem<br>(Czas spawania jest sterowany cyfrowo w synchronizacji z częstotliwością zasilania spawania)"
+          },
+          {
+            "name": "Sygnał wyjściowy docisku",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Sygnał startu",
+            "contents": "Uruchamianie pedałem"
+          }
+        ],
+        "code": "YM002",
+        "manual": "/static/manual/YM002.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym001.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Sterownik pneumatycznego zgrzewania punktowego",
+        "desc": [
+          {
+            "name": "Napięcie zasilania spawania",
+            "contents": "Jednofazowe AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Częstotliwość zasilania spawania",
+            "contents": "50/60HZ (przełączanie automatyczne)"
+          },
+          {
+            "name": "Zasilanie sterowania",
+            "contents": "Jednofazowe AC110V +10% -10%"
+          },
+          {
+            "name": "Metoda regulacji mocy",
+            "contents": "Sterowanie kątem fazowym SCR"
+          },
+          {
+            "name": "Metoda sterowania czasem",
+            "contents": "Asynchroniczne sterowanie czasem"
+          },
+          {
+            "name": "Sygnał wyjściowy docisku",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Sygnał startu",
+            "contents": "Uruchamianie pedałem"
+          }
+        ],
+        "code": "YM001",
+        "manual": "/static/manual/YM001.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym9601.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Sterownik pneumatycznego zgrzewania punktowego",
+        "desc": [
+          {
+            "name": "Napięcie zasilania spawania",
+            "contents": "Jednofazowe AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Częstotliwość zasilania spawania",
+            "contents": "50/60HZ (przełączanie automatyczne)"
+          },
+          {
+            "name": "Zasilanie sterowania",
+            "contents": "Jednofazowe AC110V +10% -10%"
+          },
+          {
+            "name": "Metoda regulacji mocy",
+            "contents": "Sterowanie kątem fazowym SCR"
+          },
+          {
+            "name": "Metoda sterowania czasem",
+            "contents": "Sterowanie cyfrowe zsynchronizowane z cyklem zasilania spawania"
+          },
+          {
+            "name": "Sterowanie nagrzewaniem",
+            "contents": "10 ustawień (dwa kanały sterowania dociskiem)"
+          },
+          {
+            "name": "Sygnał wyjściowy docisku",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Sygnał startu",
+            "contents": "Dwa wejścia ON do uruchamiania<br>(FOOT-1 aktywuje wyjście docisku SOL-1; FOOT-2 aktywuje wyjście docisku SOL-2)"
+          }
+        ],
+        "code": "YM9601",
+        "manual": "/static/manual/YM9601.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yepccu001.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Sterownik Pancake",
+        "code": "YEPCCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu001.webp",
+        "name": "Jednostka sterująca tandem",
+        "code": "YESAWCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu002.webp",
+        "name": "Pojedyncza jednostka sterująca",
+        "code": "YESAWCU-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawpd001.webp",
+        "name": "Główna jednostka rozdziału zasilania",
+        "code": "YESAWPD-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu003.webp",
+        "name": "Główna jednostka sterująca zasilaniem",
+        "code": "YESAWCU-003"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu004.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Jednostka sterująca śledzeniem złącza",
+        "code": "YESAWCU-004"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl001.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Suwak śledzenia złącza",
+        "code": "YESAWSL-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl002.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Suwak śledzenia złącza",
+        "code": "YESAWSL-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawps001.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Czujnik dotykowy śledzenia złącza",
+        "code": "YESAWPS-001",
+        "manual": "/static/manual/YESAWPS-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcg001.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Wózek spawalniczy",
+        "desc": [
+          {
+            "name": "Napięcie zasilania sterowania",
+            "contents": "Jednofazowe AC 110V, 40V, 0V, 40V"
+          },
+          {
+            "name": "Zakres prądu spawania",
+            "contents": "AC lub DC 250 ~ 1500A"
+          },
+          {
+            "name": "Prędkość podawania drutu",
+            "contents": "0.5 ~ 4m/min"
+          },
+          {
+            "name": "Metoda regulacji prędkości podawania drutu",
+            "contents": "Sprzężenie zwrotne napięcia łuku"
+          },
+          {
+            "name": "Obsługiwana średnica drutu",
+            "contents": "2.4, 3.2, 4.0, 4.8, 6.4ø"
+          },
+          {
+            "name": "Obsługiwana średnica wewnętrzna szpuli",
+            "contents": "300ø szerokość 100m/m"
+          },
+          {
+            "name": "Obsługiwana średnica zewnętrzna szpuli",
+            "contents": "450ø masa 10 ~ 24kg"
+          },
+          {
+            "name": "Prędkość jazdy wózka",
+            "contents": "12~120cm/min"
+          },
+          {
+            "name": "Regulacja pozioma",
+            "contents": "50m/m"
+          },
+          {
+            "name": "Regulacja pionowa",
+            "contents": "35m/m"
+          },
+          {
+            "name": "Pojemność zasobnika topnika",
+            "contents": "5ℓ"
+          },
+          {
+            "name": "Masa",
+            "contents": ""
+          },
+          {
+            "name": "Standardowe końcówki prądowe",
+            "contents": "4.0ø, 4.8ø"
+          }
+        ],
+        "code": "YESAWCG-001",
+        "manual": "/static/manual/YESAWCG-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawm001.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Urządzenie spawalnicze",
+        "code": "YESAWM-001"
+      },
+      {
+        "sec": "inverter",
+        "src": "/static/images/products/yeaww001.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Spawarka inwertorowa",
+        "code": "YEAWW-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwt001.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Transformator do zgrzewania punktowego prądem stałym",
+        "code": "YERWT-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwp001.webp",
+        "name": "Zasilacz do kondensatorowego zgrzewania punktowego",
+        "code": "YERWP-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerww001.webp",
+        "type": {
+          "name": "POPULARNE",
+          "color": "text-blue"
+        },
+        "name": "Zgrzewarka kondensatorowa",
+        "code": "YERWW-001"
+      }
+    ]
+  },
+  "accessibility": {
+    "menu": "Otwórz menu",
+    "darkMode": "Tryb ciemny",
+    "backToTop": "Do góry"
+  },
+  "languageLoadError": "Nie udało się wczytać tego języka. Spróbuj ponownie."
+}

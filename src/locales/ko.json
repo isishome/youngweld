@@ -785,5 +785,6 @@
     "menu": "메뉴 열기",
     "darkMode": "어두운 화면",
     "backToTop": "맨 위로"
-  }
+  },
+  "languageLoadError": "언어를 불러오지 못했습니다. 다시 선택해 주세요."
 }

@@ -1,0 +1,790 @@
+{
+  "pnf": "La pagina cercata non è stata trovata.",
+  "company": {
+    "name": "YOUNGWELD",
+    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright2": "Tutti i diritti riservati.",
+    "timeline": [
+      {
+        "title": "1981",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Fondazione dell’azienda",
+            "time": "Febbraio 1981",
+            "desc": "Apertura nell’edificio 1, unità 1 del centro di forniture industriali di Gocheok",
+            "color": "secondary",
+            "icon": "home"
+          },
+          {
+            "label": "Cambio di denominazione",
+            "time": "Novembre 1981",
+            "desc": "Cambio di denominazione da Youngil Electronics a Youngil Electric",
+            "color": "red"
+          }
+        ]
+      },
+      {
+        "title": "2000",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Trasferimento dell’azienda",
+            "time": "Maggio 2000",
+            "desc": "Trasferimento al centro di distribuzione industriale di Incheon",
+            "color": "secondary",
+            "icon": "swap_horiz"
+          }
+        ]
+      },
+      {
+        "title": "2010",
+        "color": "primary",
+        "children": [
+          {
+            "label": "Inizio dello sviluppo del carrello per saldatura ad arco sommerso",
+            "time": "Marzo 2010",
+            "desc": "<p>Inizio dello sviluppo</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Proseguimento dello sviluppo del carrello per saldatura ad arco sommerso",
+            "time": "Aprile 2010",
+            "desc": "<p>Sviluppo in corso</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
+            "icon": "work"
+          },
+          {
+            "label": "Completamento dello sviluppo del carrello per saldatura ad arco sommerso",
+            "time": "Maggio 2010",
+            "desc": "Sviluppo completato",
+            "icon": "work"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": {
+    "product": "Prodotti",
+    "company": "Azienda",
+    "support": "Assistenza",
+    "location": "Dove siamo"
+  },
+  "language": "Lingua",
+  "languageList": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "main": {
+    "detail": "Visualizza dettagli",
+    "top": [
+      {
+        "direction": "right",
+        "src": "/static/images/main/top00.webp",
+        "align": "left",
+        "title": "CARRELLO PER SALDATURA AD ARCO SOMMERSO",
+        "desc": "Saldatura di precisione lungo guide",
+        "code": "YESAWCG-001",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"submerged\", \"code\":\"YESAWCG-001\"}}"
+      },
+      {
+        "direction": "left",
+        "src": "/static/images/main/top01.webp",
+        "align": "right",
+        "title": "SALDATURA A PUNTI PNEUMATICA",
+        "desc": "Controllo digitale sincronizzato con il ciclo di alimentazione della saldatura",
+        "code": "YM9601",
+        "to": "{\"name\":\"product-select\", \"params\":{\"sec\":\"control\", \"code\":\"YM9601\"}}"
+      }
+    ],
+    "section": [
+      [
+        {
+          "title": "CARRELLO PER SALDATURA AD ARCO SOMMERSO",
+          "desc": "Saldatura di precisione lungo guide",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCG-001"
+            }
+          }
+        },
+        {
+          "title": "INSEGUITORE DEL GIUNTO PER SALDATURA AD ARCO SOMMERSO",
+          "desc": "Sensore a tastatore",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWPS-001"
+            }
+          }
+        },
+        {
+          "title": "INSEGUITORE DEL GIUNTO PER SALDATURA AD ARCO SOMMERSO",
+          "desc": "Unità di controllo",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "submerged",
+              "code": "YESAWCU-004"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "SALDATURA A PUNTI PNEUMATICA",
+          "desc": "Unità di controllo",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM001"
+            }
+          }
+        },
+        {
+          "title": "MACCHINA PANCAKE",
+          "desc": "Unità di controllo",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YEPCCU-001"
+            }
+          }
+        },
+        {
+          "title": "SALDATURA A PUNTI PNEUMATICA",
+          "desc": "Unità di controllo",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "control",
+              "code": "YM9601"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "SALDATRICE AD ARCO A INVERTER",
+          "desc": "Saldatrice ad arco a inverter compatta",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "inverter",
+              "code": "YEAWW-001"
+            }
+          }
+        }
+      ],
+      [
+        {
+          "title": "SALDATRICE A CONDENSATORI",
+          "desc": "Saldatrice a punti a resistenza con condensatori",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWW-001"
+            }
+          }
+        },
+        {
+          "title": "ALIMENTATORE PER SALDATURA A PUNTI A CONDENSATORI",
+          "desc": "Alimentatore per saldatrici a punti a resistenza con condensatori",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWP-001"
+            }
+          }
+        },
+        {
+          "title": "TRASFORMATORE PER SALDATURA A PUNTI IN CORRENTE CONTINUA",
+          "desc": "Trasformatore per saldatrici a punti a resistenza in corrente continua",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
+          "to": {
+            "name": "product-select",
+            "params": {
+              "sec": "spot",
+              "code": "YERWT-001"
+            }
+          }
+        }
+      ]
+    ]
+  },
+  "location": {
+    "contact": "Contatti",
+    "address": "17-121, 105, Bangchuk-ro, Dong-gu, Incheon, Republic of Korea",
+    "phone": "82 - (32) 589 - 1160 ~ 2",
+    "fax": "82 - (32) 589 - 5095",
+    "PublicTransport": "Trasporto pubblico",
+    "OwnCar": "In auto",
+    "PublicTransportInfo": [
+      "Scendere alla stazione Jemulpo della linea 1",
+      "Raggiungere la galleria commerciale sotterranea davanti all’uscita 2",
+      "Proseguire dritto per 30 metri dall’uscita davanti alla scuola superiore Seonin",
+      "Prendere l’autobus 510",
+      "Dopo 13 fermate, scendere al centro di distribuzione industriale, complesso 3 (edificio C)"
+    ],
+    "OwnCarInfo": [
+      "Imboccare l’autostrada Gyeongin",
+      "Proseguire verso lo svincolo Seoun (Incheon, Seoincheon, Bupyeong)",
+      "Casello di Incheon",
+      "Prendere l’uscita a destra verso Dongincheon IC",
+      "All’incrocio Bongsudae-gil, svoltare a sinistra verso la stazione Dongincheon e l’ufficio distrettuale Dong-gu",
+      "Ingresso del centro di forniture industriali di Incheon, complesso 3 (edificio C)"
+    ]
+  },
+  "support": {
+    "searchSupport": "Cerca nella guida",
+    "title": "Serve altro aiuto?",
+    "contact": [
+      "Grazie per aver scelto i prodotti Youngil Electric.",
+      "I manuali sono disponibili nella pagina Prodotti.",
+      "Per domande sui prodotti, utilizza i recapiti indicati di seguito.",
+      "Indica il nome del prodotto o il codice del modello per ricevere assistenza più rapidamente.",
+      "L’assistenza telefonica è disponibile dalle 9:00 alle 17:00 (ora standard coreana)."
+    ],
+    "email": {
+      "icon": "email",
+      "name": "E-mail",
+      "value": "youngweld{'@'}hanmail.net"
+    },
+    "phone": {
+      "icon": "phone_enabled",
+      "name": "Telefono",
+      "value": "82 - (32) 589 - 1160 ~ 2"
+    },
+    "section": {
+      "control": [
+        {
+          "label": "Controllo 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Risposta"
+            }
+          ]
+        },
+        {
+          "label": "Controllo 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Soluzione"
+            }
+          ]
+        }
+      ],
+      "submerged": [
+        {
+          "label": "Arco sommerso 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Risposta"
+            }
+          ]
+        },
+        {
+          "label": "Arco sommerso 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Soluzione"
+            }
+          ]
+        }
+      ],
+      "inverter": [
+        {
+          "label": "Inverter 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Risposta"
+            }
+          ]
+        },
+        {
+          "label": "Inverter 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Soluzione"
+            }
+          ]
+        }
+      ],
+      "spot": [
+        {
+          "label": "Punti 1",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Risposta"
+            }
+          ]
+        },
+        {
+          "label": "Punti 2",
+          "header": "question",
+          "children": [
+            {
+              "header": "answer",
+              "label": "Soluzione"
+            }
+          ]
+        }
+      ]
+    },
+    "message": {
+      "noData": "Nessun argomento della guida corrispondente."
+    }
+  },
+  "section": [
+    {
+      "code": "control",
+      "icon": "/static/images/support/control.webp",
+      "name": "Controllori"
+    },
+    {
+      "code": "submerged",
+      "icon": "/static/images/support/submerged.webp",
+      "name": "Saldatura ad arco sommerso"
+    },
+    {
+      "code": "inverter",
+      "icon": "/static/images/support/inverter.webp",
+      "name": "Saldatura a inverter"
+    },
+    {
+      "code": "spot",
+      "icon": "/static/images/support/spot.webp",
+      "name": "Saldatura a punti"
+    }
+  ],
+  "product": {
+    "manual": "Visualizza manuale",
+    "list": [
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesrwcu001.webp",
+        "name": "Unità di controllo per saldatura a rulli",
+        "desc": [
+          {
+            "name": "Tensione di alimentazione della saldatura",
+            "contents": "Monofase AC220V/380V"
+          },
+          {
+            "name": "Frequenza di alimentazione della saldatura",
+            "contents": "50/60HZ (commutazione automatica)"
+          },
+          {
+            "name": "Alimentazione di controllo",
+            "contents": "Monofase AC110V +10% -10%"
+          },
+          {
+            "name": "Metodo di regolazione della potenza",
+            "contents": "Controllo dell’angolo di fase SCR"
+          },
+          {
+            "name": "Metodo di temporizzazione",
+            "contents": "Controllo digitale sincronizzato con il ciclo di alimentazione della saldatura"
+          },
+          {
+            "name": "Segnale di uscita della pressione",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Segnale di avvio",
+            "contents": "Avvio tramite pedale (un ingresso)"
+          }
+        ],
+        "code": "SEAM01",
+        "manual": "/static/manual/SEAM01.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu001.webp",
+        "name": "Controllore per saldatura a punti a condensatori",
+        "code": "YECRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yecrwcu002.webp",
+        "name": "Controllore per saldatura a punti a condensatori",
+        "code": "YECRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeaswcu001.webp",
+        "name": "Controllore per saldatura di prigionieri",
+        "code": "YEASWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu001.webp",
+        "name": "Controllore per saldatura a punti",
+        "code": "YESPRWCU-001"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yesprwcu002.webp",
+        "name": "Controllore per saldatura a punti",
+        "code": "YESPRWCU-002"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yeasrwcu002.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Controllore per saldatura a punti pneumatica",
+        "desc": [
+          {
+            "name": "Tensione di alimentazione della saldatura",
+            "contents": "Monofase AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Frequenza di alimentazione della saldatura",
+            "contents": "50/60HZ (commutazione automatica)"
+          },
+          {
+            "name": "Alimentazione di controllo",
+            "contents": "Monofase AC110V +10% -10%"
+          },
+          {
+            "name": "Metodo di regolazione della potenza",
+            "contents": "Controllo dell’angolo di fase SCR"
+          },
+          {
+            "name": "Metodo di temporizzazione",
+            "contents": "Temporizzazione asincrona<br>(La durata della saldatura è controllata digitalmente in sincronia con la frequenza di alimentazione della saldatura)"
+          },
+          {
+            "name": "Segnale di uscita della pressione",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Segnale di avvio",
+            "contents": "Avvio tramite pedale"
+          }
+        ],
+        "code": "YM002",
+        "manual": "/static/manual/YM002.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym001.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Controllore per saldatura a punti pneumatica",
+        "desc": [
+          {
+            "name": "Tensione di alimentazione della saldatura",
+            "contents": "Monofase AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Frequenza di alimentazione della saldatura",
+            "contents": "50/60HZ (commutazione automatica)"
+          },
+          {
+            "name": "Alimentazione di controllo",
+            "contents": "Monofase AC110V +10% -10%"
+          },
+          {
+            "name": "Metodo di regolazione della potenza",
+            "contents": "Controllo dell’angolo di fase SCR"
+          },
+          {
+            "name": "Metodo di temporizzazione",
+            "contents": "Temporizzazione asincrona"
+          },
+          {
+            "name": "Segnale di uscita della pressione",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Segnale di avvio",
+            "contents": "Avvio tramite pedale"
+          }
+        ],
+        "code": "YM001",
+        "manual": "/static/manual/YM001.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/ym9601.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Controllore per saldatura a punti pneumatica",
+        "desc": [
+          {
+            "name": "Tensione di alimentazione della saldatura",
+            "contents": "Monofase AC220V/380V +10% -30%"
+          },
+          {
+            "name": "Frequenza di alimentazione della saldatura",
+            "contents": "50/60HZ (commutazione automatica)"
+          },
+          {
+            "name": "Alimentazione di controllo",
+            "contents": "Monofase AC110V +10% -10%"
+          },
+          {
+            "name": "Metodo di regolazione della potenza",
+            "contents": "Controllo dell’angolo di fase SCR"
+          },
+          {
+            "name": "Metodo di temporizzazione",
+            "contents": "Controllo digitale sincronizzato con il ciclo di alimentazione della saldatura"
+          },
+          {
+            "name": "Controllo del riscaldamento",
+            "contents": "10 impostazioni (due canali di controllo della pressione)"
+          },
+          {
+            "name": "Segnale di uscita della pressione",
+            "contents": "AC110V 1A"
+          },
+          {
+            "name": "Segnale di avvio",
+            "contents": "Due ingressi ON per avviare il funzionamento<br>(FOOT-1 attiva l’uscita di pressione SOL-1; FOOT-2 attiva l’uscita di pressione SOL-2)"
+          }
+        ],
+        "code": "YM9601",
+        "manual": "/static/manual/YM9601.pdf"
+      },
+      {
+        "sec": "control",
+        "src": "/static/images/products/yepccu001.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Controllore Pancake",
+        "code": "YEPCCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu001.webp",
+        "name": "Unità di controllo tandem",
+        "code": "YESAWCU-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu002.webp",
+        "name": "Unità di controllo singola",
+        "code": "YESAWCU-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawpd001.webp",
+        "name": "Unità di distribuzione dell’alimentazione principale",
+        "code": "YESAWPD-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu003.webp",
+        "name": "Unità di controllo dell’alimentazione principale",
+        "code": "YESAWCU-003"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcu004.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Unità di controllo per inseguimento del giunto",
+        "code": "YESAWCU-004"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl001.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Slitta per inseguimento del giunto",
+        "code": "YESAWSL-001"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawsl002.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Slitta per inseguimento del giunto",
+        "code": "YESAWSL-002"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawps001.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Sensore a tastatore per inseguimento del giunto",
+        "code": "YESAWPS-001",
+        "manual": "/static/manual/YESAWPS-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawcg001.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Carrello di saldatura",
+        "desc": [
+          {
+            "name": "Tensione di alimentazione di controllo",
+            "contents": "Monofase AC 110V, 40V, 0V, 40V"
+          },
+          {
+            "name": "Intervallo di corrente di saldatura",
+            "contents": "AC o DC 250 ~ 1500A"
+          },
+          {
+            "name": "Velocità di avanzamento del filo",
+            "contents": "0.5 ~ 4m/min"
+          },
+          {
+            "name": "Metodo di controllo della velocità di avanzamento del filo",
+            "contents": "Retroazione della tensione d’arco"
+          },
+          {
+            "name": "Diametro del filo compatibile",
+            "contents": "2.4, 3.2, 4.0, 4.8, 6.4ø"
+          },
+          {
+            "name": "Diametro interno della bobina compatibile",
+            "contents": "300ø larghezza 100m/m"
+          },
+          {
+            "name": "Diametro esterno della bobina compatibile",
+            "contents": "450ø peso 10 ~ 24kg"
+          },
+          {
+            "name": "Velocità di spostamento del carrello",
+            "contents": "12~120cm/min"
+          },
+          {
+            "name": "Regolazione orizzontale",
+            "contents": "50m/m"
+          },
+          {
+            "name": "Regolazione verticale",
+            "contents": "35m/m"
+          },
+          {
+            "name": "Capacità della tramoggia del flusso",
+            "contents": "5ℓ"
+          },
+          {
+            "name": "Peso",
+            "contents": ""
+          },
+          {
+            "name": "Punte di contatto standard",
+            "contents": "4.0ø, 4.8ø"
+          }
+        ],
+        "code": "YESAWCG-001",
+        "manual": "/static/manual/YESAWCG-001.pdf"
+      },
+      {
+        "sec": "submerged",
+        "src": "/static/images/products/yesawm001.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Saldatrice",
+        "code": "YESAWM-001"
+      },
+      {
+        "sec": "inverter",
+        "src": "/static/images/products/yeaww001.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Saldatrice a inverter",
+        "code": "YEAWW-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwt001.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Trasformatore per saldatura a punti in corrente continua",
+        "code": "YERWT-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerwp001.webp",
+        "name": "Alimentatore per saldatura a punti a condensatori",
+        "code": "YERWP-001"
+      },
+      {
+        "sec": "spot",
+        "src": "/static/images/products/yerww001.webp",
+        "type": {
+          "name": "IN EVIDENZA",
+          "color": "text-blue"
+        },
+        "name": "Saldatrice a condensatori",
+        "code": "YERWW-001"
+      }
+    ]
+  },
+  "accessibility": {
+    "menu": "Apri menu",
+    "darkMode": "Modalità scura",
+    "backToTop": "Torna in alto"
+  },
+  "languageLoadError": "Impossibile caricare questa lingua. Riprova."
+}
