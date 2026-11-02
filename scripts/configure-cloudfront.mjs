@@ -83,6 +83,13 @@ export const validateFunctionRequest = (result, uri) => {
     throw new Error('CloudFront 함수 실제 런타임 검증 실패')
 }
 
+export const selectPolicyId = (config, existingPolicy, routesOnly) => {
+  if (!routesOnly) return existingPolicy?.Id || '<새 정책 ID>'
+  const policyId = config.DefaultCacheBehavior.ResponseHeadersPolicyId
+  if (!policyId) throw new Error('보존할 기존 보안 헤더 정책이 없습니다.')
+  return policyId
+}
+
 const aws = (...args) => {
   try {
     return JSON.parse(
@@ -117,7 +124,12 @@ const main = () => {
   )?.ResponseHeadersPolicy
   const functionArn =
     existingFunction?.FunctionMetadata.FunctionARN || '<새 함수 ARN>'
-  const policyId = existingPolicy?.Id || '<새 정책 ID>'
+  const routesOnly = process.env.ROUTES_ONLY === 'true'
+  const policyId = selectPolicyId(
+    current.DistributionConfig,
+    existingPolicy,
+    routesOnly,
+  )
   const planned = planDistribution(
     current.DistributionConfig,
     functionArn,
@@ -205,32 +217,36 @@ const main = () => {
     ).TestResult
     validateFunctionRequest(result, expectedUri)
   }
-  const config = JSON.parse(
-    readFileSync('infra/cloudfront/response-headers-policy.json', 'utf8'),
-  ).ResponseHeadersPolicyConfig
-  config.Name = policyName
-  let savedPolicy
-  if (existingPolicy) {
-    const previous = aws(
-      'get-response-headers-policy',
-      '--id',
-      existingPolicy.Id,
-    )
-    savedPolicy = aws(
-      'update-response-headers-policy',
-      '--id',
-      existingPolicy.Id,
-      '--if-match',
-      previous.ETag,
-      '--response-headers-policy-config',
-      JSON.stringify(config),
-    )
-  } else {
-    savedPolicy = aws(
-      'create-response-headers-policy',
-      '--response-headers-policy-config',
-      JSON.stringify(config),
-    )
+  let finalPolicyId = policyId
+  if (!routesOnly) {
+    const config = JSON.parse(
+      readFileSync('infra/cloudfront/response-headers-policy.json', 'utf8'),
+    ).ResponseHeadersPolicyConfig
+    config.Name = policyName
+    let savedPolicy
+    if (existingPolicy) {
+      const previous = aws(
+        'get-response-headers-policy',
+        '--id',
+        existingPolicy.Id,
+      )
+      savedPolicy = aws(
+        'update-response-headers-policy',
+        '--id',
+        existingPolicy.Id,
+        '--if-match',
+        previous.ETag,
+        '--response-headers-policy-config',
+        JSON.stringify(config),
+      )
+    } else {
+      savedPolicy = aws(
+        'create-response-headers-policy',
+        '--response-headers-policy-config',
+        JSON.stringify(config),
+      )
+    }
+    finalPolicyId = savedPolicy.ResponseHeadersPolicy.Id
   }
   aws(
     'publish-function',
@@ -242,7 +258,7 @@ const main = () => {
   const final = planDistribution(
     current.DistributionConfig,
     savedFunction.FunctionSummary.FunctionMetadata.FunctionARN,
-    savedPolicy.ResponseHeadersPolicy.Id,
+    finalPolicyId,
   )
   aws(
     'update-distribution',

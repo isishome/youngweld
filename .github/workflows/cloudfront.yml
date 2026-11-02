@@ -3,6 +3,11 @@ name: CloudFront 설정 검토 및 적용
 on:
   workflow_dispatch:
     inputs:
+      routes_only:
+        description: '기존 보안 헤더 정책을 보존하고 경로 함수만 갱신'
+        type: boolean
+        default: true
+        required: true
       apply:
         description: '조회된 변경 계획을 실제 적용'
         type: boolean
@@ -39,4 +44,5 @@ jobs:
         env:
           DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
           APPLY_CHANGES: ${{ inputs.apply }}
+          ROUTES_ONLY: ${{ inputs.routes_only }}
         run: node scripts/configure-cloudfront.mjs

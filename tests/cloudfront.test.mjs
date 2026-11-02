@@ -5,7 +5,26 @@ import {
   rollbackFields,
   sanitizeAwsError,
   validateFunctionRequest,
+  selectPolicyId,
 } from '../scripts/configure-cloudfront.mjs'
+
+test('경로 전용 갱신은 운영에 연결된 보안 정책을 보존한다', () => {
+  const current = {
+    DefaultCacheBehavior: { ResponseHeadersPolicyId: 'production-policy' },
+  }
+  assert.equal(
+    selectPolicyId(current, { Id: 'old-policy' }, true),
+    'production-policy',
+  )
+  assert.equal(
+    selectPolicyId(current, { Id: 'old-policy' }, false),
+    'old-policy',
+  )
+  assert.throws(
+    () => selectPolicyId({ DefaultCacheBehavior: {} }, null, true),
+    /보존할/,
+  )
+})
 
 test('AWS TestFunction request 래퍼와 rewrite 결과를 검사한다', () => {
   const result = {
