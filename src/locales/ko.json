@@ -44,13 +44,13 @@
           {
             "label": "서브머지드 캐리지 용접기 개발 착수",
             "time": "2010년 3월",
-            "desc": "<p>개발착수</p><img src=\"/static/images/products/yesawps001.png\" width=\"200px\" />",
+            "desc": "<p>개발착수</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
             "icon": "work"
           },
           {
             "label": "서브머지드 캐리지 용접기 개발 진행",
             "time": "2010년 4월",
-            "desc": "<p>개발진행</p><img src=\"/static/images/products/yesawcg001.png\" width=\"200px\" />",
+            "desc": "<p>개발진행</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
             "icon": "work"
           },
           {
@@ -79,7 +79,7 @@
     "top": [
       {
         "direction": "right",
-        "src": "/static/images/main/top00.png",
+        "src": "/static/images/main/top00.webp",
         "align": "left",
         "title": "서브머지드 아크 용접 캐리지",
         "desc": "레일을 따라 주행하며 정밀하게 용접",
@@ -88,7 +88,7 @@
       },
       {
         "direction": "left",
-        "src": "/static/images/main/top01.png",
+        "src": "/static/images/main/top01.webp",
         "align": "right",
         "title": "에어스포트용접 콘트롤",
         "desc": "용접전원 사이클에 동기한 디지털 제어방식",
@@ -101,10 +101,8 @@
         {
           "title": "서브머지드 아크 용접 캐리지",
           "desc": "레일을 따라 주행하며 정밀하게 용접",
-          "etc": [
-            "YESAWCG-001"
-          ],
-          "src": "/static/images/products/yesawcg001.png",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -116,10 +114,8 @@
         {
           "title": "서브머지드 아크 용접선 추적장치",
           "desc": "프로브센서",
-          "etc": [
-            "YESAWPS-001"
-          ],
-          "src": "/static/images/products/yesawps001.png",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -131,10 +127,8 @@
         {
           "title": "서브머지드 아크 용접선 추적장치",
           "desc": "컨트롤 유닛",
-          "etc": [
-            "YESAWCU-004"
-          ],
-          "src": "/static/images/products/yesawcu004.png",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -148,10 +142,8 @@
         {
           "title": "서브머지드 아크 용접선 추적장치",
           "desc": "컨트롤 유닛",
-          "etc": [
-            "YM001"
-          ],
-          "src": "/static/images/products/ym001.png",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -163,10 +155,8 @@
         {
           "title": "팬케이크 머신용",
           "desc": "컨트롤 유닛",
-          "etc": [
-            "YEPCCU-001"
-          ],
-          "src": "/static/images/products/yepccu001.png",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -178,10 +168,8 @@
         {
           "title": "에어 스포트 저항 용접기용",
           "desc": "컨트롤 유닛",
-          "etc": [
-            "YM9601"
-          ],
-          "src": "/static/images/products/ym9601.png",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -195,10 +183,8 @@
         {
           "title": "인버터 용접기",
           "desc": "인버터 아크 용접기(소형)",
-          "etc": [
-            "YEAWW-001"
-          ],
-          "src": "/static/images/products/yeaww001.png",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -212,10 +198,8 @@
         {
           "title": "콘덴서 용접기",
           "desc": "콘덴서 스포트 저항용접기",
-          "etc": [
-            "YERWW-001"
-          ],
-          "src": "/static/images/products/yerww001.png",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -227,10 +211,8 @@
         {
           "title": "콘덴서 스포트 용접기 파워",
           "desc": "콘덴서 스포트 저항용접기용 파워",
-          "etc": [
-            "YERWP-001"
-          ],
-          "src": "/static/images/products/yerwp001.png",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -242,10 +224,8 @@
         {
           "title": "DC 스포트 변압기",
           "desc": "DC 스포트 저항용접기용 변압기",
-          "etc": [
-            "YERWT-001"
-          ],
-          "src": "/static/images/products/yerwt001.png",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -397,22 +377,22 @@
   "section": [
     {
       "code": "control",
-      "icon": "/static/images/support/control.png",
+      "icon": "/static/images/support/control.webp",
       "name": "콘트롤"
     },
     {
       "code": "submerged",
-      "icon": "/static/images/support/submerged.png",
+      "icon": "/static/images/support/submerged.webp",
       "name": "서브머지드"
     },
     {
       "code": "inverter",
-      "icon": "/static/images/support/inverter.png",
+      "icon": "/static/images/support/inverter.webp",
       "name": "인버터"
     },
     {
       "code": "spot",
-      "icon": "/static/images/support/spot.png",
+      "icon": "/static/images/support/spot.webp",
       "name": "스포트"
     }
   ],
@@ -421,7 +401,7 @@
     "list": [
       {
         "sec": "control",
-        "src": "/static/images/products/yesrwcu001.png",
+        "src": "/static/images/products/yesrwcu001.webp",
         "name": "심용접 컨트롤 유닛",
         "desc": [
           {
@@ -458,37 +438,37 @@
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yecrwcu001.png",
+        "src": "/static/images/products/yecrwcu001.webp",
         "name": "콘덴서 스포트 용접 컨트롤",
         "code": "YECRWCU-001"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yecrwcu002.png",
+        "src": "/static/images/products/yecrwcu002.webp",
         "name": "콘덴서 스포트 용접 컨트롤",
         "code": "YECRWCU-002"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yeaswcu001.png",
+        "src": "/static/images/products/yeaswcu001.webp",
         "name": "스터드용접 컨트롤",
         "code": "YEASWCU-001"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yesprwcu001.png",
+        "src": "/static/images/products/yesprwcu001.webp",
         "name": "스포트용접 컨트롤",
         "code": "YESPRWCU-001"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yesprwcu002.png",
+        "src": "/static/images/products/yesprwcu002.webp",
         "name": "스포트용접 컨트롤",
         "code": "YESPRWCU-002"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yeasrwcu002.png",
+        "src": "/static/images/products/yeasrwcu002.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -529,7 +509,7 @@
       },
       {
         "sec": "control",
-        "src": "/static/images/products/ym001.png",
+        "src": "/static/images/products/ym001.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -570,7 +550,7 @@
       },
       {
         "sec": "control",
-        "src": "/static/images/products/ym9601.png",
+        "src": "/static/images/products/ym9601.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -615,7 +595,7 @@
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yepccu001.png",
+        "src": "/static/images/products/yepccu001.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -625,31 +605,31 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcu001.png",
+        "src": "/static/images/products/yesawcu001.webp",
         "name": "텐덤 컨트롤 유닛",
         "code": "YESAWCU-001"
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcu002.png",
+        "src": "/static/images/products/yesawcu002.webp",
         "name": "싱글 컨트롤 유닛",
         "code": "YESAWCU-002"
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawpd001.png",
+        "src": "/static/images/products/yesawpd001.webp",
         "name": "메인파워 분배기",
         "code": "YESAWPD-001"
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcu003.png",
+        "src": "/static/images/products/yesawcu003.webp",
         "name": "메인파워 컨트롤 유닛",
         "code": "YESAWCU-003"
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcu004.png",
+        "src": "/static/images/products/yesawcu004.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -659,7 +639,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawsl001.png",
+        "src": "/static/images/products/yesawsl001.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -669,7 +649,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawsl002.png",
+        "src": "/static/images/products/yesawsl002.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -679,7 +659,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawps001.png",
+        "src": "/static/images/products/yesawps001.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -690,7 +670,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcg001.png",
+        "src": "/static/images/products/yesawcg001.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -755,7 +735,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawm001.png",
+        "src": "/static/images/products/yesawm001.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -765,7 +745,7 @@
       },
       {
         "sec": "inverter",
-        "src": "/static/images/products/yeaww001.png",
+        "src": "/static/images/products/yeaww001.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -775,7 +755,7 @@
       },
       {
         "sec": "spot",
-        "src": "/static/images/products/yerwt001.png",
+        "src": "/static/images/products/yerwt001.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -785,13 +765,13 @@
       },
       {
         "sec": "spot",
-        "src": "/static/images/products/yerwp001.png",
+        "src": "/static/images/products/yerwp001.webp",
         "name": "콘덴서스포트 용접기 파워",
         "code": "YERWP-001"
       },
       {
         "sec": "spot",
-        "src": "/static/images/products/yerww001.png",
+        "src": "/static/images/products/yerww001.webp",
         "type": {
           "name": "인기",
           "color": "blue-6"
@@ -800,5 +780,10 @@
         "code": "YERWW-001"
       }
     ]
+  },
+  "accessibility": {
+    "menu": "메뉴 열기",
+    "darkMode": "어두운 화면",
+    "backToTop": "맨 위로"
   }
 }

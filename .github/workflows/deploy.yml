@@ -1,53 +1,71 @@
-name: Deploy to S3 and Invalidate CloudFront
+name: 검증 및 S3 배포
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
 
 permissions:
-  id-token: write
   contents: read
 
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm run lint
+      - run: npm test
+      - run: npm run format:check
+      - run: npm audit
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+
   deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: verify
     runs-on: ubuntu-latest
     environment: aws_cicd
-
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          node-version: "16"
-
-      - name: Create .env.production from secret
-        run: echo "${{ secrets.ENV_PRODUCTION }}" > .env.production
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build project
-        run: npm run build
-
-      - name: Upload to S3
-        uses: jakejarvis/s3-sync-action@v0.5.1
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          args: --delete
+          node-version-file: .nvmrc
+          cache: npm
+      - name: 공개 빌드 설정 준비
         env:
-          AWS_S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          SOURCE_DIR: ./dist
-
-      - name: Invalidate CloudFront Cache
-        uses: chetan/invalidate-cloudfront-action@v2
+          ENV_PRODUCTION: ${{ secrets.ENV_PRODUCTION }}
+        run: printf '%s' "$ENV_PRODUCTION" > .env.production
+      - run: npm ci
+      - run: npm run build
+      - uses: aws-actions/configure-aws-credentials@e1253824e5c10ff9df46874f81ed3ec929e19cfd # v6.3.0
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - name: 자산 업로드 후 HTML 교체
         env:
-          DISTRIBUTION: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-          PATHS: "/*"
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
+        run: |
+          aws s3 cp dist/assets/ "s3://$S3_BUCKET/assets/" --recursive --cache-control 'public,max-age=31536000,immutable' --only-show-errors
+          aws s3 cp dist/static/ "s3://$S3_BUCKET/static/" --recursive --cache-control 'public,max-age=86400' --only-show-errors
+          aws s3 cp dist/ "s3://$S3_BUCKET/" --recursive --exclude 'assets/*' --exclude 'static/*' --exclude 'index.html' --cache-control 'public,max-age=3600' --only-show-errors
+          aws s3 cp dist/index.html "s3://$S3_BUCKET/index.html" --content-type 'text/html; charset=utf-8' --cache-control 'no-cache,max-age=0,must-revalidate' --only-show-errors
+      - name: CloudFront 캐시 갱신
+        env:
+          DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --paths '/*'

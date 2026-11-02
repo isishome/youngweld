@@ -1,0 +1,34 @@
+{
+  "ResponseHeadersPolicyConfig": {
+    "Name": "youngweld-security-headers",
+    "Comment": "Youngil Electric static website security headers",
+    "SecurityHeadersConfig": {
+      "ContentSecurityPolicy": {
+        "ContentSecurityPolicy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests",
+        "Override": true
+      },
+      "StrictTransportSecurity": {
+        "AccessControlMaxAgeSec": 31536000,
+        "IncludeSubdomains": false,
+        "Preload": false,
+        "Override": true
+      },
+      "ContentTypeOptions": { "Override": true },
+      "FrameOptions": { "FrameOption": "DENY", "Override": true },
+      "ReferrerPolicy": {
+        "ReferrerPolicy": "strict-origin-when-cross-origin",
+        "Override": true
+      }
+    },
+    "CustomHeadersConfig": {
+      "Quantity": 1,
+      "Items": [
+        {
+          "Header": "Permissions-Policy",
+          "Value": "camera=(), microphone=(), geolocation=()",
+          "Override": true
+        }
+      ]
+    }
+  }
+}

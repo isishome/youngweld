@@ -1,13 +1,13 @@
-const PageNotFound = () => import(/* webpackChunkName: "group-default" */ '@/pages/PageNotFound.vue')
-const Main = () => import(/* webpackChunkName: "group-default" */ '@/pages/Main.vue')
-const Product = () => import(/* webpackChunkName: "group-default" */ '@/pages/Product.vue')
-const Company = () => import(/* webpackChunkName: "group-default" */ '@/pages/Company.vue')
-const Support = () => import(/* webpackChunkName: "group-default" */ '@/pages/Support.vue')
-const Location = () => import(/* webpackChunkName: "group-default" */ '@/pages/Location.vue')
+const PageNotFound = () => import('@/pages/PageNotFound.vue')
+const Main = () => import('@/pages/Main.vue')
+const Product = () => import('@/pages/Product.vue')
+const Company = () => import('@/pages/Company.vue')
+const Support = () => import('@/pages/Support.vue')
+const Location = () => import('@/pages/Location.vue')
 const routes = [
   {
     path: '/:pathMatch(.*)*',
-    redirect: '/404'
+    redirect: '/404',
   },
   {
     name: '404',
@@ -17,7 +17,7 @@ const routes = [
   {
     name: 'main',
     path: '/',
-    component: Main
+    component: Main,
   },
   {
     name: 'product',
@@ -33,16 +33,16 @@ const routes = [
           {
             name: 'product-select',
             path: ':code',
-            component: Product
-          }
-        ]
-      }
-    ]
+            component: Product,
+          },
+        ],
+      },
+    ],
   },
   {
     name: 'company',
     path: '/company',
-    component: Company
+    component: Company,
   },
   {
     name: 'support',
@@ -53,15 +53,15 @@ const routes = [
       {
         name: 'support-section',
         path: ':sec',
-        component: Support
-      }
-    ]
+        component: Support,
+      },
+    ],
   },
   {
     name: 'location',
     path: '/location',
-    component: Location
-  }
+    component: Location,
+  },
 ]
 
 export default routes

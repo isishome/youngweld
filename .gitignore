@@ -20,3 +20,22 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Report
+.report
+
+# 로컬 에이전트 하네스와 조사 자료 (공개 저장소 제외)
+/AGENTS.md
+/CLAUDE.md
+/FIRST_STEPS.md
+/docs/
+/prompts/
+/templates/
+/.agents/
+/.claude/
+/.codex/
+/.tmp/
+/scripts/Verify-Starter.ps1
+/scripts/Test-VerifyStarter.ps1
+/test-results/
+/playwright-report/

@@ -1,0 +1,10 @@
+node_modules
+dist
+.report
+.tmp
+docs
+templates
+package-lock.json
+test-results
+playwright-report
+public

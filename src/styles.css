@@ -1,0 +1,19 @@
+@import '@fontsource-variable/noto-sans-kr';
+@import '@fontsource/teko/latin-500.css';
+@import '../public/static/styles/fourshome/core.css';
+@import '../public/static/styles/animate/animate.min.css';
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: 'Noto Sans KR Variable', sans-serif !important;
+}

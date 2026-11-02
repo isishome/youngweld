@@ -3,46 +3,47 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write src tests infra scripts/*.mjs *.js *.json index.html .github/workflows/*.yml",
+    "format:check": "prettier --check src tests infra scripts/*.mjs *.js *.json index.html .github/workflows/*.yml",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "images:optimize": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
-    "@quasar/extras": "^1.0.0",
-    "axios": "^1.16.1",
-    "core-js": "^3.6.5",
-    "quasar": "^2.0.0",
-    "vue": "^3.0.0",
-    "vue-i18n": "^11.1.9",
-    "vue-router": "4",
-    "vuex": "^4.0.2"
+    "@fontsource-variable/noto-sans-kr": "5.3.1",
+    "@fontsource/teko": "5.3.0",
+    "@quasar/extras": "2.1.0",
+    "quasar": "2.35.2",
+    "vue": "3.5.44",
+    "vue-i18n": "11.4.17",
+    "vue-router": "5.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "eslint": "^8.0.0",
-    "eslint-plugin-vue": "^9.0.0",
-    "vue-cli-plugin-quasar": "~5.1.0"
+    "@axe-core/playwright": "4.14.0",
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.64.1",
+    "@quasar/vite-plugin": "2.0.2",
+    "@vitejs/plugin-vue": "6.0.10",
+    "eslint": "10.14.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-vue": "10.12.0",
+    "globals": "17.14.0",
+    "prettier": "3.9.10",
+    "sharp": "0.35.5",
+    "vite": "8.3.5"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "rules": {}
+  "type": "module",
+  "engines": {
+    "node": ">=26.13.0 <27",
+    "npm": ">=11"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
+  "packageManager": "npm@11.20.0",
   "overrides": {
-    "qs": "6.14.1"
+    "minimatch": "11.0.3"
   }
 }

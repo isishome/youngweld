@@ -44,13 +44,13 @@
           {
             "label": "Development of submerged carriage welding machine started",
             "time": "March 2010",
-            "desc": "<p>Development started</p><img src=\"/static/images/products/yesawps001.png\" width=\"200px\" />",
+            "desc": "<p>Development started</p><img src=\"/static/images/products/yesawps001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
             "icon": "work"
           },
           {
             "label": "Submerged carriage welding machine development in progress",
             "time": "April 2010",
-            "desc": "<p>Development in progress</p><img src=\"/static/images/products/yesawcg001.png\" width=\"200px\" />",
+            "desc": "<p>Development in progress</p><img src=\"/static/images/products/yesawcg001.webp\" width=\"200\" alt=\"\" loading=\"lazy\" />",
             "icon": "work"
           },
           {
@@ -79,7 +79,7 @@
     "top": [
       {
         "direction": "right",
-        "src": "/static/images/main/top00.png",
+        "src": "/static/images/main/top00.webp",
         "align": "left",
         "title": "SUBMERGED ARC WELDING CARRIAGE",
         "desc": "Precision welding driving along rails",
@@ -88,7 +88,7 @@
       },
       {
         "direction": "left",
-        "src": "/static/images/main/top01.png",
+        "src": "/static/images/main/top01.webp",
         "align": "right",
         "title": "AIR SPOT RESISTANCE WELDING",
         "desc": "Digital control method synchronized with welding power cycle",
@@ -101,10 +101,8 @@
         {
           "title": "SUBMERGED ARC WELDING CARRIAGE",
           "desc": "Precision welding driving along rails",
-          "etc": [
-            "YESAWCG-001"
-          ],
-          "src": "/static/images/products/yesawcg001.png",
+          "etc": ["YESAWCG-001"],
+          "src": "/static/images/products/yesawcg001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -116,10 +114,8 @@
         {
           "title": "SUBMERGED ARC WELDING SEAM TRACKER",
           "desc": "Probe sensor",
-          "etc": [
-            "YESAWPS-001"
-          ],
-          "src": "/static/images/products/yesawps001.png",
+          "etc": ["YESAWPS-001"],
+          "src": "/static/images/products/yesawps001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -131,10 +127,8 @@
         {
           "title": "SUBMERGED ARC WELDING SEAM TRACKER",
           "desc": "Control unit",
-          "etc": [
-            "YESAWCU-004"
-          ],
-          "src": "/static/images/products/yesawcu004.png",
+          "etc": ["YESAWCU-004"],
+          "src": "/static/images/products/yesawcu004.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -148,10 +142,8 @@
         {
           "title": "AIR SPOT RESISTANCE WELDING",
           "desc": "Control unit",
-          "etc": [
-            "YM001"
-          ],
-          "src": "/static/images/products/ym001.png",
+          "etc": ["YM001"],
+          "src": "/static/images/products/ym001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -163,10 +155,8 @@
         {
           "title": "PANCAKE MACHINE",
           "desc": "Control unit",
-          "etc": [
-            "YEPCCU-001"
-          ],
-          "src": "/static/images/products/yepccu001.png",
+          "etc": ["YEPCCU-001"],
+          "src": "/static/images/products/yepccu001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -178,10 +168,8 @@
         {
           "title": "AIR SPOT RESISTANCE WELDING",
           "desc": "Control unit",
-          "etc": [
-            "YM9601"
-          ],
-          "src": "/static/images/products/ym9601.png",
+          "etc": ["YM9601"],
+          "src": "/static/images/products/ym9601.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -195,10 +183,8 @@
         {
           "title": "INVERTER ARC WELDING MACHINE",
           "desc": "Inverter ARC welding machine (small)",
-          "etc": [
-            "YEAWW-001"
-          ],
-          "src": "/static/images/products/yeaww001.png",
+          "etc": ["YEAWW-001"],
+          "src": "/static/images/products/yeaww001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -212,10 +198,8 @@
         {
           "title": "CONDENSER WELDING MACHINE",
           "desc": "Condenser spot resistance welding machine",
-          "etc": [
-            "YERWW-001"
-          ],
-          "src": "/static/images/products/yerww001.png",
+          "etc": ["YERWW-001"],
+          "src": "/static/images/products/yerww001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -227,10 +211,8 @@
         {
           "title": "CONDENSER SPOT WELDING MACHINE POWER",
           "desc": "Power for capacitor spot resistance welding machine",
-          "etc": [
-            "YERWP-001"
-          ],
-          "src": "/static/images/products/yerwp001.png",
+          "etc": ["YERWP-001"],
+          "src": "/static/images/products/yerwp001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -242,10 +224,8 @@
         {
           "title": "DC SPOT TRANSFORMER",
           "desc": "DC Spot Resistance Welding Machine Transformer",
-          "etc": [
-            "YERWT-001"
-          ],
-          "src": "/static/images/products/yerwt001.png",
+          "etc": ["YERWT-001"],
+          "src": "/static/images/products/yerwt001.webp",
           "to": {
             "name": "product-select",
             "params": {
@@ -397,22 +377,22 @@
   "section": [
     {
       "code": "control",
-      "icon": "/static/images/support/control.png",
+      "icon": "/static/images/support/control.webp",
       "name": "Control"
     },
     {
       "code": "submerged",
-      "icon": "/static/images/support/submerged.png",
+      "icon": "/static/images/support/submerged.webp",
       "name": "Submerged"
     },
     {
       "code": "inverter",
-      "icon": "/static/images/support/inverter.png",
+      "icon": "/static/images/support/inverter.webp",
       "name": "Inverter"
     },
     {
       "code": "spot",
-      "icon": "/static/images/support/spot.png",
+      "icon": "/static/images/support/spot.webp",
       "name": "Spot"
     }
   ],
@@ -421,7 +401,7 @@
     "list": [
       {
         "sec": "control",
-        "src": "/static/images/products/yesrwcu001.png",
+        "src": "/static/images/products/yesrwcu001.webp",
         "name": "Seam Weld Control Unit",
         "desc": [
           {
@@ -458,37 +438,37 @@
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yecrwcu001.png",
+        "src": "/static/images/products/yecrwcu001.webp",
         "name": "Condenser Spot Weld Control",
         "code": "YECRWCU-001"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yecrwcu002.png",
+        "src": "/static/images/products/yecrwcu002.webp",
         "name": "Condenser Spot Weld Control",
         "code": "YECRWCU-002"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yeaswcu001.png",
+        "src": "/static/images/products/yeaswcu001.webp",
         "name": "Stud welding control",
         "code": "YEASWCU-001"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yesprwcu001.png",
+        "src": "/static/images/products/yesprwcu001.webp",
         "name": "Spot welding control",
         "code": "YESPRWCU-001"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yesprwcu002.png",
+        "src": "/static/images/products/yesprwcu002.webp",
         "name": "Spot welding control",
         "code": "YESPRWCU-002"
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yeasrwcu002.png",
+        "src": "/static/images/products/yeasrwcu002.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -529,7 +509,7 @@
       },
       {
         "sec": "control",
-        "src": "/static/images/products/ym001.png",
+        "src": "/static/images/products/ym001.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -570,7 +550,7 @@
       },
       {
         "sec": "control",
-        "src": "/static/images/products/ym9601.png",
+        "src": "/static/images/products/ym9601.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -615,7 +595,7 @@
       },
       {
         "sec": "control",
-        "src": "/static/images/products/yepccu001.png",
+        "src": "/static/images/products/yepccu001.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -625,31 +605,31 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcu001.png",
+        "src": "/static/images/products/yesawcu001.webp",
         "name": "Tandem Control Unit",
         "code": "YESAWCU-001"
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcu002.png",
+        "src": "/static/images/products/yesawcu002.webp",
         "name": "Single Control Unit",
         "code": "YESAWCU-002"
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawpd001.png",
+        "src": "/static/images/products/yesawpd001.webp",
         "name": "Main Power Splitter",
         "code": "YESAWPD-001"
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcu003.png",
+        "src": "/static/images/products/yesawcu003.webp",
         "name": "Main Power Control Unit",
         "code": "YESAWCU-003"
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcu004.png",
+        "src": "/static/images/products/yesawcu004.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -659,7 +639,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawsl001.png",
+        "src": "/static/images/products/yesawsl001.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -669,7 +649,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawsl002.png",
+        "src": "/static/images/products/yesawsl002.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -679,7 +659,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawps001.png",
+        "src": "/static/images/products/yesawps001.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -690,7 +670,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawcg001.png",
+        "src": "/static/images/products/yesawcg001.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -755,7 +735,7 @@
       },
       {
         "sec": "submerged",
-        "src": "/static/images/products/yesawm001.png",
+        "src": "/static/images/products/yesawm001.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -765,7 +745,7 @@
       },
       {
         "sec": "inverter",
-        "src": "/static/images/products/yeaww001.png",
+        "src": "/static/images/products/yeaww001.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -775,7 +755,7 @@
       },
       {
         "sec": "spot",
-        "src": "/static/images/products/yerwt001.png",
+        "src": "/static/images/products/yerwt001.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -785,13 +765,13 @@
       },
       {
         "sec": "spot",
-        "src": "/static/images/products/yerwp001.png",
+        "src": "/static/images/products/yerwp001.webp",
         "name": "Condenser Spot Welder Power",
         "code": "YERWP-001"
       },
       {
         "sec": "spot",
-        "src": "/static/images/products/yerww001.png",
+        "src": "/static/images/products/yerww001.webp",
         "type": {
           "name": "BEST",
           "color": "text-blue"
@@ -800,5 +780,10 @@
         "code": "YERWW-001"
       }
     ]
+  },
+  "accessibility": {
+    "menu": "Open menu",
+    "darkMode": "Dark mode",
+    "backToTop": "Back to top"
   }
 }

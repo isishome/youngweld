@@ -1,12 +1,43 @@
-
 import 'quasar/dist/quasar.css'
-import '@quasar/extras/material-icons/material-icons.css'
+import './styles.css'
 import { Cookies } from 'quasar'
+import iconSet from 'quasar/icon-set/svg-material-icons'
+import {
+  matMenu,
+  matLanguage,
+  matDarkMode,
+  matKeyboardArrowUp,
+  matLocationOn,
+  matPhoneEnabled,
+  matPrint,
+  matPictureAsPdf,
+  matHelpOutline,
+  matHome,
+  matSwapHoriz,
+  matWork,
+  matEmail,
+} from '@quasar/extras/material-icons'
 
-// To be used on app.use(Quasar, { ... })
+const icons = {
+  menu: matMenu,
+  language: matLanguage,
+  dark_mode: matDarkMode,
+  keyboard_arrow_up: matKeyboardArrowUp,
+  location_on: matLocationOn,
+  phone_enabled: matPhoneEnabled,
+  print: matPrint,
+  picture_as_pdf: matPictureAsPdf,
+  help_outline: matHelpOutline,
+  home: matHome,
+  swap_horiz: matSwapHoriz,
+  work: matWork,
+  email: matEmail,
+}
+
 export default {
-  config: {},
-  plugins: {
-    Cookies
-  }
+  config: {
+    iconMapFn: (name) => (icons[name] ? { icon: icons[name] } : undefined),
+  },
+  iconSet,
+  plugins: { Cookies },
 }
