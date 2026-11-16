@@ -1,0 +1,3 @@
+# 저장소와 작업 폴더의 줄바꿈을 LF로 통일한다(Prettier 기본 endOfLine과 일치).
+# 이미지·PDF 등 이진 파일은 text=auto가 자동으로 제외한다.
+* text=auto eol=lf
