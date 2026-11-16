@@ -13,6 +13,17 @@ const chooseLanguage = async (page, label, mobile) => {
   await page.getByText(label, { exact: true }).last().click()
 }
 
+// 등장 애니메이션 도중의 반투명 상태가 아니라 최종 화면을 검사하기 위해 기다린다.
+const waitForAnimations = (page) =>
+  page.waitForFunction(() =>
+    document
+      .getAnimations()
+      .filter(
+        (animation) => animation.effect.getTiming().iterations !== Infinity,
+      )
+      .every((animation) => animation.playState !== 'running'),
+  )
+
 test('목록의 이미지·제품명으로 제품 선택 및 방문 기록 복원', async ({
   page,
 }) => {
@@ -195,6 +206,7 @@ test('홈 이미지·접근성·CSP·아이콘', async ({ page }) => {
   const nextProduct = page.locator('.product-wrap img').nth(1)
   await nextProduct.scrollIntoViewIfNeeded()
   await expect(nextProduct).toHaveCSS('animation-name', 'slideInUp')
+  await waitForAnimations(page)
   const results = await new AxeBuilder({ page })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
     .analyze()
@@ -309,4 +321,76 @@ test('지원 검색·지도 프레임·정적 자산', async ({ page, request })
   expect((await request.get(manifest.icons[0].src)).status()).toBe(200)
   expect((await request.get('/robots.txt')).status()).toBe(200)
   expect(errors).toEqual([])
+})
+
+test('전 페이지 h1·접근성(라이트/다크)', async ({ page }) => {
+  for (const scheme of ['light', 'dark']) {
+    await page.emulateMedia({ colorScheme: scheme })
+    for (const path of [
+      '/',
+      '/product/control',
+      '/company',
+      '/support',
+      '/location',
+      '/404',
+    ]) {
+      await page.goto(path)
+      await expect(page.locator('main')).toBeVisible()
+      await expect(page.getByRole('heading', { level: 1 })).toHaveCount(1)
+      await waitForAnimations(page)
+      const results = await new AxeBuilder({ page })
+        .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
+        .exclude('iframe')
+        .analyze()
+      expect(results.violations, `${scheme} ${path}`).toEqual([])
+    }
+  }
+})
+
+test('전화·이메일 링크와 현재 연도 저작권', async ({ page }) => {
+  const year = String(new Date().getFullYear())
+  await page.goto('/support')
+  await expect(page.locator('footer')).toContainText(`Copyright © ${year}`)
+  await expect(page.locator('footer a[href^="tel:"]')).toHaveAttribute(
+    'href',
+    'tel:+82-32-589-1160',
+  )
+  await expect(page.locator('main a[href^="mailto:"]')).toHaveAttribute(
+    'href',
+    'mailto:youngweld@hanmail.net',
+  )
+  await expect(page.locator('main a[href^="tel:"]')).toHaveCount(1)
+  await page.goto('/location')
+  await expect(page.locator('main a[href^="tel:"]')).toHaveCount(1)
+})
+
+test('고객지원 FAQ 임시 항목 제거와 빈 분류 안내', async ({ page }) => {
+  await page.goto('/support')
+  const tree = page.locator('.q-tree')
+  // 분류명은 CSS로 대문자 표시되므로 대소문자를 구분하지 않는다.
+  await expect(tree).toContainText(/control/i)
+  for (const placeholder of ['서브머지드2', '인버터1', '스포트1', 'Solution'])
+    await expect(tree).not.toContainText(placeholder)
+  await expect(tree).not.toContainText(/inverter/i)
+  await page.goto('/support/inverter')
+  await expect(tree).toContainText('검색 된 도움말이 없습니다.')
+})
+
+test('홈 상세 버튼 즉시 표시', async ({ page }) => {
+  await page.goto('/')
+  const detail = page.locator('.detail').first()
+  await expect(detail).toBeVisible()
+  await expect(detail).not.toHaveClass(/animate__delay-3s/)
+})
+
+test('홈 제품 영역 배경색(라이트/다크)', async ({ page }) => {
+  const product = page.locator('.section-wrap .product-wrap').first()
+  for (const [scheme, color] of [
+    ['light', 'rgba(50, 50, 50, 0.05)'],
+    ['dark', 'rgba(255, 255, 255, 0.05)'],
+  ]) {
+    await page.emulateMedia({ colorScheme: scheme })
+    await page.goto('/')
+    await expect(product).toHaveCSS('background-color', color)
+  }
 })

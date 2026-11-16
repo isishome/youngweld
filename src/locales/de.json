@@ -2,7 +2,7 @@
   "pnf": "Die gesuchte Seite wurde nicht gefunden.",
   "company": {
     "name": "YOUNGWELD",
-    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright1": "Copyright © {year} Youngil Electric.",
     "copyright2": "Alle Rechte vorbehalten.",
     "timeline": [
       {
@@ -313,62 +313,10 @@
               "label": "Antwort"
             }
           ]
-        },
-        {
-          "label": "Unterpulver 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Lösung"
-            }
-          ]
         }
       ],
-      "inverter": [
-        {
-          "label": "Inverter 1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Antwort"
-            }
-          ]
-        },
-        {
-          "label": "Inverter 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Lösung"
-            }
-          ]
-        }
-      ],
-      "spot": [
-        {
-          "label": "Punkt 1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Antwort"
-            }
-          ]
-        },
-        {
-          "label": "Punkt 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Lösung"
-            }
-          ]
-        }
-      ]
+      "inverter": [],
+      "spot": []
     },
     "message": {
       "noData": "Keine passenden Hilfethemen gefunden."

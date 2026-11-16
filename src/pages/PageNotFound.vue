@@ -1,8 +1,6 @@
 <template>
-  <div
-    class="full-width q-px-md text-center absolute-center font-size text-weight-bold text-wrap"
-  >
-    <div>{{ t('pnf') }}</div>
+  <div class="full-width q-px-md text-center absolute-center text-wrap">
+    <h1 class="page-title font-size text-weight-bold">{{ t('pnf') }}</h1>
   </div>
 </template>
 <script>

@@ -2,7 +2,7 @@
   "pnf": "お探しのページが見つかりません。",
   "company": {
     "name": "YOUNGWELD",
-    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright1": "Copyright © {year} Youngil Electric.",
     "copyright2": "無断転載を禁じます。",
     "timeline": [
       {
@@ -313,62 +313,10 @@
               "label": "回答"
             }
           ]
-        },
-        {
-          "label": "サブマージアーク2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "解決方法"
-            }
-          ]
         }
       ],
-      "inverter": [
-        {
-          "label": "インバーター1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "回答"
-            }
-          ]
-        },
-        {
-          "label": "インバーター2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "解決方法"
-            }
-          ]
-        }
-      ],
-      "spot": [
-        {
-          "label": "スポット1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "回答"
-            }
-          ]
-        },
-        {
-          "label": "スポット2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "解決方法"
-            }
-          ]
-        }
-      ]
+      "inverter": [],
+      "spot": []
     },
     "message": {
       "noData": "該当するヘルプが見つかりません。"

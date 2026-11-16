@@ -3,8 +3,8 @@
     <div
       class="row justify-start col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 q-pa-lg"
     >
-      <div class="text-h5 col-12 q-mb-md">
-        {{ t('menu.location') }}
+      <div class="col-12 q-mb-md">
+        <h1 class="page-title text-h5">{{ t('menu.location') }}</h1>
         <q-separator />
       </div>
       <div class="full-width relative-position">
@@ -29,8 +29,8 @@
         <q-card-section
           :class="
             $q.dark.isActive
-              ? 'bg-grey-9 text-grey-5'
-              : 'bg-yellow-7 text-black'
+              ? 'bg-grey-9 text-grey-4'
+              : 'bg-blue-grey-8 text-white'
           "
         >
           <div class="text-h6">{{ t('location.contact') }}</div>
@@ -44,8 +44,10 @@
         <q-separator inset />
         <q-card-section>
           <div class="row items-center q-gutter-x-md">
-            <q-icon name="phone_enabled" size="xs" />
-            <div>{{ t('location.phone') }}</div>
+            <q-icon name="phone_enabled" size="xs" aria-hidden="true" />
+            <a class="contact-link" :href="PHONE_HREF">
+              {{ t('location.phone') }}
+            </a>
           </div>
         </q-card-section>
         <q-separator inset />
@@ -63,8 +65,8 @@
               <q-card-section
                 :class="
                   $q.dark.isActive
-                    ? 'bg-grey-9 text-grey-5'
-                    : 'bg-green-6 text-white'
+                    ? 'bg-grey-9 text-grey-4'
+                    : 'bg-blue-grey-8 text-white'
                 "
               >
                 <div class="text-h6">{{ t('location.PublicTransport') }}</div>
@@ -88,8 +90,8 @@
               <q-card-section
                 :class="
                   $q.dark.isActive
-                    ? 'bg-grey-9 text-grey-5'
-                    : 'bg-red-5 text-white'
+                    ? 'bg-grey-9 text-grey-4'
+                    : 'bg-blue-grey-8 text-white'
                 "
               >
                 <div class="text-h6">{{ t('location.OwnCar') }}</div>
@@ -117,6 +119,7 @@
 <script>
 import { ref, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { PHONE_HREF } from '../contact.js'
 
 export default {
   setup() {
@@ -136,11 +139,22 @@ export default {
       tm,
       visible,
       iframe,
+      PHONE_HREF,
     }
   },
 }
 </script>
 <style scoped>
+.contact-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  text-decoration: underline;
+}
+
 .text-wrap {
   word-break: keep-all;
   overflow-wrap: anywhere;

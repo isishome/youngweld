@@ -3,9 +3,9 @@
   <div class="row">
     <q-img alt="" class="top-image" src="/static/images/support/top.webp">
       <div class="gt-sm sub-area row justify-center items-center">
-        <div class="col-12 sub-title text-uppercase">
+        <h1 class="col-12 page-title sub-title text-uppercase">
           {{ t('menu.support') }}
-        </div>
+        </h1>
         <div class="col-12 row justify-center full-width bg-transparent">
           <q-input
             spellcheck="false"
@@ -24,9 +24,9 @@
       class="lt-md row justify-start col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 q-pa-lg"
     >
       <div class="row items-center justify-between full-width">
-        <div class="text-h5 text-uppercase text-weight-bold">
+        <h1 class="page-title text-h5 text-uppercase text-weight-bold">
           {{ t('menu.support') }}
-        </div>
+        </h1>
         <div class="col-6">
           <q-input
             type="search"
@@ -97,6 +97,7 @@
         :filter="searchText"
         :filter-method="filterSupport"
         :no-results-label="tm('support.message.noData')"
+        :no-nodes-label="tm('support.message.noData')"
         :no-connectors="$q.screen.lt.sm"
         default-expand-all
       >
@@ -141,8 +142,8 @@
         <q-card-section
           :class="[
             $q.dark.isActive
-              ? 'bg-grey-9 text-grey-5'
-              : 'bg-light-blue-10 text-white',
+              ? 'bg-grey-9 text-grey-4'
+              : 'bg-blue-grey-8 text-white',
             $q.screen.lt.sm ? 'text-body1' : 'text-h6',
           ]"
         >
@@ -168,8 +169,8 @@
               <q-card-section
                 :class="
                   $q.dark.isActive
-                    ? 'bg-grey-9 text-grey-5'
-                    : 'bg-cyan-8 text-white'
+                    ? 'bg-grey-9 text-grey-4'
+                    : 'bg-blue-grey-8 text-white'
                 "
               >
                 <div class="row q-gutter-x-md text-h6">
@@ -181,7 +182,7 @@
                 class="support-contents"
                 style="letter-spacing: 2px"
               >
-                {{ t('support.email.value') }}
+                <a :href="EMAIL_HREF">{{ t('support.email.value') }}</a>
               </q-card-section>
             </q-card>
           </div>
@@ -190,8 +191,8 @@
               <q-card-section
                 :class="
                   $q.dark.isActive
-                    ? 'bg-grey-9 text-grey-5'
-                    : 'bg-teal-8 text-white'
+                    ? 'bg-grey-9 text-grey-4'
+                    : 'bg-blue-grey-8 text-white'
                 "
               >
                 <div class="row q-gutter-x-md text-h6">
@@ -200,7 +201,7 @@
                 </div>
               </q-card-section>
               <q-card-section class="support-contents">
-                {{ t('support.phone.value') }}
+                <a :href="PHONE_HREF">{{ t('support.phone.value') }}</a>
               </q-card-section>
             </q-card>
           </div>
@@ -213,6 +214,7 @@
 import { ref, watch, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
+import { EMAIL_HREF, PHONE_HREF } from '../contact.js'
 
 export default {
   props: {
@@ -241,13 +243,16 @@ export default {
       if (props.sec) {
         return tm(`support.section.${props.sec.toLowerCase()}`)
       } else {
-        return Object.entries(tm('support.section')).map(([key, value]) => {
-          return {
-            label: key,
-            header: 'root',
-            children: value,
-          }
-        })
+        // 등록된 질문이 없는 분류는 전체 보기에서 숨긴다.
+        return Object.entries(tm('support.section'))
+          .filter(([, questions]) => questions.length > 0)
+          .map(([key, questions]) => {
+            return {
+              label: key,
+              header: 'root',
+              children: questions,
+            }
+          })
       }
     })
 
@@ -306,6 +311,8 @@ export default {
       sticky,
       qna,
       select,
+      EMAIL_HREF,
+      PHONE_HREF,
       propsSec: computed(() => {
         return props.sec
       }),
@@ -362,6 +369,16 @@ export default {
 
 .q-tree::first-line {
   font-size: 1.2em;
+}
+
+.support-contents a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.support-contents a:hover,
+.support-contents a:focus-visible {
+  text-decoration: underline;
 }
 
 .support-contents {

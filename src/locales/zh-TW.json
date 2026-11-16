@@ -2,7 +2,7 @@
   "pnf": "找不到您要瀏覽的頁面。",
   "company": {
     "name": "YOUNGWELD",
-    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright1": "Copyright © {year} Youngil Electric.",
     "copyright2": "保留所有權利。",
     "timeline": [
       {
@@ -313,62 +313,10 @@
               "label": "回答"
             }
           ]
-        },
-        {
-          "label": "潛弧焊2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "解決方法"
-            }
-          ]
         }
       ],
-      "inverter": [
-        {
-          "label": "變頻1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "回答"
-            }
-          ]
-        },
-        {
-          "label": "變頻2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "解決方法"
-            }
-          ]
-        }
-      ],
-      "spot": [
-        {
-          "label": "點焊1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "回答"
-            }
-          ]
-        },
-        {
-          "label": "點焊2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "解決方法"
-            }
-          ]
-        }
-      ]
+      "inverter": [],
+      "spot": []
     },
     "message": {
       "noData": "找不到符合的說明內容。"

@@ -2,7 +2,7 @@
   "pnf": "找不到您要访问的页面。",
   "company": {
     "name": "YOUNGWELD",
-    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright1": "Copyright © {year} Youngil Electric.",
     "copyright2": "版权所有。",
     "timeline": [
       {
@@ -313,62 +313,10 @@
               "label": "回答"
             }
           ]
-        },
-        {
-          "label": "埋弧焊2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "解决方法"
-            }
-          ]
         }
       ],
-      "inverter": [
-        {
-          "label": "逆变1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "回答"
-            }
-          ]
-        },
-        {
-          "label": "逆变2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "解决方法"
-            }
-          ]
-        }
-      ],
-      "spot": [
-        {
-          "label": "点焊1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "回答"
-            }
-          ]
-        },
-        {
-          "label": "点焊2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "解决方法"
-            }
-          ]
-        }
-      ]
+      "inverter": [],
+      "spot": []
     },
     "message": {
       "noData": "未找到匹配的帮助内容。"

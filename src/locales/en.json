@@ -2,7 +2,7 @@
   "pnf": "The page you’re looking for can’t be found.",
   "company": {
     "name": "YOUNGWELD",
-    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright1": "Copyright © {year} Youngil Electric.",
     "copyright2": "All Rights Reserved.",
     "timeline": [
       {
@@ -313,62 +313,10 @@
               "label": "answer"
             }
           ]
-        },
-        {
-          "label": "Submerged2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Solution"
-            }
-          ]
         }
       ],
-      "inverter": [
-        {
-          "label": "Inverter1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "answer"
-            }
-          ]
-        },
-        {
-          "label": "Inverter2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Solution"
-            }
-          ]
-        }
-      ],
-      "spot": [
-        {
-          "label": "Spot1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "answer"
-            }
-          ]
-        },
-        {
-          "label": "Spot2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Solution"
-            }
-          ]
-        }
-      ]
+      "inverter": [],
+      "spot": []
     },
     "message": {
       "noData": "No matching help topics found."

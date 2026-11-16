@@ -25,7 +25,7 @@
     </div>
     <template v-for="(e, index) in etc" :key="`etc_${index}`">
       <div
-        class="col-1 etc text-primary animate__animated"
+        class="col-1 etc animate__animated"
         :class="[
           `animate__delay-${parsDelay}s`,
           show ? 'animate__flipInY' : '',
@@ -115,10 +115,18 @@ export default {
 .product-wrap {
   user-select: none;
   overflow: hidden;
-  background-color: rgba(50, 50, 50, 0.02);
   position: relative;
   word-break: keep-all;
   border-radius: 4px;
+}
+
+/* 제품 영역을 페이지 배경보다 진하게 해 스크롤 중에도 구분되게 한다. */
+.body--light .product-wrap {
+  background-color: rgba(50, 50, 50, 0.05);
+}
+
+.body--dark .product-wrap {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 @media screen and (max-width: 599px) {
@@ -153,6 +161,15 @@ export default {
   font-size: 1em;
   font-weight: bold;
   letter-spacing: 3px;
+}
+
+/* 진해진 배경에서도 제품 코드 대비 4.5:1 이상을 유지한다. */
+.body--light .etc {
+  color: #1565c0;
+}
+
+.body--dark .etc {
+  color: #64b5f6;
 }
 
 .img-wrap {

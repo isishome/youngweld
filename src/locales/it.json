@@ -2,7 +2,7 @@
   "pnf": "La pagina cercata non è stata trovata.",
   "company": {
     "name": "YOUNGWELD",
-    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright1": "Copyright © {year} Youngil Electric.",
     "copyright2": "Tutti i diritti riservati.",
     "timeline": [
       {
@@ -313,62 +313,10 @@
               "label": "Risposta"
             }
           ]
-        },
-        {
-          "label": "Arco sommerso 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Soluzione"
-            }
-          ]
         }
       ],
-      "inverter": [
-        {
-          "label": "Inverter 1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Risposta"
-            }
-          ]
-        },
-        {
-          "label": "Inverter 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Soluzione"
-            }
-          ]
-        }
-      ],
-      "spot": [
-        {
-          "label": "Punti 1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Risposta"
-            }
-          ]
-        },
-        {
-          "label": "Punti 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Soluzione"
-            }
-          ]
-        }
-      ]
+      "inverter": [],
+      "spot": []
     },
     "message": {
       "noData": "Nessun argomento della guida corrispondente."

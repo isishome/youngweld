@@ -3,16 +3,18 @@
   <div class="row full-width">
     <q-img alt="" class="top-image" src="/static/images/products/top.webp">
       <div class="gt-sm sub-area left">
-        <div class="sub-title text-uppercase">{{ t('menu.product') }}</div>
+        <h1 class="page-title sub-title text-uppercase">
+          {{ t('menu.product') }}
+        </h1>
       </div>
     </q-img>
     <div
       class="lt-md row justify-start col-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 q-px-lg q-py-sm"
     >
       <div class="row items-center justify-start full-width">
-        <div class="text-h5 text-uppercase text-weight-bold">
+        <h1 class="page-title text-h5 text-uppercase text-weight-bold">
           {{ t('menu.product') }}
-        </div>
+        </h1>
       </div>
     </div>
     <q-separator class="full-width" />
@@ -62,8 +64,8 @@
       <q-separator inset class="full-width" />
     </div>
     <div
-      class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 non-selectable q-mt-xl"
-      :class="$q.screen.lt.md ? 'q-pa-xs' : 'q-pa-lg'"
+      class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 non-selectable"
+      :class="$q.screen.lt.md ? 'q-pa-xs q-mt-sm' : 'q-pa-lg q-mt-xl'"
     >
       <!-- Product List Start -->
       <div class="full-width">
@@ -88,7 +90,7 @@
                     : ''
                 "
               >
-                <q-separator class="q-mt-xl" />
+                <q-separator :class="$q.screen.lt.md ? 'q-mt-md' : 'q-mt-xl'" />
                 <router-link
                   class="img-wrap product-link"
                   :to="{
@@ -96,20 +98,20 @@
                     params: { sec: p.sec, code: p.code },
                   }"
                   :aria-label="`${p.name} (${p.code})`"
-                  :class="$q.screen.lt.md ? 'q-py-md' : 'q-py-xl'"
+                  :class="$q.screen.lt.md ? 'q-py-sm' : 'q-py-xl'"
                 >
                   <q-img
                     :alt="p.name"
                     :src="p.src"
                     :ratio="1"
-                    :width="$q.screen.lt.md ? '80%' : '60%'"
+                    :width="$q.screen.lt.sm ? '55%' : '60%'"
                   />
                 </router-link>
                 <q-card-section class="no-padding">
                   <q-chip
                     size="sm"
                     v-if="p.type"
-                    :color="$q.dark.isActive ? 'grey-8' : 'blue-6'"
+                    :color="$q.dark.isActive ? 'grey-8' : 'blue-9'"
                     text-color="white"
                   >
                     {{ p.type.name }}
@@ -146,7 +148,8 @@
                   <q-card-section class="q-px-none">
                     <div>
                       <a
-                        class="manual text-h6 product-name text-subtitle1 text-red-8 ellipsis"
+                        class="manual text-h6 product-name text-subtitle1 ellipsis"
+                        :class="$q.dark.isActive ? 'text-red-4' : 'text-red-8'"
                         :href="p.manual"
                       >
                         <q-icon size="30px" name="picture_as_pdf" />
@@ -162,7 +165,7 @@
                   :key="index"
                 >
                   <div class="column">
-                    <div class="text-subtitle2 text-grey-7">{{ d.name }}</div>
+                    <div class="text-subtitle2 spec-name">{{ d.name }}</div>
                     <div
                       class="text-caption ellipsis-3-lines text-wrap"
                       v-html="d.contents"
@@ -306,6 +309,14 @@ export default {
 
 .manual {
   text-decoration: none;
+}
+
+.body--light .spec-name {
+  color: #616161;
+}
+
+.body--dark .spec-name {
+  color: #9e9e9e;
 }
 
 .body--light .marker {

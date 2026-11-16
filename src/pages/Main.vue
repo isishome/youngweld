@@ -1,5 +1,6 @@
 <!-- pages/Main.vue -->
 <template>
+  <h1 class="visually-hidden">{{ t('company.name') }}</h1>
   <div class="gt-sm q-mt-lg"></div>
   <div class="lt-md q-mt-md"></div>
   <div class="row full-width">
@@ -50,7 +51,7 @@
                 class="detail"
                 color="yellow-8 text-black"
                 :class="[
-                  `animate__animated animate__delay-3s ${inView.includes(index.toString()) ? 'animate__flipInX' : ''}`,
+                  `animate__animated ${inView.includes(index.toString()) ? 'animate__flipInX' : ''}`,
                 ]"
                 rounded
                 unelevated
@@ -115,7 +116,7 @@ for (let i = 0; i <= 1.0; i += 0.01) {
 
 export default {
   setup() {
-    const { locale, tm } = useI18n({ useScope: 'global' })
+    const { locale, t, tm } = useI18n({ useScope: 'global' })
 
     // about top image -------------------------------------------------------
     const $q = useQuasar()
@@ -173,6 +174,7 @@ export default {
 
     return {
       locale,
+      t,
       tm,
       imageFile,
       options,

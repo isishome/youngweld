@@ -2,7 +2,7 @@
   "pnf": "Запрашиваемая страница не найдена.",
   "company": {
     "name": "YOUNGWELD",
-    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright1": "Copyright © {year} Youngil Electric.",
     "copyright2": "Все права защищены.",
     "timeline": [
       {
@@ -313,62 +313,10 @@
               "label": "Ответ"
             }
           ]
-        },
-        {
-          "label": "Под флюсом 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Решение"
-            }
-          ]
         }
       ],
-      "inverter": [
-        {
-          "label": "Инвертор 1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Ответ"
-            }
-          ]
-        },
-        {
-          "label": "Инвертор 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Решение"
-            }
-          ]
-        }
-      ],
-      "spot": [
-        {
-          "label": "Точечная 1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Ответ"
-            }
-          ]
-        },
-        {
-          "label": "Точечная 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Решение"
-            }
-          ]
-        }
-      ]
+      "inverter": [],
+      "spot": []
     },
     "message": {
       "noData": "Подходящие темы справки не найдены."

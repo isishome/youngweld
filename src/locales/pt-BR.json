@@ -2,7 +2,7 @@
   "pnf": "A página que você procura não foi encontrada.",
   "company": {
     "name": "YOUNGWELD",
-    "copyright1": "Copyright © 2021 Youngil Electric.",
+    "copyright1": "Copyright © {year} Youngil Electric.",
     "copyright2": "Todos os direitos reservados.",
     "timeline": [
       {
@@ -313,62 +313,10 @@
               "label": "Resposta"
             }
           ]
-        },
-        {
-          "label": "Arco submerso 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Solução"
-            }
-          ]
         }
       ],
-      "inverter": [
-        {
-          "label": "Inversora 1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Resposta"
-            }
-          ]
-        },
-        {
-          "label": "Inversora 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Solução"
-            }
-          ]
-        }
-      ],
-      "spot": [
-        {
-          "label": "Ponto 1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Resposta"
-            }
-          ]
-        },
-        {
-          "label": "Ponto 2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Solução"
-            }
-          ]
-        }
-      ]
+      "inverter": [],
+      "spot": []
     },
     "message": {
       "noData": "Nenhum tópico de ajuda correspondente encontrado."

@@ -2,7 +2,7 @@
   "pnf": "페이지를 찾을 수 없습니다.",
   "company": {
     "name": "영일전기",
-    "copyright1": "Copyright © 2021 영일전기.",
+    "copyright1": "Copyright © {year} 영일전기.",
     "copyright2": "모든 권리 보유.",
     "timeline": [
       {
@@ -313,62 +313,10 @@
               "label": "과열로 인한 내부 보호 회로 작동으로 간주되므로 센터에 입고하여 점검요망"
             }
           ]
-        },
-        {
-          "label": "서브머지드2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Solution"
-            }
-          ]
         }
       ],
-      "inverter": [
-        {
-          "label": "인버터1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "answer"
-            }
-          ]
-        },
-        {
-          "label": "인버터2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Solution"
-            }
-          ]
-        }
-      ],
-      "spot": [
-        {
-          "label": "스포트1",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "answer"
-            }
-          ]
-        },
-        {
-          "label": "스포트2",
-          "header": "question",
-          "children": [
-            {
-              "header": "answer",
-              "label": "Solution"
-            }
-          ]
-        }
-      ]
+      "inverter": [],
+      "spot": []
     },
     "message": {
       "noData": "검색 된 도움말이 없습니다."

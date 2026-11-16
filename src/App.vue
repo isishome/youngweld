@@ -5,14 +5,12 @@
         <router-link
           class="company row q-pl-none items-center"
           :to="{ name: 'main' }"
+          :aria-label="t('company.name')"
         >
-          <img
-            src="/static/images/logo.webp"
-            :alt="t('company.name')"
-            width="40"
-            height="40"
-          />
-          <div class="gt-sm skew">{{ t('company.name') }}</div>
+          <img src="/static/images/logo.webp" alt="" width="40" height="40" />
+          <div class="gt-sm skew" aria-hidden="true">
+            {{ t('company.name') }}
+          </div>
         </router-link>
       </li>
     </template>
@@ -49,12 +47,26 @@
       <router-view />
     </template>
     <template #footer>
-      <div
-        class="footer row justify-center items-center q-gutter-x-xs q-py-md text-caption"
-      >
-        <img src="/static/images/logo.webp" alt="" width="30" height="30" />
-        <div>{{ t('company.copyright1') }}</div>
-        <div>{{ t('company.copyright2') }}</div>
+      <div class="footer column items-center q-px-md q-py-lg text-caption">
+        <address class="contact column items-center text-center">
+          <span class="text-wrap">{{ t('location.address') }}</span>
+          <span class="row justify-center items-center q-gutter-x-md">
+            <a class="row items-center" :href="PHONE_HREF">
+              <q-icon name="phone_enabled" size="14px" aria-hidden="true" />
+              <span class="visually-hidden">{{ t('support.phone.name') }}</span>
+              <span class="q-ml-xs">{{ t('location.phone') }}</span>
+            </a>
+            <span class="row items-center">
+              <q-icon name="print" size="14px" aria-hidden="true" />
+              <span class="q-ml-xs">{{ t('location.fax') }}</span>
+            </span>
+          </span>
+        </address>
+        <div class="row justify-center items-center q-gutter-x-xs q-mt-sm">
+          <img src="/static/images/logo.webp" alt="" width="30" height="30" />
+          <div>{{ t('company.copyright1', { year }) }}</div>
+          <div>{{ t('company.copyright2') }}</div>
+        </div>
       </div>
     </template>
   </f-layout>
@@ -62,14 +74,18 @@
 
 <script>
 import { useI18n } from 'vue-i18n'
+import { PHONE_HREF } from './contact.js'
 
 export default {
   setup() {
     const { t, tm } = useI18n({ useScope: 'global' })
+    const year = new Date().getFullYear()
 
     return {
       t,
       tm,
+      year,
+      PHONE_HREF,
     }
   },
 }
@@ -141,7 +157,7 @@ a {
 }
 
 .body--dark .tab a {
-  color: rgba(184, 156, 91, 0.8);
+  color: #b89c5b;
 }
 
 .tab a.router-link-active::before {
@@ -165,6 +181,21 @@ a {
 .footer img {
   width: 30px;
   filter: grayscale(100%);
+}
+
+.footer .contact {
+  gap: 4px;
+  font-style: normal;
+}
+
+.footer .contact a {
+  padding: 0;
+  color: inherit;
+}
+
+.footer .contact a:hover,
+.footer .contact a:focus-visible {
+  text-decoration: underline;
 }
 
 .body--light .footer {
